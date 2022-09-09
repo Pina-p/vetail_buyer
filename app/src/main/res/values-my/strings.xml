@@ -1,17 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">vetail layout</string>
-    <string name="loginIntro">Login to my account</string>
-    <string name="signupIntro">I\'m new here, sign me up</string>
+    <string name="loginIntro">အကောင့်ဝင်မည်</string>
+    <string name="signupIntro">အကောင့်အသစ်ဖွင့်မည်</string>
     <string name="term_policy">By loggin in or signing up, you are agree to Veatail\'s <font color='#487FFF'>Term of Use</font> and <font color='#487FFF'>Privacy Policy.</font></string>
-    <string name="login_to_my_account">Login to my account</string>
-    <string name="login_phone_email">Mobile number or email</string>
-    <string name="password">Password</string>
-    <string name="login">Login</string>
-    <string name="or_login_with">or login with</string>
-    <string name="forgot_password">Forgot password?</string>
+    <string name="login_to_my_account">အကောင့်ဝင်မည်</string>
+    <string name="login_phone_email">ဖုန်းနံပါတ် (သို့) အီးမေးလ်</string>
+    <string name="password">စကားဝှက်</string>
+    <string name="login">အကောင့်ဝင်မည်</string>
+    <string name="or_login_with">အခြားအရာများဖြင့်ဝင်ရန်</string>
+    <string name="forgot_password">စကားဝှက်မေ့နေပါသလား?</string>
     <string name="welcome_first_caption">Buy and sell \nAll in one application</string>
     <string name="welcome_first_little_caption">Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn</string>
-    <string name="welcome_second_caption">Attract the customers\nAll in one application</string>
+    <string name="welcome_second_caption">Buy and sell \nAll in one application</string>
     <string name="welcome_second_little_caption">Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn</string>
     <string name="welcome_third_caption">Buy and sell \nAll in one application</string>
     <string name="welcome_thirdt_little_caption">Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn</string>
