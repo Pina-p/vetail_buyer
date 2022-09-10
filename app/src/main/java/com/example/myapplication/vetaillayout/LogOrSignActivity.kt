@@ -3,6 +3,8 @@ package com.example.myapplication.vetaillayout
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.Html
 import android.util.Log
 import android.widget.LinearLayout
@@ -10,11 +12,13 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.size
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
 import com.example.myapplication.vetaillayout.adapters.ViewPagerAdapter
 import com.example.myapplication.vetaillayout.databinding.ActivityLogOrSignBinding
 import com.google.android.material.tabs.TabLayout
+import java.util.*
 
 class LogOrSignActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLogOrSignBinding
@@ -69,8 +73,25 @@ class LogOrSignActivity : AppCompatActivity() {
         mDotLayout = binding.indicatorLayout
         val viewPagerAdapter = ViewPagerAdapter(this)
         mSLideViewPager.adapter = viewPagerAdapter
-        setUpindicator(0)
         mSLideViewPager.addOnPageChangeListener(viewListener)
+        setUpindicator(0)
+        val mainHandler = Handler(Looper.getMainLooper())
+        var i=-1
+        mainHandler.post(object :Runnable{
+            override fun run() {
+                if (i>=mDotLayout.size-1){
+                    i=0
+                    Log.d("Tutu","One")
+                }
+                else{
+                    i++
+                    Log.d("Tutu","two")
+                }
+                mSLideViewPager.currentItem=i
+                mainHandler.postDelayed(this,3000)
+            }
+        })
+
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
@@ -103,7 +124,4 @@ class LogOrSignActivity : AppCompatActivity() {
         override fun onPageScrollStateChanged(state: Int) {}
     }
 
-    private fun getitem(i: Int): Int {
-        return mSLideViewPager.getCurrentItem() + i
-    }
 }

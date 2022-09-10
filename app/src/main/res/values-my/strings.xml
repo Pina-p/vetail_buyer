@@ -10,11 +10,13 @@
     <string name="login">အကောင့်ဝင်မည်</string>
     <string name="or_login_with">အခြားအရာများဖြင့်ဝင်ရန်</string>
     <string name="forgot_password">စကားဝှက်မေ့နေပါသလား?</string>
-    <string name="welcome_first_caption">Buy and sell \nAll in one application</string>
-    <string name="welcome_first_little_caption">Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn</string>
+    <string name="welcome_first_caption">မိမိလိုချင်တာမှန်သမျှ \nအဆင်ပြေစွာ ရွေးချယ်ဝယ်ယူနိုင်မယ်</string>
+    <string name="welcome_first_little_caption">Ever thought about you not being able to find a right online place to establihs a shop? \nWe have ShopDoora for you</string>
     <string name="welcome_second_caption">Buy and sell \nAll in one application</string>
-    <string name="welcome_second_little_caption">Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn</string>
+    <string name="welcome_second_little_caption">Come come here mister. Be the first to join the future of buyer and seller relationship.</string>
     <string name="welcome_third_caption">Buy and sell \nAll in one application</string>
-    <string name="welcome_thirdt_little_caption">Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn Randonn</string>
-
+    <string name="welcome_thirdt_little_caption">We couldn\'t persuade you any better. Let\'s just join now</string>
+    <string name="signin_term_and_policy">By signing up, you\'ve read and agreeded to Vetails\' <font color='#487FFF'>Terms of Services </font> and <font color='#487FFF'>Privacy policy </font>on how we collect, use and process your personal data</string>
+    <string name="acc_exist_normal">ယခုဖုန်းနံပါတ်ဖြင့် အကောင့်ဖွင့်ထားပြီးသားဖြစ်ပါသည်။</string>
+    <string name="acc_exist_shopdoora">ယခုဖုန်းနံပါတ်ဖြင့် ShopDoora Seller အကောင့်ဖွင့်ထားပြီးသားဖြစ်ပါသည်</string>
 </resources>

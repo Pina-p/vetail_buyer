@@ -58,6 +58,7 @@
         app:tabIndicatorAnimationMode="elastic"
         app:tabIndicator="@drawable/tab_indicator"
         app:tabTextColor="#84A6FF"
+        android:elevation="3dp"
         app:tabTextAppearance="@style/CustomTabText"
         />
     <androidx.constraintlayout.widget.ConstraintLayout

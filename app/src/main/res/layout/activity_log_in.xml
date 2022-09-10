@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintTop_toBottomOf="@id/tbLogin"
-        android:background="@drawable/login_bg"
+        android:background="@drawable/bg_login"
         android:scaleType="center"/>
     </androidx.cardview.widget.CardView>
 
