@@ -1,7 +1,8 @@
-package com.example.myapplication.vetaillayout
+package com.example.myapplication.vetaillayout.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.myapplication.vetaillayout.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

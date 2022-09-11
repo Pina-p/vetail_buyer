@@ -12,7 +12,7 @@ import androidx.viewpager.widget.PagerAdapter
 import com.example.myapplication.vetaillayout.R
 
 
-class ViewPagerAdapter(var context: Context) : PagerAdapter() {
+class ViewPagerAdapterLogOrSign(var context: Context) : PagerAdapter() {
     var images = intArrayOf(
         R.drawable.ic_bg_people_discussing,
         R.drawable.ic_bg_twopeople,

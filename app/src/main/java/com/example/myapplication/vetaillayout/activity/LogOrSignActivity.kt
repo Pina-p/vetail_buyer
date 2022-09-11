@@ -1,4 +1,4 @@
-package com.example.myapplication.vetaillayout
+package com.example.myapplication.vetaillayout.activity
 
 import android.content.Intent
 import android.os.Build
@@ -15,10 +15,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.size
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
-import com.example.myapplication.vetaillayout.adapters.ViewPagerAdapter
+import com.example.myapplication.vetaillayout.R
+import com.example.myapplication.vetaillayout.adapters.ViewPagerAdapterLogOrSign
 import com.example.myapplication.vetaillayout.databinding.ActivityLogOrSignBinding
 import com.google.android.material.tabs.TabLayout
-import java.util.*
 
 class LogOrSignActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLogOrSignBinding
@@ -39,10 +39,10 @@ class LogOrSignActivity : AppCompatActivity() {
     }
     fun activityChange(){
         binding.btnSignUp.setOnClickListener{
-            Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show()
+            Intent(this, SignUpActivity::class.java).also { startActivity(it) }
         }
         binding.btnLogin.setOnClickListener{
-            Intent(this,LogInActivity::class.java).also { startActivity(it) }
+            Intent(this, LogInActivity::class.java).also { startActivity(it) }
         }
     }
 
@@ -71,7 +71,7 @@ class LogOrSignActivity : AppCompatActivity() {
     fun initViewPager(){
         mSLideViewPager = binding.vpWelcome
         mDotLayout = binding.indicatorLayout
-        val viewPagerAdapter = ViewPagerAdapter(this)
+        val viewPagerAdapter = ViewPagerAdapterLogOrSign(this)
         mSLideViewPager.adapter = viewPagerAdapter
         mSLideViewPager.addOnPageChangeListener(viewListener)
         setUpindicator(0)
