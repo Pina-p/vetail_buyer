@@ -20,9 +20,9 @@
 
     <ImageView
         android:id="@+id/ivProfileImg"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
         android:src="@color/black"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -39,6 +39,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 
+
     <TextView
         android:id="@+id/tvPersonalInfo"
         android:layout_width="wrap_content"
@@ -51,13 +52,16 @@
         app:layout_constraintTop_toBottomOf="@id/tvUserName"/>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cvCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
         android:layout_marginHorizontal="20dp"
         app:layout_constraintTop_toBottomOf="@id/tvPersonalInfo">
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/clPhoneNum"
+            android:id="@+id/clLayout"
+            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
@@ -126,10 +130,221 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvUserPhoneNum"/>
+                app:layout_constraintTop_toBottomOf="@id/ivPhoneIcon"/>
 
+            <ImageView
+                android:id="@+id/ivBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mail_24"
+                app:layout_constraintTop_toBottomOf="@id/ivEmail"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
 
+            <TextView
+                android:id="@+id/tvBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="မွေးနေ့"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/ivEmail"
+                app:layout_constraintLeft_toRightOf="@id/ivBirthday"/>
+
+            <TextView
+                android:id="@+id/tvUserBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13 Aug 1990"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivEmail"/>
+
+            <ImageView
+                android:id="@+id/ivAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mail_24"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivBirthday"/>
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="လိပ်စာ"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/ivBirthday"
+                app:layout_constraintLeft_toRightOf="@id/ivAddress"/>
+
+            <TextView
+                android:id="@+id/tvUserAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N0. 84, Padamyar St. Hledan"
+                android:ellipsize="end"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/ivBirthday"
+                app:layout_constraintRight_toRightOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ဆက်တင်များ"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvCard"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCardSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSetting"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/ivLock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_lock_24"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvSecurity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="လုံခြုံရေးဆိုင်ရာ ဆက်တင်များ"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toRightOf="@id/ivLock"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/ivLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_lock_24"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivLock"/>
+
+            <TextView
+                android:id="@+id/tvLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="ဘာသာစကား ပြောင်းလဲမည်"
+                app:layout_constraintLeft_toRightOf="@id/ivLanguage"
+                app:layout_constraintTop_toBottomOf="@id/ivLock"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvConnectAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:text="အကောင့်ချိတ်ဆက်ခြင်း"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvCardSetting"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvConnectAcc"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvConnectAcc">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivGoogle"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_google"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toRightOf="@+id/ivGoogle"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvConnectGAcc"
+                android:text="@string/connect"
+                android:textColor="@color/blueOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/ivExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_baseline_exit_to_app_24"
+        app:layout_constraintRight_toLeftOf="@id/tvExitAcc"
+        app:layout_constraintTop_toBottomOf="@+id/cvConnectAcc"/>
+        <TextView
+            android:id="@+id/tvExitAcc"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:text="အကောင့်ထွက်မည်"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ivExit"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvConnectAcc"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
