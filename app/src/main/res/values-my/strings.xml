@@ -19,4 +19,7 @@
     <string name="signin_term_and_policy">By signing up, you\'ve read and agreeded to Vetails\' <font color='#487FFF'>Terms of Services </font> and <font color='#487FFF'>Privacy policy </font>on how we collect, use and process your personal data</string>
     <string name="acc_exist_normal">ယခုဖုန်းနံပါတ်ဖြင့် အကောင့်ဖွင့်ထားပြီးသားဖြစ်ပါသည်။</string>
     <string name="acc_exist_shopdoora">ယခုဖုန်းနံပါတ်ဖြင့် ShopDoora Seller အကောင့်ဖွင့်ထားပြီးသားဖြစ်ပါသည်</string>
+    <string name="proceed">ဆက်သွားမည်</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
