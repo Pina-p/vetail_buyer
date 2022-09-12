@@ -22,4 +22,17 @@
     <string name="proceed">ဆက်သွားမည်</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="profile">မိမိပရိုဖိုင်</string>
+    <string name="personal_info">ကိုယ်ရေးအချက်အလက်များ</string>
+    <string name="phone_num">ဖုန်းနံပါတ်</string>
+    <string name="email">အီးမေးလ်</string>
+    <string name="connect">ချိတ်ဆက်မည်</string>
+
+    <string name="forgot_pwd">စကားဝှက် မေ့နေပါသလား?</string>
+    <string name="its_ok_to_forgot">စိတ်မပူပါနဲ့၊ ဒါဟာဖြစ်တတ်ပါတယ်!</string>
+    <string name="fill_phone_email">သင့်အကောင့်ဖွင့်စဥ်က အသုံးပြုထားသော ဖုန်းနံပါတ် (သို့)\n
+    အီးမေးလ်ကို အောက်တွင်ဖြည့်စွက်ပါ။</string>
+    <string name="checkPhoneNum">ယခုဖုန်းနံပါတ်ဖြင့် ချိတ်ဆက်ထားသောအကောင့်မရှိပါ! ဖုန်းနံပါတ် မှန်မမှန် ပြန်လည်စစ်ဆေးပါ။</string>
 </resources>

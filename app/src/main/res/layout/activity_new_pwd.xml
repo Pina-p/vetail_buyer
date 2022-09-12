@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NewPwdActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbSignUpFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_back_24"
+            android:background="@color/white"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvNewPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="စကားဝှက် အသစ်ထည့်မည်"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbSignUpFinish"/>
+
+    <TextView
+        android:id="@+id/tvSuggest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="သင့် စကားဝှက်အသစ်ကို မှတ်မိလွယ်ပြီး အလွယ်တကူ\nမခိုးယူနိုင်သော စကားဝှက်မျိုးထားရှိရန် အကြုံပြုအပ်ပါသည်။"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNewPwd"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNewPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:startIconTint="@color/black"
+        app:startIconDrawable="@drawable/ic_lock_24"
+        android:layout_marginHorizontal="16dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintTop_toBottomOf="@id/tvSuggest"
+        app:boxStrokeColor="@color/blueOne"
+        app:hintTextColor="@color/blueOne"
+        app:passwordToggleEnabled="true"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNewPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="စကားဝှက်အသစ်"
+            android:textColorHint="@color/iconTextColor"
+            android:maxLength="11"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_pw_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:startIconTint="@color/black"
+        app:startIconDrawable="@drawable/ic_lock_24"
+        android:layout_marginHorizontal="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintTop_toBottomOf="@id/tilNewPwd"
+        app:boxStrokeColor="@color/blueOne"
+        app:hintTextColor="@color/blueOne"
+        app:passwordToggleEnabled="true"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_pw_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="စကားဝှက်အသစ် ထပ်မံထည့်ပါ"
+            android:textColorHint="@color/iconTextColor"
+            android:maxLength="11"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvPwdNotMatch"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="စကားဝှက်နှစ်ခုမှာ ကိုက်ညီမှုမရှိပါ။\nကျေးဇူးပြု၍ တူညီသော စကားဝှက်ကို ထည့်သွင်းပေးပါ"
+        android:textColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/til_pw_confirm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSave"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        app:cornerRadius="10dp"
+        android:text="သိမ်းဆည်းမည်"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/blueOne"
+        app:layout_constraintTop_toBottomOf="@id/til_pw_confirm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

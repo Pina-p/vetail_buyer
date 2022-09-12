@@ -1,5 +1,6 @@
 package com.example.myapplication.vetaillayout.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -12,6 +13,11 @@ class LogInActivity : AppCompatActivity() {
         binding=ActivityLogInBinding.inflate(layoutInflater)
         setContentView(binding.root)
         onClicks()
+        binding.tvForgotPw.setOnClickListener {
+            Intent(this,ForgotPwdActivity::class.java).also {
+                startActivity(it)
+            }
+        }
     }
     fun onClicks(){
         binding.ivBackButton.setOnClickListener {
@@ -20,5 +26,6 @@ class LogInActivity : AppCompatActivity() {
         binding.btnLogin.setOnClickListener{
             Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show()
         }
+
     }
 }

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ForgotPwdActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbSignUpFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_back_24"
+            android:background="@color/white"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvForgotPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_pwd"
+        android:textSize="26sp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbSignUpFinish"/>
+
+    <TextView
+        android:id="@+id/tvDontWorry"
+        android:text="@string/its_ok_to_forgot"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvForgotPwd"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvFillPhoneOrMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="သင့်အကောင့်ဖွင့်စဥ်က အသုံးပြုထားသော ဖုန်းနံပါတ် (သို့)\nအီးမေးလ်ကို အောက်တွင်ဖြည့်စွက်ပါ။"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDontWorry"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_ph_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:startIconTint="@color/black"
+        app:startIconDrawable="@drawable/ic_phone_outline_icon"
+        android:layout_marginHorizontal="16dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintTop_toBottomOf="@id/tvFillPhoneOrMail"
+        app:boxStrokeColor="@color/blueOne"
+        app:hintTextColor="@color/blueOne"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_ph_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ဖုန်းနံပါတ် (သို့) အီးမေးလ်"
+            android:textColorHint="@color/iconTextColor"
+            android:maxLength="11"
+            android:inputType="phone"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGetOTPCode"
+        android:visibility="gone"
+        android:text="OTP Code ရယူမည်"
+        android:backgroundTint="@color/blueOne"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintTop_toBottomOf="@id/til_ph_no"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvCheckPhoneNum"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/red"
+        android:text="ယခုဖုန်းနံပါတ်ဖြင့် ချိတ်ဆက်ထားသောအကောင့်မရှိပါ!\nဖုန်းနံပါတ် မှန်မမှန် ပြန်လည်စစ်ဆေးပါ။"
+        app:layout_constraintTop_toBottomOf="@id/til_ph_no"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
