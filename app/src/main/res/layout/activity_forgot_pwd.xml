@@ -15,7 +15,7 @@
             android:id="@+id/ivBackButton"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/ic_arrow_back_24"
+            android:src="@drawable/arrow_back"
             android:background="@color/white"
             />
     </androidx.appcompat.widget.Toolbar>

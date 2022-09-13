@@ -14,13 +14,21 @@
         android:theme="@style/Theme.VetailLayout"
         tools:targetApi="31">
         <activity
+            android:name=".activity.ChangePwdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SecuritySettingActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.NewPwdActivity"
-            android:exported="true" >
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            android:exported="true">
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".activity.GetOTPActivity"

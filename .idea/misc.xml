@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/custom_button_blue.xml" value="0.125" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_change_pwd.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_forgot_pwd.xml" value="0.22" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_get_otpactivity.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_log_in.xml" value="0.18" />
@@ -11,6 +12,7 @@
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_main.xml" value="0.16032608695652173" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_new_pwd.xml" value="0.22" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_security_setting.xml" value="0.22" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_sign_up_finish_activiy.xml" value="0.1" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_sign_up_one.xml" value="0.25" />

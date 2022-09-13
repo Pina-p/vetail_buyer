@@ -1,5 +1,6 @@
 package com.example.myapplication.vetaillayout.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import coil.load
@@ -18,6 +19,10 @@ class ProfileActivity : AppCompatActivity() {
             crossfade(true)
             crossfade(1000)
             transformations(CircleCropTransformation())
+        }
+
+        binding.ivForwardArrow.setOnClickListener {
+            Intent(this,SecuritySettingActivity::class.java).also { startActivity(it) }
         }
     }
 
