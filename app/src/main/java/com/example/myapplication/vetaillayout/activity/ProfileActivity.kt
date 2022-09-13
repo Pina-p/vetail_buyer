@@ -24,6 +24,10 @@ class ProfileActivity : AppCompatActivity() {
         binding.ivForwardArrow.setOnClickListener {
             Intent(this,SecuritySettingActivity::class.java).also { startActivity(it) }
         }
+
+        binding.ivArrowPhoneNum.setOnClickListener {
+
+        }
     }
 
 }

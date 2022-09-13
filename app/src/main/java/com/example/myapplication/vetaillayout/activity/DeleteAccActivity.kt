@@ -2,13 +2,13 @@ package com.example.myapplication.vetaillayout.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.myapplication.vetaillayout.databinding.ActivityChangePwdBinding
+import com.example.myapplication.vetaillayout.databinding.ActivityDeleteAccBinding
 
-class ChangePwdActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityChangePwdBinding
+class DeleteAccActivity : AppCompatActivity() {
+    private lateinit var binding : ActivityDeleteAccBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityChangePwdBinding.inflate(layoutInflater)
+        binding = ActivityDeleteAccBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.ivBackButton.setOnClickListener {

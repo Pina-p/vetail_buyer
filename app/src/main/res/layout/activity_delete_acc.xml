@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DeleteAccActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbSignUpFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:clickable="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow_back"
+            android:background="@color/white"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbSignUpFinish">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ivHeartBreak"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_lock_24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+<!--        app:layout_constraintTop_toBottomOf="@id/tbSignUpFinish"/>-->
+
+    <TextView
+        android:id="@+id/tvDeleteAcc"
+        android:text="မိမိအကောင့်အားအပြီးဖျက်သိမ်းမည်"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivHeartBreak"/>
+
+    <TextView
+        android:id="@+id/tvSorry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="We feel sorry to see you go"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDeleteAcc"/>
+
+    <TextView
+        android:id="@+id/tvLetUsKnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Before you go, let us know..."
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSorry"/>
+
+    <TextView
+        android:id="@+id/tvPassage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:text="Before you go, we would like to hear your honest\nfeedbacks and why you are deleting your account.\nWe may be able to help with common issues.\nYou can also just continue to deletion."
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLetUsKnow"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/ivCircle"/>
+
+    <ImageView
+        android:id="@+id/ivCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/circle_outline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPassage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I spend too much time on this application."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/ivCircle"
+        app:layout_constraintBottom_toBottomOf="@id/ivCircle"
+        app:layout_constraintTop_toTopOf="@id/ivCircle"/>
+
+    <View
+        android:id="@+id/vView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ivCircle"/>
+
+    <ImageView
+        android:id="@+id/ivCircle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/circle_outline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vView2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This app doesn't have any fun to use."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/ivCircle2"
+        app:layout_constraintBottom_toBottomOf="@id/ivCircle2"
+        app:layout_constraintTop_toTopOf="@id/ivCircle2"/>
+
+    <View
+        android:id="@+id/vView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ivCircle2"/>
+
+    <ImageView
+        android:id="@+id/ivCircle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/circle_outline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vView3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My account was hacked."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/ivCircle3"
+        app:layout_constraintBottom_toBottomOf="@id/ivCircle3"
+        app:layout_constraintTop_toTopOf="@id/ivCircle3"/>
+
+    <View
+        android:id="@+id/vView4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ivCircle3"/>
+
+    <ImageView
+        android:id="@+id/ivCircle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/circle_outline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vView4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Because of my personal issues."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/ivCircle4"
+        app:layout_constraintBottom_toBottomOf="@id/ivCircle4"
+        app:layout_constraintTop_toTopOf="@id/ivCircle4"/>
+
+    <View
+        android:id="@+id/vView5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ivCircle4"/>
+
+    <ImageView
+        android:id="@+id/ivCircle5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/circle_outline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vView5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I don't feel safe using this app."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/ivCircle5"
+        app:layout_constraintBottom_toBottomOf="@id/ivCircle5"
+        app:layout_constraintTop_toTopOf="@id/ivCircle5"/>
+
+    <View
+        android:id="@+id/vView6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ivCircle5"/>
+
+    <ImageView
+        android:id="@+id/ivCircle6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/circle_outline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vView6"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other, please explain further."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/ivCircle6"
+        app:layout_constraintBottom_toBottomOf="@id/ivCircle6"
+        app:layout_constraintTop_toTopOf="@id/ivCircle6"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toBottomOf="@id/ivCircle6"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        app:cornerRadius="10dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/blueOne"
+        android:text="No, I've changed my mind."
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp"
+        android:backgroundTint="#FFECEC"
+        android:textColor="@color/red"
+        android:text="Delete my account anyway"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCancel"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,5 +11,6 @@ class GetOTPActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityGetOtpactivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
     }
 }

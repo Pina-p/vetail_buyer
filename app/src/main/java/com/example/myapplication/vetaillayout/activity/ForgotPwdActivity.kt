@@ -17,5 +17,9 @@ class ForgotPwdActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
+        binding.ivBackButton.setOnClickListener {
+            finish()
+        }
     }
 }

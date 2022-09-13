@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/custom_button_blue.xml" value="0.125" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.125" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/profile_bg.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_change_pwd.xml" value="0.25" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_delete_acc.xml" value="0.1762295081967213" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_forgot_pwd.xml" value="0.22" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_get_otpactivity.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_log_in.xml" value="0.18" />

@@ -18,15 +18,40 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
     <ImageView
         android:id="@+id/ivProfileImg"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:src="@color/black"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvProfile"/>
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blue_check"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/tvUserName"
+        app:layout_constraintTop_toTopOf="@id/tvUserName"
+        app:layout_constraintBottom_toBottomOf="@id/tvUserName"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_temp_edit"
+        app:layout_constraintLeft_toRightOf="@id/tvUserName"
+        app:layout_constraintBottom_toBottomOf="@id/tvUserName"
+        app:layout_constraintTop_toTopOf="@id/tvUserName"/>
 
     <TextView
         android:id="@+id/tvUserName"
@@ -39,17 +64,25 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 
-
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/profile_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName">
     <TextView
         android:id="@+id/tvPersonalInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/personal_info"
         android:textColor="@color/black"
-        android:layout_marginTop="20dp"
+
         android:layout_marginLeft="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvUserName"/>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvCard"
@@ -57,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         app:cardCornerRadius="10dp"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginHorizontal="10dp"
         app:layout_constraintTop_toBottomOf="@id/tvPersonalInfo">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/clLayout"
@@ -76,11 +109,12 @@
                 android:id="@+id/tvPhone"
                 android:text="@string/phone_num"
                 android:textColor="@color/black"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:textSize="16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/ivPhoneIcon"
+                app:layout_constraintTop_toTopOf="@id/ivPhoneIcon"
                 app:layout_constraintLeft_toRightOf="@id/ivPhoneIcon"/>
 
             <TextView
@@ -89,9 +123,19 @@
                 android:layout_marginLeft="250dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginRight="20dp"
+                app:layout_constraintTop_toTopOf="@id/ivPhoneIcon"
+                app:layout_constraintBottom_toBottomOf="@id/ivPhoneIcon"
+                android:layout_marginRight="25dp"
                 app:layout_constraintRight_toRightOf="parent"/>
+            <ImageView
+                android:id="@+id/ivArrowPhoneNum"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/small_arrow"
+                app:layout_constraintLeft_toRightOf="@id/tvUserPhoneNum"
+                app:layout_constraintTop_toTopOf="@id/tvUserPhoneNum"
+                app:layout_constraintBottom_toBottomOf="@id/tvUserPhoneNum"/>
 
             <ImageView
                 android:layout_marginLeft="350dp"
@@ -111,26 +155,36 @@
 
             <TextView
                 android:id="@+id/tvEmail"
-                android:layout_marginTop="20dp"
                 android:text="@string/email"
                 android:textSize="16sp"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/ivEmail"
                 app:layout_constraintLeft_toRightOf="@id/ivEmail"
-                app:layout_constraintTop_toBottomOf="@id/ivPhoneIcon"/>
+                app:layout_constraintTop_toTopOf="@id/ivEmail"/>
 
             <TextView
-                android:layout_marginTop="20dp"
                 android:id="@+id/tvConnect"
                 android:text="@string/connect"
                 android:textColor="@color/blueOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="25dp"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/ivPhoneIcon"/>
+                app:layout_constraintTop_toTopOf="@id/ivEmail"
+                app:layout_constraintBottom_toBottomOf="@id/ivEmail"/>
+
+            <ImageView
+                android:id="@+id/ivArrowMail"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/small_arrow"
+                app:layout_constraintLeft_toRightOf="@id/tvConnect"
+                app:layout_constraintTop_toTopOf="@id/tvConnect"
+                app:layout_constraintBottom_toBottomOf="@id/tvConnect"/>
 
             <ImageView
                 android:id="@+id/ivBirthday"
@@ -148,9 +202,9 @@
                 android:text="မွေးနေ့"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                app:layout_constraintTop_toBottomOf="@id/ivEmail"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/ivBirthday"
+                app:layout_constraintTop_toTopOf="@id/ivBirthday"
                 app:layout_constraintLeft_toRightOf="@id/ivBirthday"/>
 
             <TextView
@@ -158,10 +212,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="13 Aug 1990"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="25dp"
+                app:layout_constraintTop_toTopOf="@id/ivBirthday"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/ivEmail"/>
+                app:layout_constraintBottom_toBottomOf="@id/ivBirthday"/>
+
+            <ImageView
+                android:id="@+id/ivArrowBirth"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/small_arrow"
+                app:layout_constraintLeft_toRightOf="@id/tvUserBirthday"
+                app:layout_constraintTop_toTopOf="@id/tvUserBirthday"
+                app:layout_constraintBottom_toBottomOf="@id/tvUserBirthday"/>
 
             <ImageView
                 android:id="@+id/ivAddress"
@@ -179,21 +243,32 @@
                 android:text="လိပ်စာ"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                app:layout_constraintTop_toBottomOf="@+id/ivBirthday"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintTop_toTopOf="@id/ivAddress"
+                app:layout_constraintBottom_toBottomOf="@id/ivAddress"
                 app:layout_constraintLeft_toRightOf="@id/ivAddress"/>
 
             <TextView
                 android:id="@+id/tvUserAddress"
+                android:layout_width="0dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:text="N0. 84, Padamyar St. Hle.."
+                android:ellipsize="end"
+                android:layout_marginRight="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/ivAddress"
+                app:layout_constraintTop_toTopOf="@id/ivAddress"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <ImageView
+                android:id="@+id/ivArrowAddr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="N0. 84, Padamyar St. Hledan"
-                android:ellipsize="end"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp"
-                app:layout_constraintTop_toBottomOf="@id/ivBirthday"
-                app:layout_constraintRight_toRightOf="parent"/>
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/small_arrow"
+                app:layout_constraintLeft_toRightOf="@id/tvUserAddress"
+                app:layout_constraintTop_toTopOf="@id/tvUserAddress"
+                app:layout_constraintBottom_toBottomOf="@id/tvUserAddress"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
@@ -215,7 +290,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         app:cardCornerRadius="10dp"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginHorizontal="10dp"
         app:layout_constraintTop_toBottomOf="@id/tvSetting"
         app:layout_constraintLeft_toLeftOf="parent">
 
@@ -235,12 +310,13 @@
                 android:id="@+id/tvSecurity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:text="လုံခြုံရေးဆိုင်ရာ ဆက်တင်များ"
                 android:textSize="16sp"
                 android:textColor="@color/black"
                 app:layout_constraintLeft_toRightOf="@id/ivLock"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintBottom_toBottomOf="@id/ivLock"
+                app:layout_constraintTop_toTopOf="@id/ivLock"/>
 
             <ImageView
                 android:id="@+id/ivForwardArrow"
@@ -248,9 +324,10 @@
                 android:elevation="2dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:src="@drawable/small_arrow"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintBottom_toBottomOf="@id/tvSecurity"
+                app:layout_constraintTop_toTopOf="@id/tvSecurity"/>
             <ImageView
                 android:id="@+id/ivLanguage"
                 android:layout_width="wrap_content"
@@ -264,22 +341,22 @@
                 android:id="@+id/tvLanguage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
                 android:textSize="16sp"
                 android:textColor="@color/black"
                 android:text="ဘာသာစကား ပြောင်းလဲမည်"
                 app:layout_constraintLeft_toRightOf="@id/ivLanguage"
-                app:layout_constraintTop_toBottomOf="@id/ivLock"/>
+                app:layout_constraintTop_toTopOf="@id/ivLanguage"
+                app:layout_constraintBottom_toBottomOf="@id/ivLanguage"/>
 
             <ImageView
                 android:id="@+id/ivForwardArrow2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:src="@drawable/small_arrow"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/ivLock"/>
+                app:layout_constraintBottom_toBottomOf="@id/tvLanguage"
+                app:layout_constraintTop_toTopOf="@id/tvLanguage"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
@@ -298,7 +375,7 @@
         android:id="@+id/cvConnectAcc"
         app:cardCornerRadius="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginHorizontal="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -322,11 +399,10 @@
                 android:layout_height="wrap_content"
                 android:text="Google"
                 android:textSize="16sp"
-                android:layout_marginTop="5dp"
                 android:textColor="@color/black"
-                android:layout_marginLeft="20dp"
                 app:layout_constraintLeft_toRightOf="@+id/ivGoogle"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="@id/ivGoogle"
+                app:layout_constraintBottom_toBottomOf="@id/ivGoogle"/>
 
             <TextView
                 android:layout_marginTop="5dp"
@@ -337,23 +413,40 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="@id/ivGoogle"
+                app:layout_constraintBottom_toBottomOf="@id/ivGoogle"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/cvExit"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardCornerRadius="10dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="20dp"
+       android:layout_marginHorizontal="10dp"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/cvConnectAcc">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:padding="5dp"
+           android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/ivExit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:src="@drawable/ic_baseline_exit_to_app_24"
         app:layout_constraintRight_toLeftOf="@id/tvExitAcc"
-        app:layout_constraintTop_toBottomOf="@+id/cvConnectAcc"/>
+        app:layout_constraintTop_toTopOf="parent"/>
         <TextView
             android:id="@+id/tvExitAcc"
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:text="အကောင့်ထွက်မည်"
             android:textSize="16sp"
@@ -362,6 +455,11 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toRightOf="@+id/ivExit"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cvConnectAcc"/>
+            app:layout_constraintTop_toTopOf="parent" />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
