@@ -45,6 +45,8 @@
         app:layout_constraintBottom_toBottomOf="@id/tvUserName"/>
 
     <ImageView
+        android:id="@+id/ivEdit"
+        android:clickable="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -129,6 +131,7 @@
                 app:layout_constraintRight_toRightOf="parent"/>
             <ImageView
                 android:id="@+id/ivArrowPhoneNum"
+                android:clickable="true"
                 android:layout_marginLeft="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -219,6 +222,7 @@
 
             <ImageView
                 android:id="@+id/ivArrowBirth"
+                android:clickable="true"
                 android:layout_marginLeft="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
