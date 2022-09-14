@@ -55,6 +55,10 @@ class ProfileActivity : AppCompatActivity() {
         binding.ivArrowMail.setOnClickListener {
             Intent(this,ConnectWithEmail::class.java).also { startActivity(it) }
         }
+
+        binding.ivArrowAddr.setOnClickListener {
+            Intent(this,ChooseAddress::class.java).also { startActivity(it) }
+        }
     }
 
 }

@@ -10,6 +10,7 @@
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_change_phone_num.xml" value="0.16" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_change_pwd.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_change_user_name_and_image.xml" value="0.16032608695652173" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_choose_address.xml" value="0.16047144152311876" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_connect_with_email.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_delete_acc.xml" value="0.1762295081967213" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_forgot_pwd.xml" value="0.22" />
@@ -22,6 +23,7 @@
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_security_setting.xml" value="0.22" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_sign_up_finish_activiy.xml" value="0.1" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/address_item.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_sign_up_one.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_sign_up_two.xml" value="0.16032608695652173" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/item_signin_one.xml" value="0.25" />

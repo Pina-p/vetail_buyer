@@ -256,9 +256,9 @@
             <TextView
                 android:id="@+id/tvUserAddress"
                 android:layout_width="0dp"
-                android:maxLines="1"
+                android:maxLength="24"
                 android:layout_height="wrap_content"
-                android:text="N0. 84, Padamyar St. Hle.."
+                android:text="N0. 84, Padamyar St. Hledan"
                 android:ellipsize="end"
                 android:layout_marginRight="25dp"
                 app:layout_constraintBottom_toBottomOf="@id/ivAddress"
