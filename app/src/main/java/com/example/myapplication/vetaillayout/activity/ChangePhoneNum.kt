@@ -11,5 +11,9 @@ class ChangePhoneNum : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityChangePhoneNumBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.ivBackButton.setOnClickListener {
+            finish()
+        }
     }
 }

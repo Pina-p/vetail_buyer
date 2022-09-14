@@ -12,18 +12,34 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.graphics.drawable.DrawableCompat
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.example.myapplication.vetaillayout.databinding.AddressItemBinding
 import com.example.myapplication.vetaillayout.model.Address
 
 class AddressAdapter (val list: List<Address>) :
     RecyclerView.Adapter<AddressAdapter.AddressHolder>() {
-
+    var selected = -1
     inner class AddressHolder(private val binding: AddressItemBinding):RecyclerView.ViewHolder(binding.root){
 
         fun bind(list : Address){
+            binding.ivIcon.load(list.icon)
             binding.tvPlace.text = list.category
             binding.tvAddress.text = list.address
             binding.tvNearPlace.text = list.near
+
+            binding.root.setOnClickListener{
+                if(!binding.rbRadio.isChecked){
+                    selected = adapterPosition
+                    notifyDataSetChanged()
+                }
+            }
+            binding.rbRadio.setOnClickListener {
+                if(binding.rbRadio.isChecked){
+                    selected = adapterPosition
+                    notifyDataSetChanged()
+                }
+            }
+            binding.rbRadio.isChecked = selected == adapterPosition
         }
     }
 

@@ -15,8 +15,8 @@
 
     <ImageView
         android:id="@+id/ivIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         app:layout_constraintLeft_toRightOf="@id/rbRadio"
         app:layout_constraintTop_toTopOf="@id/rbRadio"
         app:layout_constraintBottom_toBottomOf="@id/rbRadio"/>
@@ -68,22 +68,22 @@
 
     <ImageView
         android:id="@+id/ivEdit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_temp_edit"
-        android:layout_marginEnd="50dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_edit_gray"
+        android:layout_marginEnd="60dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/rbRadio"
         app:layout_constraintBottom_toBottomOf="@id/rbRadio"/>
 
     <ImageView
         android:id="@+id/ivDelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_temp_delete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_delete"
         android:layout_marginEnd="20dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/rbRadio"
-        app:layout_constraintBottom_toBottomOf="@id/rbRadio"/>
+        app:layout_constraintTop_toTopOf="@id/ivEdit"
+        app:layout_constraintBottom_toBottomOf="@id/ivEdit"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

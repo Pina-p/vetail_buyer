@@ -5,11 +5,13 @@
       <map>
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/custom_button_blue.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/edittext_bg.xml" value="0.125" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/half_circle.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.125" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_cute_profile_gray.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/profile_bg.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_change_phone_num.xml" value="0.16" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_change_pwd.xml" value="0.25" />
-        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_change_user_name_and_image.xml" value="0.16032608695652173" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_change_user_name_and_image.xml" value="0.22" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_choose_address.xml" value="0.16047144152311876" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_connect_with_email.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_delete_acc.xml" value="0.1762295081967213" />

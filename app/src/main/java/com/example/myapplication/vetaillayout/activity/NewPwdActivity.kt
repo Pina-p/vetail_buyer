@@ -12,5 +12,9 @@ class NewPwdActivity : AppCompatActivity() {
         binding = ActivityNewPwdBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.ivBackButton.setOnClickListener {
+            finish()
+        }
+
     }
 }

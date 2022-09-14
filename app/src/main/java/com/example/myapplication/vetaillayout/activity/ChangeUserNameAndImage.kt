@@ -19,5 +19,7 @@ class ChangeUserNameAndImage : AppCompatActivity() {
             crossfade(1000)
             transformations(CircleCropTransformation())
         }
+
+        binding.etName.requestFocus()
     }
 }
