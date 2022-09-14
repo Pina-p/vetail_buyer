@@ -51,6 +51,10 @@ class ProfileActivity : AppCompatActivity() {
         binding.ivArrowPhoneNum.setOnClickListener {
             Intent(this,ChangePhoneNum::class.java).also { startActivity(it) }
         }
+
+        binding.ivArrowMail.setOnClickListener {
+            Intent(this,ConnectWithEmail::class.java).also { startActivity(it) }
+        }
     }
 
 }
