@@ -10,5 +10,9 @@ class ConnectWithEmail : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityConnectWithEmailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.ivBackButton.setOnClickListener {
+            finish()
+        }
     }
 }

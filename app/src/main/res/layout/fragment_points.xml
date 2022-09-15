@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivTrophy"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/prize_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNoPoint"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ပွိုင့်များ မရှိသေးပါ!"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivTrophy"/>
+
+    <TextView
+        android:id="@+id/tvBuyVetail"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vetail နှင့်ချိတ်ဆက်ထားသော ဆိုင်များတွင် စျေးဝယ်ပြီး"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNoPoint"/>
+
+    <TextView
+        android:id="@+id/tvCollectPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ပွိုင့်များကို စုဆောင်းပါ"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBuyVetail"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnViewShops"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="ဆိုင်များကို ကြည့်ရန်"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="10dp"
+        android:backgroundTint="@color/yellow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCollectPoints"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
