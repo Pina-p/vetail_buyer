@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivBg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/shop_ruby"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvKyat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ks1,000"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        app:layout_constraintRight_toRightOf="@id/ivBg"
+        app:layout_constraintLeft_toLeftOf="@id/ivBg"
+        app:layout_constraintBottom_toBottomOf="@id/ivBg"
+        app:layout_constraintTop_toTopOf="@id/ivBg"/>
+
+    <TextView
+        android:id="@+id/tvEarnPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="earn 1 point"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="@id/ivBg"
+        app:layout_constraintLeft_toLeftOf="@id/ivBg"
+        app:layout_constraintTop_toBottomOf="@id/tvKyat"/>
+
+    <TextView
+        android:id="@+id/tvShopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RUBY Energy\n(Lashio)"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="@id/ivBg"
+        app:layout_constraintLeft_toLeftOf="@id/ivBg"
+        app:layout_constraintTop_toBottomOf="@id/ivBg"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
