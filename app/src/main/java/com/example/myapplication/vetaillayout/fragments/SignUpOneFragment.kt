@@ -7,14 +7,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.myapplication.vetaillayout.R
 import com.example.myapplication.vetaillayout.activity.SignUpActivity
+import com.example.myapplication.vetaillayout.adapters.ViewPagerAdapterSignUpTemp
 import com.example.myapplication.vetaillayout.databinding.FragmentSignUpOneBinding
 
-class SignUpOneFragment : Fragment() {
+class SignUpOneFragment : Fragment(){
     private lateinit var binding: FragmentSignUpOneBinding
-    val tempPhoneUserNum= "12345"
-    val tempPhoneSellerNum= "67890"
+    val tempPhoneUserNum = "12345"
+    val tempPhoneSellerNum = "67890"
+    var clickedOnce: Boolean = false
+    var fragmentChange=0
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,38 +31,37 @@ class SignUpOneFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         onClicks()
-        Log.d("Mingalar","onviewCreated")
     }
 
-    fun onClicks(){
-        var clickedOnce=false
-        if (!clickedOnce){
-            binding.btnSignUp.setOnClickListener {
-                Log.d("Mingalar","setOnclicked")
 
-                var text:String= binding.etPhNo.text.toString()
-                if (text==tempPhoneUserNum){
-                    binding.tvAccDuplicate.visibility= View.VISIBLE
-                    binding.tilPhNo.boxStrokeColor=resources.getColor(R.color.red)
-                    binding.tvAccDuplicate.text = getString(R.string.acc_exist_normal)
-                }
-                else if (text==tempPhoneSellerNum){
-                    binding.tvAccDuplicate.visibility= View.VISIBLE
-                    binding.tilPhNo.boxStrokeColor=resources.getColor(R.color.red)
-                    binding.tvAccDuplicate.text = getString(R.string.acc_exist_shopdoora)
-                }
-                else{
-                    binding.tilPhNo.boxStrokeColor=resources.getColor(R.color.blueOne)
-                    binding.ivCorrect.visibility=View.VISIBLE
-                    binding.tvAccDuplicate.visibility=View.GONE
-                    binding.btnSignUp.text = getString(R.string.proceed)
+
+    fun onClicks() {
+        binding.btnSignUp.setOnClickListener {
+
+            var text: String = binding.etPhNo.text.toString()
+            if (text == tempPhoneUserNum) {
+                binding.tvAccDuplicate.visibility = View.VISIBLE
+                binding.tilPhNo.boxStrokeColor = resources.getColor(R.color.red)
+                binding.tvAccDuplicate.text = getString(R.string.acc_exist_normal)
+            } else if (text == tempPhoneSellerNum) {
+                binding.tvAccDuplicate.visibility = View.VISIBLE
+                binding.tilPhNo.boxStrokeColor = resources.getColor(R.color.red)
+                binding.tvAccDuplicate.text = getString(R.string.acc_exist_shopdoora)
+            } else {
+                binding.tilPhNo.boxStrokeColor = resources.getColor(R.color.blueOne)
+                binding.ivCorrect.visibility = View.VISIBLE
+                binding.tvAccDuplicate.visibility = View.GONE
+                binding.btnSignUp.text = getString(R.string.proceed)
+                if (!clickedOnce){
                     clickedOnce=true
                 }
+                else if (clickedOnce){
+//                    SignUpActivity().initViewPager().currentItem=1
+                    Toast.makeText(this.context, "change to another page", Toast.LENGTH_SHORT).show()
+                }
+
             }
         }
-        else if(clickedOnce){
-            Intent(this.context,SignUpActivity::class.java).putExtra("changePage",1)
-            Log.d("Mingalar","sent Intent")
-        }
     }
+
 }

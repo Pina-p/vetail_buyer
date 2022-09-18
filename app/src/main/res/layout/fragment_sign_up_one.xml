@@ -95,7 +95,8 @@
             android:textColor="@color/white"
             android:textAllCaps="false"
             android:layout_marginHorizontal="40dp"
-            android:background="@drawable/custom_button_blue"/>
+            android:background="@drawable/custom_button_blue"
+             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

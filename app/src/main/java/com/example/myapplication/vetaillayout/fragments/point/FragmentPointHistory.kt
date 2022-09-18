@@ -1,15 +1,12 @@
 package com.example.myapplication.vetaillayout.fragments.point
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.viewpager.widget.ViewPager
 import com.example.myapplication.vetaillayout.adapters.FragmentAdapter
 import com.example.myapplication.vetaillayout.databinding.PointHistoryBinding
-import com.google.android.material.tabs.TabLayout
 
 class FragmentPointHistory : Fragment() {
     private lateinit var binding: PointHistoryBinding
