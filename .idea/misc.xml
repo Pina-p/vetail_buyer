@@ -7,18 +7,23 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/custom_blue_button.xml" value="0.2225" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/custom_button.xml" value="0.2225" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/custom_button_blue.xml" value="0.2225" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/custom_button_invisibile_blue.xml" value="0.2065" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/custom_button_white.xml" value="0.2225" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/custom_imageview_shopitem.xml" value="0.286" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/custom_login.xml" value="0.2225" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/custom_search_view.xml" value="0.286" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/custom_switch_bg.xml" value="0.2225" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/custom_white_button.xml" value="0.2225" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/ic_arrow_back_24.xml" value="0.2225" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/ic_icon_loading.xml" value="0.2065" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/ic_phone_outline_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/ic_qr_blue.xml" value="0.286" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/ic_vector.xml" value="0.2825" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/ic_vetail_blue.xml" value="0.2" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/tab_indicator.xml" value="0.2225" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/thumb_selector.xml" value="0.2225" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/track_selector.xml" value="0.2225" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_change_phone_num.xml" value="0.2056159420289855" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_change_pwd.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_change_user_name_and_image.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_choose_address.xml" value="0.29270833333333335" />
@@ -27,19 +32,23 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_forgot_pwd.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_get_otpactivity.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_log_in.xml" value="0.33" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_log_or_sign.xml" value="0.29270833333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_log_or_sign.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_login.xml" value="0.1621933621933622" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_main.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_profile.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_security_setting.xml" value="0.29270833333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_shop_list.xml" value="0.33" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_sign_up_finish_activiy.xml" value="0.29270833333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/activity_term_and_policy_activiy.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/address_item.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/fragment_expired_tab.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/fragment_home.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/fragment_sign_up_one.xml" value="0.26875" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/fragment_sign_up_two.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/fragment_sign_up_two.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/item_acc_signin_one.xml" value="0.29270833333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/item_shop_item.xml" value="0.5" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/item_shop_list.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/item_sigin_two.xml" value="0.290625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/item_signin_one.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/item_welcome_layout.xml" value="0.33" />

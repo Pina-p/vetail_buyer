@@ -84,7 +84,7 @@
             android:hint="@string/login_phone_email"
             android:textColorHint="@color/iconTextColor"
             android:maxLength="11"
-            android:inputType="phone"
+            android:inputType="textEmailAddress"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -136,7 +136,7 @@
         android:textColor="@color/white"
         android:textAllCaps="false"
         android:layout_marginHorizontal="40dp"
-        android:background="@drawable/custom_button_blue"/>
+        android:background="@drawable/custom_button_invisibile_blue"/>
 
     <TextView
         android:id="@+id/tvOrLoginWith"

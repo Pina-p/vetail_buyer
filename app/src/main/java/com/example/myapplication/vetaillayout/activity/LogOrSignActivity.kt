@@ -6,12 +6,20 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.text.Html
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.TextPaint
+import android.text.method.LinkMovementMethod
+import android.text.style.ClickableSpan
+import android.text.style.ForegroundColorSpan
 import android.util.Log
+import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.text.toSpannable
 import androidx.core.view.size
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
@@ -33,9 +41,11 @@ class LogOrSignActivity : AppCompatActivity() {
         binding = ActivityLogOrSignBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        spannableSetUp()
         LanguageSwitchTab()
         initViewPager()
         activityChange()
+
     }
     fun activityChange(){
         binding.btnSignUp.setOnClickListener{
@@ -124,4 +134,49 @@ class LogOrSignActivity : AppCompatActivity() {
         override fun onPageScrollStateChanged(state: Int) {}
     }
 
+    fun spannableSetUp(){
+        val spannableString = SpannableString(getString(R.string.term_policy))
+        var i1 = spannableString.indexOf("Terms");
+        var i2 = spannableString.indexOf("Use")
+        var i3 = spannableString.indexOf("Privacy")
+        var i4 = spannableString.indexOf("Policy")
+
+        binding.tvTermAndPolicy.movementMethod = LinkMovementMethod.getInstance()
+        binding.tvTermAndPolicy.setText(spannableString, TextView.BufferType.SPANNABLE)
+        val SpannableOne = binding.tvTermAndPolicy.text.toSpannable()
+        val myClickableSpan: ClickableSpan = object : ClickableSpan() {
+            override fun updateDrawState(ds: TextPaint) {
+                ds.color = resources.getColor(R.color.blueOne)
+                ds.isUnderlineText=false
+            }
+
+            override fun onClick(widget: View) {
+                Intent(
+                    this@LogOrSignActivity,
+                    TermAndPolicyActiviy::class.java
+                ).also { startActivity(it) }
+            }
+        }
+        val myClickableSpan1: ClickableSpan = object : ClickableSpan() {
+            override fun updateDrawState(ds: TextPaint) {
+                ds.color = resources.getColor(R.color.blueOne)
+                ds.isUnderlineText=false
+            }
+
+            override fun onClick(widget: View) {
+                Intent(
+                    this@LogOrSignActivity,
+                    TermAndPolicyActiviy::class.java
+                ).also { startActivity(it) }
+            }
+        }
+
+        SpannableOne
+            .setSpan(myClickableSpan, i1, i2 + 3, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+
+        SpannableOne
+            .setSpan(myClickableSpan1, i3, i4 + 6, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+
+        binding.tvTermAndPolicy.text = SpannableOne
+    }
 }

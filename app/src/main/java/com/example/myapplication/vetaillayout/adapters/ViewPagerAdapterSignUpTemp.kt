@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.myapplication.vetaillayout.fragments.SignUpOneFragment
 
 class ViewPagerAdapterSignUpTemp(
     val items: ArrayList<Fragment>,

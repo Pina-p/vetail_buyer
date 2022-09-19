@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent">
         <ImageView
+            android:id="@+id/ivBackButton"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/ic_arrow_back_24"
@@ -26,23 +27,32 @@
             android:background="@drawable/bg_signup"
             android:scaleType="center"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/ivBackgroundSignUp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:background="@drawable/custom_login"-->
+<!--        android:elevation="2dp"-->
+<!--        >-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:cardCornerRadius="20dp">-->
+<!--        <androidx.viewpager2.widget.ViewPager2-->
+<!--            android:id="@+id/vpSignUp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/regFragmentHost"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/ivBackgroundSignUp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@drawable/custom_login"
-        android:elevation="2dp"
-        >
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:cardCornerRadius="20dp">
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/vpSignUp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-        </androidx.cardview.widget.CardView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_register"
+        app:layout_constraintTop_toBottomOf="@+id/ivBackgroundSignUp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

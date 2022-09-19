@@ -3,7 +3,7 @@
     <string name="app_name">vetail layout</string>
     <string name="loginIntro">အကောင့်ဝင်မည်</string>
     <string name="signupIntro">အကောင့်အသစ်ဖွင့်မည်</string>
-    <string name="term_policy">By loggin in or signing up, you are agree to Veatail\'s <font color='#487FFF'>Term of Use</font> and <font color='#487FFF'>Privacy Policy.</font></string>
+    <string name="term_policy">By loggin in or signing up, you are agree to Veatail\'s <font color='#487FFF'>Terms of Use</font> and <font color='#487FFF'>Privacy Policy.</font></string>
     <string name="login_to_my_account">အကောင့်ဝင်မည်</string>
     <string name="login_phone_email">ဖုန်းနံပါတ် (သို့) အီးမေးလ်</string>
     <string name="password">စကားဝှက်</string>

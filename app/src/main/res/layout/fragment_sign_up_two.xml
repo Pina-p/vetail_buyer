@@ -12,12 +12,12 @@
 
         <ImageView
             android:id="@+id/ivTopIcon"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="25dp"
             android:src="@drawable/ic_mail_beautiful_24"
             />
         <TextView
@@ -25,11 +25,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="40dp"
             android:text="တစ်ခါသုံးကုဒ် ထည့်ပါ"
             android:textColor="@color/black"
-            android:textSize="22sp"
-            android:textStyle="bold"
+            android:textSize="24sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ivTopIcon" />
@@ -65,14 +64,15 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="3dp">
-                <TextView
+                <EditText
                     android:id="@+id/tvOtpOne"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="*"
                     android:maxLength="1"
-                    android:textSize="45sp"
+                    android:textSize="25sp"
                     android:gravity="center"
+                    android:background="@color/white"
                     android:nextFocusRight="@id/tvOtpTwo"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -85,7 +85,7 @@
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="3dp"
                 >
-                <TextView
+                <EditText
                     android:id="@+id/tvOtpTwo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -104,7 +104,7 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="3dp">
-                <TextView
+                <EditText
                     android:id="@+id/tvOtpThree"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -123,7 +123,7 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="3dp">
-                <TextView
+                <EditText
                     android:id="@+id/tvOtpFour"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -142,7 +142,7 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="3dp">
-                <TextView
+                <EditText
                     android:id="@+id/tvOtpFive"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -161,7 +161,7 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="3dp">
-                <TextView
+                <EditText
                     android:id="@+id/tvOtpSix"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -180,7 +180,7 @@
             app:layout_constraintLeft_toLeftOf="@id/llOtpLayout"
             android:layout_marginTop="20dp"
             android:text="5:00"
-            android:textSize="22sp"
+            android:textSize="18sp"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSignUp"
