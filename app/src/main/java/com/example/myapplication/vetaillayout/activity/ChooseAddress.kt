@@ -1,5 +1,6 @@
 package com.example.myapplication.vetaillayout.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -28,6 +29,12 @@ class ChooseAddress : AppCompatActivity() {
 
         binding.ivBackButton.setOnClickListener {
             finish()
+        }
+
+        binding.ivAdd.setOnClickListener {
+            Intent(this,FragmentContainerActivity::class.java).also {
+                startActivity(it)
+            }
         }
     }
 }
