@@ -16,5 +16,6 @@
     <color name="iconTextColor">#A0A0A0</color>
     <color name="whitishWhite">#F4F4F4</color>
     <color name="yellow">#FFB000</color>
+    <color name="pale_btn">#EAF0FF</color>
     <color name="tab_unselected">#96B7FF</color>
 </resources>
