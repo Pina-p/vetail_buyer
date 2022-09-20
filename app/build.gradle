@@ -54,6 +54,7 @@ dependencies {
     implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
 
     //otp View
+    //implementation 'com.github.aabhasr1:OtpView:v1.1.2-ktx'
     //implementation 'com.github.criminact:OTPView:1.0.1'
     //implementation("com.wdullaer:materialdatetimepicker:2.3.0")
 }

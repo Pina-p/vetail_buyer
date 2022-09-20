@@ -6,12 +6,15 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="blackishBlack">#202020</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blueOne">#2E6EFF</color>
     <color name="blueTwoLight">#CFDEFF</color>
     <color name="blueFont">#487FFF</color>
+    <color name="blueFontTwo">#2B72FF</color>
     <color name="invisibleBlue">#EAF0FF</color>
     <color name="grey">#292929</color>
+    <color name="greyer">#909090</color>
     <color name="light_gray">#F4F4F4</color>
     <color name="red">#FF2A2A</color>
     <color name="iconTextColor">#A0A0A0</color>

@@ -91,8 +91,9 @@
                     android:layout_height="match_parent"
                     android:hint="*"
                     android:maxLength="1"
-                    android:textSize="45sp"
+                    android:textSize="25sp"
                     android:gravity="center"
+                    android:background="@color/white"
                     android:nextFocusRight="@id/tvOtpThree"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -110,8 +111,9 @@
                     android:layout_height="match_parent"
                     android:hint="*"
                     android:maxLength="1"
-                    android:textSize="45sp"
+                    android:textSize="25sp"
                     android:gravity="center"
+                    android:background="@color/white"
                     android:nextFocusRight="@id/tvOtpFour"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -123,15 +125,17 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="3dp">
+
                 <EditText
                     android:id="@+id/tvOtpFour"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
                     android:hint="*"
                     android:maxLength="1"
-                    android:textSize="45sp"
-                    android:gravity="center"
-                    android:nextFocusRight="@id/tvOtpFive"/>
+                    android:nextFocusRight="@id/tvOtpFive"
+                    android:textSize="25sp" />
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
@@ -148,8 +152,9 @@
                     android:layout_height="match_parent"
                     android:hint="*"
                     android:maxLength="1"
-                    android:textSize="45sp"
+                    android:textSize="25sp"
                     android:gravity="center"
+                    android:background="@color/white"
                     android:nextFocusRight="@id/tvOtpSix"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -167,8 +172,9 @@
                     android:layout_height="match_parent"
                     android:hint="*"
                     android:maxLength="1"
-                    android:textSize="45sp"
-                    android:gravity="center"/>
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:background="@color/white" />
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 

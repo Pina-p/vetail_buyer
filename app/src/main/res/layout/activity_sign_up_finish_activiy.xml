@@ -28,8 +28,9 @@
         android:layout_marginHorizontal="25dp">
         <ImageView
             android:id="@+id/ivVetailIcon"
-            android:layout_width="180dp"
-            android:layout_height="90dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="left"
             android:src="@drawable/ic_vetail_blue"/>
         <TextView
             android:id="@+id/tvWelcomeText"
@@ -40,10 +41,12 @@
             android:textSize="25sp"
             android:layout_marginTop="25dp"/>
         <TextView
+            android:id="@+id/tvWelcomeTextMini"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:gravity="left"
+            android:layout_marginTop="10dp"
             android:text="သင့်ရဲ့စတိုးဆိုင်ကို ပိုမိုကောင်းမွန်တဲ့ \nအွန်လိုင်းစတိုးဆိုင် အဖြစ် အလွယ်ကူပြေင်းလဲနိုင်ဖို့အတွက် Vetail မှကူညီရန်အသင့်ရှိပါတယ်"/>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -144,6 +147,84 @@
                 android:inputType="textPassword"
                 />
         </com.google.android.material.textfield.TextInputLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/ivPwCheckSixDigit"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_union"/>
+            <TextView
+                android:id="@+id/tvPwCheckSixDigit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="စကားဝှက်မှာ အနည်းဆုံး ၆ လုံးရှိရမည်။"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/ivPwCheckOneAlpha"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_union"/>
+            <TextView
+                android:id="@+id/tvPwCheckOneAlpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="စကားဝှက်မှာ အနည်းဆုံး အင်္ဂလိပ်အက္ခရာ ၁ လုံးပါရမည်။"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/ivPwCheckOneNum"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_union"/>
+            <TextView
+                android:id="@+id/tvPwCheckOneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="စကားဝှက်မှာ အနည်းဆုံး ဂဏန်းနံပါတ် ၁ လုံးပါရမည်။"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/signUp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:background="@drawable/custom_button_invisibile_blue"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

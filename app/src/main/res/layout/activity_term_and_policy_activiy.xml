@@ -6,4 +6,108 @@
     android:layout_height="match_parent"
     tools:context=".activity.TermAndPolicyActiviy">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_back_24white" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/ivBackgroundTermAndPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@color/blueFont"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="25dp"
+        android:text="အသုံးပြုမှုဆိုင်ရာမူဝါဒများနှင့် စည်းကမ်းသတ်မှတ်ချက်များ"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBackgroundTermAndPolicy" />
+
+    <TextView
+        android:id="@+id/tvLatestUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/invisibleBlue"
+        android:text="13 Sep 2022 တွင်နောက်ဆုံးတင်ခဲ့သည်"
+        android:textColor="@color/blueFontTwo"
+        android:textSize="14sp"
+        android:paddingLeft="20dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/ivBackgroundTermAndPolicy" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintTop_toBottomOf="@+id/tvLatestUpdate"
+    app:layout_constraintBottom_toBottomOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTermsAndUserAgree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Vetail Terms &amp; User Agreement"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="20dp"/>
+
+    <TextView
+        android:id="@+id/tvTermsAndUserAgreeMini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvTermsAndUserAgree"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at magna fringilla, tristique ipsum non, auctor tellus. Pellentesque nunc mi, tristique sed turpis ut, pellentesque interdum arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed vitae purus cursus magna accumsan finibus. Quisque id dui tristique, sollicitudin arcu eget"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="20dp"/>
+
+        <TextView
+            android:id="@+id/tvPrivacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvTermsAndUserAgreeMini"
+            android:text="Vetail Terms &amp; User Agreement"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacyPolicy"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at magna fringilla, tristique ipsum non, auctor tellus. Pellen
+            \n
+            \n Sed vitae purus cursus magna accumsan finibus. Quisque id dui tristique, sollicitudin arcu eget, luctus lacus. Nullam facilisis fermentum risus, sit amet tincidunt ipsum tempor et. Nulla malesuada  Donec ullamcorper tincidunt arcu, id vulputate enim."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="20dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
