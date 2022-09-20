@@ -20,6 +20,12 @@
             android:name=".activity.ShopListActivity"
             android:exported="true"></activity>
         <activity
+            android:name=".activity.FragmentContainerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AccountLogoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ChooseAddress"
             android:exported="false" />
         <activity
@@ -51,7 +57,9 @@
             android:exported="false" />
         <activity
             android:name=".activity.ProfileActivity"
-            android:exported="true" />
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".activity.SignUpFinishActiviy"
             android:exported="false" />
@@ -64,15 +72,21 @@
         <activity
             android:name=".activity.LogOrSignActivity"
             android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activity.MainActivity"
-            android:exported="true" />
     </application>
 
 </manifest>

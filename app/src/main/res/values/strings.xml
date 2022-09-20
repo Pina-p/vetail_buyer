@@ -33,5 +33,11 @@
     <string name="fill_phone_email">သင့်အကောင့်ဖွင့်စဥ်က အသုံးပြုထားသော ဖုန်းနံပါတ် (သို့)\n
     အီးမေးလ်ကို အောက်တွင်ဖြည့်စွက်ပါ။</string>
     <string name="checkPhoneNum">ယခုဖုန်းနံပါတ်ဖြင့် ချိတ်ဆက်ထားသောအကောင့်မရှိပါ! ဖုန်းနံပါတ် မှန်မမှန် ပြန်လည်စစ်ဆေးပါ။</string>
+
+    <string-array name="cities">
+        <item>ရန်ကုန် (Yangon)</item>
+        <item>မန္တလေး (Mandalay)</item>
+        <item>နေပြည်တော် (Nay Pyi Taw)</item>
+    </string-array>
     <string name="signUp">အကောင့်ဝင်မည်</string>
 </resources>

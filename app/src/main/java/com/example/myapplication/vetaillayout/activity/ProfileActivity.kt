@@ -59,6 +59,10 @@ class ProfileActivity : AppCompatActivity() {
         binding.ivArrowAddr.setOnClickListener {
             Intent(this,ChooseAddress::class.java).also { startActivity(it) }
         }
+
+        binding.tvExitAcc.setOnClickListener {
+            Intent(this,AccountLogoutActivity::class.java).also { startActivity(it) }
+        }
     }
 
 }
