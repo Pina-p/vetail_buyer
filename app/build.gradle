@@ -50,10 +50,12 @@ dependencies {
 
     implementation("io.coil-kt:coil:2.2.1")
     implementation 'de.hdodenhof:circleimageview:3.1.0'
-    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'com.google.android.material:material:1.6.1'
     implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
 
     //otp View
+    implementation("io.github.chaosleung:pinview:1.4.4")
+
     //implementation 'com.github.aabhasr1:OtpView:v1.1.2-ktx'
     //implementation 'com.github.criminact:OTPView:1.0.1'
     //implementation("com.wdullaer:materialdatetimepicker:2.3.0")

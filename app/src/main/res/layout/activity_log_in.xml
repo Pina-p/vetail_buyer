@@ -82,6 +82,7 @@
         app:boxCornerRadiusTopEnd="10dp"
         app:boxCornerRadiusBottomStart="10dp"
         app:boxCornerRadiusBottomEnd="10dp"
+        app:hintEnabled="false"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_ph_no"
@@ -92,6 +93,8 @@
             android:inputType="textEmailAddress"
             android:textSize="14sp"
             android:textColor="@color/black"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -115,7 +118,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         app:startIconTint="@color/black"
-        app:startIconDrawable="@drawable/ic_phone_outline_icon"
+        app:startIconDrawable="@drawable/ic_lock_24"
         android:layout_marginHorizontal="16dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintTop_toBottomOf="@id/tvEmailError"
@@ -126,6 +129,7 @@
         app:boxStrokeColor="@color/blueOne"
         app:hintTextColor="@color/blueOne"
         app:passwordToggleEnabled="true"
+        app:hintEnabled="false"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_pw"
@@ -136,6 +140,8 @@
             android:inputType="textPassword"
             android:textSize="14sp"
             android:textColor="@color/black"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -164,6 +170,7 @@
         app:layout_constraintRight_toRightOf="@+id/til_pw"
         android:layout_marginTop="10dp"
         android:textSize="16sp"
+        android:cursorVisible="true"
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLogin"
@@ -223,22 +230,22 @@
         android:gravity="center">
         <ImageView
             android:id="@+id/ivApple"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/ic_apple_login"
-            android:layout_marginHorizontal="5dp"/>
+            android:layout_marginHorizontal="12dp"/>
         <ImageView
             android:id="@+id/ivFacebook"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/ic_facebook"
-            android:layout_marginHorizontal="5dp"/>
+            android:layout_marginHorizontal="12dp"/>
         <ImageView
             android:id="@+id/ivGoogle"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/ic_google"
-            android:layout_marginHorizontal="5dp"/>
+            android:layout_marginHorizontal="12dp"/>
 
     </LinearLayout>
 

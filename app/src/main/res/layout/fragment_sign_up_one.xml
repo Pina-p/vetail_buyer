@@ -17,9 +17,8 @@
             android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginTop="35dp"
-            android:layout_marginLeft="20dp"/>
+            app:layout_constraintLeft_toLeftOf="@+id/til_ph_no"
+            android:layout_marginTop="35dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_ph_no"
@@ -37,6 +36,7 @@
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxStrokeColor="@color/blueOne"
             app:hintTextColor="@color/blueOne"
+            app:hintEnabled="false"
             >
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_ph_no"
@@ -45,7 +45,9 @@
                 android:hint="@string/login_phone_email"
                 android:textColorHint="@color/iconTextColor"
                 android:maxLength="11"
-                android:inputType="phone"
+                android:inputType="text"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -95,11 +97,12 @@
             app:layout_constraintLeft_toLeftOf="@id/til_ph_no"
             app:layout_constraintRight_toRightOf="@id/til_ph_no"
             android:layout_marginTop="35dp"
-            android:text="@string/signUp"
+            android:text="ဆက်သွားမည်"
             android:textSize="18sp"
             android:textColor="@color/white"
             android:textAllCaps="false"
             android:background="@drawable/custom_button_invisibile_blue"
+            android:stateListAnimator="@null"
              />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,8 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:paddingVertical="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/white"
     android:paddingLeft="15dp">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/clSmall"

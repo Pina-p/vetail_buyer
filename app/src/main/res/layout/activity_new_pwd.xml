@@ -62,6 +62,7 @@
         app:boxCornerRadiusBottomStart="10dp"
         app:boxCornerRadiusTopEnd="10dp"
         app:boxCornerRadiusTopStart="10dp"
+        app:hintEnabled="false"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etNewPwd"
@@ -71,6 +72,8 @@
             android:textColorHint="@color/iconTextColor"
             android:maxLength="11"
             android:inputType="text"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -91,6 +94,7 @@
         app:boxCornerRadiusBottomStart="10dp"
         app:boxCornerRadiusTopEnd="10dp"
         app:boxCornerRadiusTopStart="10dp"
+        app:hintEnabled="false"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_pw_confirm"
@@ -100,33 +104,110 @@
             android:textColorHint="@color/iconTextColor"
             android:maxLength="11"
             android:inputType="text"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/tvPwdNotMatch"
-        android:visibility="gone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:text="စကားဝှက်နှစ်ခုမှာ ကိုက်ညီမှုမရှိပါ။\nကျေးဇူးပြု၍ တူညီသော စကားဝှက်ကို ထည့်သွင်းပေးပါ"
-        android:textColor="@color/red"
-        app:layout_constraintTop_toBottomOf="@id/til_pw_confirm"
-        app:layout_constraintLeft_toLeftOf="parent"
-        />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnSave"
-        android:visibility="gone"
+    <LinearLayout
+        android:id="@+id/llErrorLayout"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="30dp"
-        app:cornerRadius="10dp"
-        android:text="သိမ်းဆည်းမည်"
-        android:layout_marginHorizontal="20dp"
-        android:backgroundTint="@color/blueOne"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/til_pw_confirm"
+        app:layout_constraintRight_toRightOf="@id/til_pw_confirm"
         app:layout_constraintTop_toBottomOf="@id/til_pw_confirm"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvPwdNotMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="စကားဝှက်နှစ်ခုမှာ ကိုက်ညီမှုမရှိပါ။\nကျေးဇူးပြု၍ တူညီသော စကားဝှက်ကို ထည့်သွင်းပေးပါ"
+            android:textColor="@color/red"
+            android:visibility="gone"
+            android:textSize="16sp"
+            />
+        <LinearLayout
+            android:id="@+id/llSixDigit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/ivPwCheckSixDigit"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_union"/>
+            <TextView
+                android:id="@+id/tvPwCheckSixDigit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="စကားဝှက်မှာ အနည်းဆုံး ၆ လုံးရှိရမည်။"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llOneAlpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/ivPwCheckOneAlpha"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_union"/>
+            <TextView
+                android:id="@+id/tvPwCheckOneAlpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="စကားဝှက်မှာ အနည်းဆုံး အင်္ဂလိပ်အက္ခရာ ၁ လုံးပါရမည်။"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llOneNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/ivPwCheckOneNum"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_union"/>
+            <TextView
+                android:id="@+id/tvPwCheckOneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="စကားဝှက်မှာ အနည်းဆုံး ဂဏန်းနံပါတ် ၁ လုံးပါရမည်။"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signUp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_button_invisibile_blue"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llErrorLayout"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

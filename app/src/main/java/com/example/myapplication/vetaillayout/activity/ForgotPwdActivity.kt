@@ -11,7 +11,7 @@ import com.example.myapplication.vetaillayout.databinding.ActivityForgotPwdBindi
 
 class ForgotPwdActivity : AppCompatActivity() {
     private lateinit var binding: ActivityForgotPwdBinding
-    var tempPhNo="12345"
+    var tempPhNo = "12345"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityForgotPwdBinding.inflate(layoutInflater)
@@ -25,15 +25,17 @@ class ForgotPwdActivity : AppCompatActivity() {
     fun onClick() {
 
         binding.btnGetOTPCode.setOnClickListener {
-            if(binding.etPhNo.text.toString()==tempPhNo){
-                binding.tvError.visibility= View.GONE
+            if (binding.etPhNo.text.toString() == tempPhNo) {
+                binding.tvError.visibility = View.GONE
                 Intent(this, GetOTPActivity::class.java).also {
                     startActivity(it)
                 }
-            }
-            else{
-                binding.tvError.visibility= View.VISIBLE
-                binding.tilPhNo.boxStrokeColor=resources.getColor(R.color.red)
+            } else {
+                binding.tvError.visibility = View.VISIBLE
+                binding.tilPhNo.boxStrokeColor = resources.getColor(R.color.red)
+                binding.btnGetOTPCode.isEnabled = false
+                binding.btnGetOTPCode.background =
+                    resources.getDrawable(R.drawable.custom_button_invisibile_blue)
             }
 
         }
@@ -52,25 +54,28 @@ class ForgotPwdActivity : AppCompatActivity() {
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
 
-                    if (p0.isNullOrEmpty()) {
-                        binding.btnGetOTPCode.background =
-                            resources.getDrawable(R.drawable.custom_button_invisibile_blue)
-                        binding.btnGetOTPCode.isEnabled = false
-                    }
-                else if (p0!=null){
-                    if (!p0.startsWith("09") || p0.length>=11 || p0.length<=9){
+                if (p0.isNullOrEmpty()) {
+                    binding.btnGetOTPCode.background =
                         resources.getDrawable(R.drawable.custom_button_invisibile_blue)
-                        binding.btnGetOTPCode.isEnabled = false
-                        binding.tvError.visibility= View.VISIBLE
-                        binding.tilPhNo.boxStrokeColor=resources.getColor(R.color.red)
-
-                    }
-                    else{
-                        binding.btnGetOTPCode.background =
-                            resources.getDrawable(R.drawable.custom_button_blue)
-                        binding.btnGetOTPCode.isEnabled = true
-                    }
-
+                    binding.btnGetOTPCode.isEnabled = false
+                    binding.tilPhNo.boxStrokeColor = resources.getColor(R.color.greyer)
+                } else {
+//                    if (!p0.startsWith("09") || p0.length>=11 || p0.length<=9){
+//                        resources.getDrawable(R.drawable.custom_button_invisibile_blue)
+//                        binding.btnGetOTPCode.isEnabled = false
+//                        binding.tvError.visibility= View.VISIBLE
+//                        binding.tilPhNo.boxStrokeColor=resources.getColor(R.color.red)
+//
+//                    }
+//                    else{
+//                        binding.btnGetOTPCode.background =
+//                            resources.getDrawable(R.drawable.custom_button_blue)
+//                        binding.btnGetOTPCode.isEnabled = true
+//                    }
+                    binding.btnGetOTPCode.background =
+                        resources.getDrawable(R.drawable.custom_button_blue)
+                    binding.btnGetOTPCode.isEnabled = true
+                    binding.tvError.visibility=View.GONE
                 }
             }
 

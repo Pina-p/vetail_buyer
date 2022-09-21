@@ -3,6 +3,7 @@ package com.example.myapplication.vetaillayout.adapters
 import android.content.res.ColorStateList
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
@@ -35,6 +36,7 @@ class ShopListAdapter(val shopList: List<ShopList>) :
         if (position==0){
             holder.itemView.background=ContextCompat.getDrawable(holder.itemView.context,R.color.yellowishYellow)
             holder.itemView.findViewById<TextView>(R.id.tvMyPoints).setTextColor(holder.itemView.resources.getColor(R.color.black))
+            holder.itemView.findViewById<ImageView>(R.id.ivShare).setImageResource(R.drawable.ic_share_icon)
         }
     }
 

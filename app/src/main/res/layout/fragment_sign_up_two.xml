@@ -14,23 +14,21 @@
             android:id="@+id/ivTopIcon"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="25dp"
             android:src="@drawable/ic_mail_beautiful_24"
-            />
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
         <TextView
             android:id="@+id/tvTopLabel"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
             android:layout_marginTop="40dp"
             android:text="တစ်ခါသုံးကုဒ် ထည့်ပါ"
             android:textColor="@color/black"
             android:textSize="24sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/otp_view"
             app:layout_constraintTop_toBottomOf="@+id/ivTopIcon" />
 
         <TextView
@@ -38,168 +36,121 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/tvTopLabel"
-            app:layout_constraintLeft_toLeftOf="@+id/tvTopLabel"
-            app:layout_constraintRight_toRightOf="@+id/tvTopLabel"
+            android:textSize="16sp"
             android:gravity="left"
             android:text="သင်ထဲ့ထားသောဖုန်းနံပါတ် 09683***** သို့တစ်ခါသုံးကုဒ်ပေးပို့ပြီးဖြစ်ပါသည်၊။ ၎င်းတစ်ခါသုံးကုဒ်ကို အောက်တွင် ရိုက်ထဲ့ပါ"
+            app:layout_constraintLeft_toLeftOf="@+id/otp_view"
+            app:layout_constraintRight_toRightOf="@+id/otp_view"
+            app:layout_constraintTop_toBottomOf="@+id/tvTopLabel" />
+
+
+
+        <com.chaos.view.PinView
+            android:id="@+id/otp_view"
+            style="@style/PinWidget.PinView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:cursorVisible="true"
+            android:inputType="number"
+            app:cursorColor="@color/black"
+            app:hideLineWhenFilled="false"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:itemCount="6"
+            app:itemHeight="52dp"
+            app:itemRadius="5dp"
+            app:itemWidth="52dp"
+            app:itemSpacing="10dp"
+            app:lineColor="@color/greyer"
+            android:paddingHorizontal="1dp"
+            android:hint="******"
+            app:lineWidth="1dp" />
+        <TextView
+            android:id="@+id/tvOtpWrong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/otp_view"
+            app:layout_constraintLeft_toLeftOf="@id/otp_view"
+            app:layout_constraintRight_toRightOf="@id/otp_view"
+            android:text="တစ်ခါသုံးကုဒ်မှားယွင်းနေပါသည် နောက်တစ်ကြိမ်ထပ်မံကြိုးစားကြည့်ပါ"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
             />
-
-        <LinearLayout
-            android:id="@+id/llOtpLayout"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            app:layout_constraintTop_toBottomOf="@+id/tvNotice"
-            android:orientation="horizontal"
-            android:weightSum="6"
-            android:layout_marginTop="20dp"
-            android:layout_marginHorizontal="25dp">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="55dp"
-                app:cardCornerRadius="10dp"
-                android:background="@color/black"
-                android:elevation="2dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="3dp">
-                <EditText
-                    android:id="@+id/tvOtpOne"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="*"
-                    android:maxLength="1"
-                    android:textSize="25sp"
-                    android:gravity="center"
-                    android:background="@color/white"
-                    android:nextFocusRight="@id/tvOtpTwo"/>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="55dp"
-                app:cardCornerRadius="10dp"
-                android:background="@color/black"
-                android:elevation="2dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="3dp"
-                >
-                <EditText
-                    android:id="@+id/tvOtpTwo"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="*"
-                    android:maxLength="1"
-                    android:textSize="25sp"
-                    android:gravity="center"
-                    android:background="@color/white"
-                    android:nextFocusRight="@id/tvOtpThree"/>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="55dp"
-                app:cardCornerRadius="10dp"
-                android:background="@color/black"
-                android:elevation="2dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="3dp">
-                <EditText
-                    android:id="@+id/tvOtpThree"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="*"
-                    android:maxLength="1"
-                    android:textSize="25sp"
-                    android:gravity="center"
-                    android:background="@color/white"
-                    android:nextFocusRight="@id/tvOtpFour"/>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="55dp"
-                app:cardCornerRadius="10dp"
-                android:background="@color/black"
-                android:elevation="2dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="3dp">
-
-                <EditText
-                    android:id="@+id/tvOtpFour"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:gravity="center"
-                    android:hint="*"
-                    android:maxLength="1"
-                    android:nextFocusRight="@id/tvOtpFive"
-                    android:textSize="25sp" />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="55dp"
-                app:cardCornerRadius="10dp"
-                android:background="@color/black"
-                android:elevation="2dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="3dp">
-                <EditText
-                    android:id="@+id/tvOtpFive"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="*"
-                    android:maxLength="1"
-                    android:textSize="25sp"
-                    android:gravity="center"
-                    android:background="@color/white"
-                    android:nextFocusRight="@id/tvOtpSix"/>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="55dp"
-                app:cardCornerRadius="10dp"
-                android:background="@color/black"
-                android:elevation="2dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="3dp">
-                <EditText
-                    android:id="@+id/tvOtpSix"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="*"
-                    android:maxLength="1"
-                    android:textSize="25sp"
-                    android:gravity="center"
-                    android:background="@color/white" />
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
+        <TextView
+            android:id="@+id/tvOtpLimit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvOtpWrong"
+            app:layout_constraintLeft_toLeftOf="@id/otp_view"
+            app:layout_constraintRight_toRightOf="@id/otp_view"
+            android:text="ယနေ့အတွက် တစ်ခါသုံးကုဒ် ရယူနိုင်သောအကြိမ်အရေအတွက် ပြည့်သွားပါပြီ။ နောက်ရက်တွင် ထပ်မံကြိုးစားပါ။"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
         <TextView
             android:id="@+id/tvTimer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/llOtpLayout"
-            app:layout_constraintLeft_toLeftOf="@id/llOtpLayout"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:text="5:00"
             android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="@id/otp_view"
+            app:layout_constraintTop_toBottomOf="@+id/tvOtpLimit"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tvCodeRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/tvTimer"
+            app:layout_constraintTop_toTopOf="@+id/tvTimer"
+            android:text="ကုဒ်ထပ်မံတောင်းဆိုရန်"
+            android:textSize="14sp"
+            android:textColor="@color/blueFont"
+            android:visibility="gone"
             />
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:layout_constraintRight_toRightOf="@id/tvNotice"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/tvTimer"-->
+        <!--            android:text="တစ်ခါသုံးကုဒ်မှာ အနည်းဆုံး ၆ လုံးရှိရမည်"-->
+        <!--            android:textColor="@color/red"-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:visibility="visible"/>-->
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            app:layout_constraintTop_toTopOf="@id/tvCodeRequest"
+            app:layout_constraintBottom_toBottomOf="@id/tvCodeRequest"
+            app:layout_constraintLeft_toRightOf="@id/tvCodeRequest"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_send_icon"
+            android:visibility="gone"/>
+
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSignUp"
+            android:id="@+id/btnSubmit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tvTimer"
-            app:layout_constraintLeft_toLeftOf="@+id/llOtpLayout"
-            app:layout_constraintRight_toRightOf="@id/llOtpLayout"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_button_invisibile_blue"
             android:text="ဆက်သွားမည်"
-            android:textSize="18sp"
-            android:textColor="@color/white"
             android:textAllCaps="false"
-            android:background="@drawable/custom_button_blue"/>
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="@+id/otp_view"
+            app:layout_constraintRight_toRightOf="@id/otp_view"
+            app:layout_constraintTop_toBottomOf="@id/tvTimer" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
