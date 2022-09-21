@@ -34,6 +34,16 @@
         app:layout_constraintTop_toTopOf="@id/ivIcon"
         app:layout_constraintBottom_toBottomOf="@id/ivIcon"/>
 
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipOther"
+        android:visibility="gone"
+        android:text="ထွန်းထွန်း တိုက်ခန်း"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/blueFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/ivIcon"
+        app:layout_constraintTop_toBottomOf="@id/tvPlace"/>
     <TextView
         android:id="@+id/tvAddress"
         android:layout_width="wrap_content"
@@ -45,7 +55,7 @@
         android:layout_marginStart="10dp"
         android:textColor="@color/black"
         app:layout_constraintLeft_toRightOf="@id/ivIcon"
-        app:layout_constraintTop_toBottomOf="@id/tvPlace"/>
+        app:layout_constraintTop_toBottomOf="@id/chipOther"/>
 
     <ImageView
         android:id="@+id/ivFlag"

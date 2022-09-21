@@ -4,16 +4,23 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/blue_bg.xml" value="0.125" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/chip_icon.xml" value="0.1405" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/custom_button_blue.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/custom_dialog_box_bg.xml" value="0.1405" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/edittext_bg.xml" value="0.125" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/edittext_bg_pale_blue.xml" value="0.1405" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/half_circle.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.125" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_chip_location.xml" value="0.1405" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_cute_profile_gray.xml" value="0.125" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_face_logout.xml" value="0.1405" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_home.xml" value="0.1405" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_point_forward.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_recent.xml" value="0.125" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_small_face.xml" value="0.1405" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_vetail_blue.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_white_back.xml" value="0.125" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_work.xml" value="0.1405" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/profile_bg.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/tab_selector.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/textbox_bg.xml" value="0.125" />
@@ -38,11 +45,11 @@
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/address_item.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/custom_alert_dialog_delete_acc.xml" value="0.20018115942028986" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/dropdown_item.xml" value="0.20018115942028986" />
-        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_add_new_addr.xml" value="0.20018115942028986" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_add_new_addr.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_expired_tab.xml" value="0.16032608695652173" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_login_after_logout.xml" value="0.19010416666666666" />
-        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_logout.xml" value="0.16032608695652173" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_logout.xml" value="0.18" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_point.xml" value="0.16032608695652173" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_points.xml" value="0.16032608695652173" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_profile.xml" value="0.16032608695652173" />

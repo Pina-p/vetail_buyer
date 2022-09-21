@@ -16,4 +16,9 @@
     <style name="CustomTabText" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">12sp</item>
     </style>
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+
+        <item name="chipBackgroundColor">@color/chip_select_unselect</item>
+        <item name="android:textColor">@color/chip_textcolor_select_unselect</item>
+    </style>
 </resources>

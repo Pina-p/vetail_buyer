@@ -18,4 +18,5 @@
     <color name="yellow">#FFB000</color>
     <color name="pale_btn">#EAF0FF</color>
     <color name="tab_unselected">#96B7FF</color>
+    <color name="icon_color">#929292</color>
 </resources>
