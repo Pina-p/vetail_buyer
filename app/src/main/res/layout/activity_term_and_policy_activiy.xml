@@ -25,18 +25,31 @@
         android:id="@+id/ivBackgroundTermAndPolicy"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:src="@color/blueFont"
+        android:src="@drawable/vector_register"
+        android:scaleType="centerCrop"
+        android:background="@color/blueOne"
         app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_shield"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvLabel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivBackgroundTermAndPolicy"
+        />
 
     <TextView
+        android:id="@+id/tvLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="70dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="20dp"
         android:text="အသုံးပြုမှုဆိုင်ရာမူဝါဒများနှင့် စည်းကမ်းသတ်မှတ်ချက်များ"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/ivBackgroundTermAndPolicy" />
 

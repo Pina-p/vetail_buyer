@@ -39,7 +39,6 @@ class SignUpOneFragment : Fragment() {
 
 
     fun onClicks() {
-
         binding.etPhNo.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
 
@@ -47,30 +46,37 @@ class SignUpOneFragment : Fragment() {
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 binding.ivCorrect.visibility = View.INVISIBLE
-                binding.btnSignUp.text = getString(R.string.signUp)
                 if (p0.isNullOrEmpty()) {
                     binding.btnSignUp.background =
                         resources.getDrawable(R.drawable.custom_button_invisibile_blue)
+                    binding.btnSignUp.isEnabled=false
                 } else {
+                    binding.btnSignUp.isEnabled=true
                     binding.btnSignUp.background =
                         resources.getDrawable(R.drawable.custom_button_blue)
                     binding.btnSignUp.setOnClickListener {
                         if (binding.etPhNo.text.toString() == tempPhoneUserNum) {
                             binding.tvAccDuplicate.visibility = View.VISIBLE
                             binding.tilPhNo.boxStrokeColor = resources.getColor(R.color.red)
+                            binding.btnSignUp.isEnabled=false
+                            binding.btnSignUp.background =
+                                resources.getDrawable(R.drawable.custom_button_invisibile_blue)
                             binding.tvAccDuplicate.text = getString(R.string.acc_exist_normal)
 
                         } else if (binding.etPhNo.text.toString() == tempPhoneSellerNum) {
                             binding.tvAccDuplicate.visibility = View.VISIBLE
                             binding.tilPhNo.boxStrokeColor = resources.getColor(R.color.red)
+                            binding.btnSignUp.isEnabled=false
+                            binding.btnSignUp.background =
+                                resources.getDrawable(R.drawable.custom_button_invisibile_blue)
                             binding.tvAccDuplicate.text = getString(R.string.acc_exist_shopdoora)
                         } else {
                             binding.tilPhNo.boxStrokeColor = resources.getColor(R.color.blueOne)
-                            binding.ivCorrect.visibility = View.VISIBLE
+                            binding.btnSignUp.isEnabled=true
                             binding.tvAccDuplicate.visibility = View.GONE
-                            if (binding.btnSignUp.text != getString(R.string.proceed)) {
-                                binding.btnSignUp.text = getString(R.string.proceed)
-                            } else if (binding.btnSignUp.text == getString(R.string.proceed)) {
+                            if (binding.ivCorrect.visibility != View.VISIBLE) {
+                                binding.ivCorrect.visibility = View.VISIBLE
+                            } else if (binding.ivCorrect.visibility == View.VISIBLE) {
                                 findNavController().navigate(R.id.action_signUpOneFragment_to_signUpTwoFragment)
                             }
 
@@ -125,6 +131,6 @@ class SignUpOneFragment : Fragment() {
             .setSpan(myClickableSpan, i1, i2 + 8, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         SpannableOne
             .setSpan(myClickableSpan1, i3, i4 + 6, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-        binding.tvTermAndPolicy.setText(SpannableOne)
+        binding.tvTermAndPolicy.text = SpannableOne
     }
 }

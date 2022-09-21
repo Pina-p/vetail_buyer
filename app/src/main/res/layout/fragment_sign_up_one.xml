@@ -44,7 +44,6 @@
                 android:layout_height="50dp"
                 android:hint="@string/login_phone_email"
                 android:textColorHint="@color/iconTextColor"
-                android:maxLength="11"
                 android:inputType="text"
                 android:cursorVisible="true"
                 android:textCursorDrawable="@null"

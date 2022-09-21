@@ -17,6 +17,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/ic_arrow_back_24.xml" value="0.2225" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/ic_arrow_back_24White.xml" value="0.2065" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/ic_arrow_back_24white.xml" value="0.2065" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/ic_arrow_forward.xml" value="0.2065" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.2065" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/ic_correct_24.xml" value="0.2065" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/drawable/ic_cute_profile_gray.xml" value="0.2065" />
@@ -56,6 +57,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/dropdown_item.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/fragment_expired_tab.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/fragment_home.xml" value="0.29270833333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/fragment_ranking_tab.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/fragment_sign_up_one.xml" value="0.26875" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/fragment_sign_up_two.xml" value="0.33" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/home_custom_alertdialog_layout.xml" value="0.29270833333333335" />
@@ -67,7 +69,9 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/item_signin_one.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/item_signin_two.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/item_welcome_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/my_shop_list_item.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/point_history.xml" value="0.29270833333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/received_point_history_item.xml" value="0.29270833333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/vetaillayout/app/src/main/res/layout/shop_point_items.xml" value="0.29270833333333335" />
       </map>
     </option>

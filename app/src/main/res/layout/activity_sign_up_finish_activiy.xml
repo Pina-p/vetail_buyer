@@ -44,7 +44,7 @@
             android:id="@+id/tvWelcomeTextMini"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:gravity="left"
             android:layout_marginTop="10dp"
             android:text="သင့်ရဲ့စတိုးဆိုင်ကို ပိုမိုကောင်းမွန်တဲ့ \nအွန်လိုင်းစတိုးဆိုင် အဖြစ် အလွယ်ကူပြေင်းလဲနိုင်ဖို့အတွက် Vetail မှကူညီရန်အသင့်ရှိပါတယ်"/>
@@ -53,7 +53,7 @@
             android:id="@+id/til_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="25dp"
             app:startIconTint="@color/black"
             app:startIconDrawable="@drawable/ic_boy_24"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"

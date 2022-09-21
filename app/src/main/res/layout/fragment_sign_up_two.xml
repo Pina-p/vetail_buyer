@@ -69,7 +69,8 @@
             app:lineColor="@color/greyer"
             android:paddingHorizontal="1dp"
             android:hint="******"
-            app:lineWidth="1dp" />
+            app:lineWidth="1dp"
+            />
         <TextView
             android:id="@+id/tvOtpWrong"
             android:layout_width="0dp"

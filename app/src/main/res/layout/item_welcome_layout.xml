@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingBottom="60dp">
+    android:paddingBottom="60dp"
+    android:background="@color/blueOne">
 
 
 <ImageView
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/ivLayoutIcon"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="24dp"
         android:text="@string/welcome_first_caption"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="@id/ivLayoutIcon" />
@@ -37,7 +38,7 @@
         android:text="@string/welcome_first_little_caption"
         android:gravity="left"
         android:layout_marginHorizontal="40dp"
-        android:textSize="18sp"
+        android:textSize="18dp"
         android:textColor="@color/white"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

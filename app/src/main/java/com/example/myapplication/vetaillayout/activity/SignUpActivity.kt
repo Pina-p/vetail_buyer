@@ -2,16 +2,7 @@ package com.example.myapplication.vetaillayout.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.NavHostFragment
-import androidx.viewpager2.widget.ViewPager2
-import com.example.myapplication.vetaillayout.R
-import com.example.myapplication.vetaillayout.adapters.ViewPagerAdapterSignUp
-import com.example.myapplication.vetaillayout.adapters.ViewPagerAdapterSignUpTemp
 import com.example.myapplication.vetaillayout.databinding.ActivitySignUpBinding
-import com.example.myapplication.vetaillayout.fragments.SignUpOneFragment
-import com.example.myapplication.vetaillayout.fragments.SignUpTwoFragment
 
 class SignUpActivity : AppCompatActivity() {
     private lateinit var binding:ActivitySignUpBinding
