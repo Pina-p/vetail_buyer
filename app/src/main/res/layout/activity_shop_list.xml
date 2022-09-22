@@ -45,6 +45,7 @@
                 app:defaultQueryHint="ဆိုင်ရှာမည်"
                 android:theme="@style/AppSearchView"
                 android:layoutDirection="rtl"
+                android:focusedByDefault="true"
                 app:layout_constraintTop_toBottomOf="@id/tvShopListLabel"
                 app:layout_constraintRight_toLeftOf="@id/ivScannerIcon"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -60,9 +61,8 @@
         android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@id/tbShopList"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="5dp"
-        android:background="@color/whitishWhite">
-
+        android:background="@color/whitishWhite"
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -72,7 +72,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:listitem="@layout/item_shop_list"
-                android:background="@color/whitishWhite"/>
+                android:background="@color/whitishWhite"
+                android:nestedScrollingEnabled="false"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

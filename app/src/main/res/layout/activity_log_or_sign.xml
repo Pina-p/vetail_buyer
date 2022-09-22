@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.LogOrSignActivity"
+    android:theme="@style/Theme.TopBlue"
     android:background="@color/blueOne">
 
     <androidx.viewpager.widget.ViewPager

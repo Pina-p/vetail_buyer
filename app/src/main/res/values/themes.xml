@@ -10,9 +10,20 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/blueOne</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="NoBackGroundDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="Theme.TopBlue" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/blueOne</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
     <style name="CustomTabText" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">12dp</item>
     </style>
@@ -23,5 +34,10 @@
 
         <item name="chipBackgroundColor">@color/chip_select_unselect</item>
         <item name="android:textColor">@color/chip_textcolor_select_unselect</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
     </style>
 </resources>

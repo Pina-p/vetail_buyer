@@ -1,7 +1,6 @@
 package com.example.myapplication.vetaillayout.activity
 
 import android.app.Dialog
-import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -9,15 +8,15 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
-import android.view.View
+import android.view.View.OnFocusChangeListener
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import com.example.myapplication.vetaillayout.R
 import com.example.myapplication.vetaillayout.databinding.ActivitySignUpFinishActiviyBinding
 import com.example.myapplication.vetaillayout.utils.PasswordPatterns
+
 
 class SignUpFinishActiviy : AppCompatActivity() {
     private lateinit var binding: ActivitySignUpFinishActiviyBinding
@@ -34,8 +33,8 @@ class SignUpFinishActiviy : AppCompatActivity() {
     private fun textChangeListener() {
         binding.etName.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                binding.tvWelcomeText.visibility= View.GONE
-                binding.tvWelcomeTextMini.visibility=View.GONE
+//                binding.tvWelcomeText.visibility= View.GONE
+//                binding.tvWelcomeTextMini.visibility=View.GONE
             }
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
@@ -56,8 +55,8 @@ class SignUpFinishActiviy : AppCompatActivity() {
                                         p2: Int,
                                         p3: Int
                                     ) {
-                                        binding.tvWelcomeText.visibility= View.GONE
-                                        binding.tvWelcomeTextMini.visibility=View.GONE
+//                                        binding.tvWelcomeText.visibility= View.GONE
+//                                        binding.tvWelcomeTextMini.visibility=View.GONE
                                     }
 
                                     override fun onTextChanged(
@@ -84,8 +83,8 @@ class SignUpFinishActiviy : AppCompatActivity() {
                                                     p2: Int,
                                                     p3: Int
                                                 ) {
-                                                    binding.tvWelcomeText.visibility= View.GONE
-                                                    binding.tvWelcomeTextMini.visibility=View.GONE
+//                                                    binding.tvWelcomeText.visibility= View.GONE
+//                                                    binding.tvWelcomeTextMini.visibility=View.GONE
                                                 }
 
                                                 override fun onTextChanged(

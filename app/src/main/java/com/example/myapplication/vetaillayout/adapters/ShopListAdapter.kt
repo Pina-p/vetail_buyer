@@ -1,15 +1,19 @@
 package com.example.myapplication.vetaillayout.adapters
 
-import android.content.res.ColorStateList
-import android.view.LayoutInflater
-import android.view.ViewGroup
+import android.app.Dialog
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
+import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.content.res.ResourcesCompat
+import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.vetaillayout.R
 import com.example.myapplication.vetaillayout.databinding.ItemShopListBinding
+import com.example.myapplication.vetaillayout.fragments.ShopListBottomSheetFragment
 import com.example.myapplication.vetaillayout.model.ShopList
 import com.example.myapplication.vetaillayout.model.ShopListItems
 
@@ -21,8 +25,13 @@ class ShopListAdapter(val shopList: List<ShopList>) :
         binding.ivShopLogo.setImageResource(shop.shopIcon)
             binding.tvShopName.text=shop.shopName
             binding.tvMyPoints.text=shop.myPoints
-            val shopListItemsAdapter=ShopListItemsAdapter(shop.shopItems)
-            binding.rvShopItems.adapter=shopListItemsAdapter
+            binding.ivShare.setOnClickListener {
+                Toast.makeText(
+                    binding.root.context,
+                    "You are sent to a website",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         }
 
     }
@@ -37,12 +46,16 @@ class ShopListAdapter(val shopList: List<ShopList>) :
             holder.itemView.background=ContextCompat.getDrawable(holder.itemView.context,R.color.yellowishYellow)
             holder.itemView.findViewById<TextView>(R.id.tvMyPoints).setTextColor(holder.itemView.resources.getColor(R.color.black))
             holder.itemView.findViewById<ImageView>(R.id.ivShare).setImageResource(R.drawable.ic_share_icon)
+           }
+        val rvShopItem=holder.itemView.findViewById<RecyclerView>(R.id.rvShopItems)
+        val shopListItemsAdapter=ShopListItemsAdapter(shopList[position].shopItems,position)
+        rvShopItem.adapter=shopListItemsAdapter
+
+        holder.itemView.setOnClickListener {
         }
     }
 
     override fun getItemCount(): Int {
         return shopList.size
     }
-
-
 }

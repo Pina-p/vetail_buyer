@@ -19,6 +19,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.text.toSpannable
 import androidx.core.view.size
 import androidx.viewpager.widget.ViewPager
@@ -40,6 +41,9 @@ class LogOrSignActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLogOrSignBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //window.statusBarColor= ContextCompat.getColor(this,R.color.blueOne)
+        //window.decorView.systemUiVisibility= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
 
         spannableSetUp()
         LanguageSwitchTab()

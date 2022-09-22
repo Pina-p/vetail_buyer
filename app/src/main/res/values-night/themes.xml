@@ -13,10 +13,25 @@
         <item name="android:statusBarColor" tools:targetApi="l">@color/blueOne</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.TopBlue" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/blueOne</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
     <style name="CustomTabText" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">12dp</item>
     </style>
     <style name="AppSearchView" parent="Widget.AppCompat.SearchView" >
         <item name="android:textSize">18sp</item>
+    </style>
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+
+        <item name="chipBackgroundColor">@color/chip_select_unselect</item>
+        <item name="android:textColor">@color/chip_textcolor_select_unselect</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
     </style>
 </resources>

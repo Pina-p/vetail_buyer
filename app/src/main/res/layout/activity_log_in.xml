@@ -22,7 +22,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cvBackGroundLogin"
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="160dp"
         app:layout_constraintTop_toBottomOf="@id/tbLogin"
         android:layout_marginTop="18dp"
         app:cardCornerRadius="25dp">
@@ -31,24 +31,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintTop_toBottomOf="@id/tbLogin"
-        android:background="@drawable/bg_login"
-        android:scaleType="center"/>
+        android:src="@drawable/bg_login"
+        android:scaleType="fitCenter"/>
     </androidx.cardview.widget.CardView>
-
     <View
-        android:id="@+id/viewCenter"
-        android:layout_width="1dp"
+        android:id="@+id/viewBg"
+        android:layout_width="match_parent"
         android:layout_height="1dp"
-        app:layout_constraintTop_toTopOf="@id/cvBackGroundLogin"
         app:layout_constraintBottom_toBottomOf="@id/cvBackGroundLogin"
-        app:layout_constraintRight_toRightOf="@id/cvBackGroundLogin"
-        app:layout_constraintLeft_toLeftOf="@id/cvBackGroundLogin"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="35dp"
+        />
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="0dp"
-    app:layout_constraintTop_toBottomOf="@id/viewCenter"
+    app:layout_constraintTop_toBottomOf="@id/viewBg"
     app:layout_constraintBottom_toBottomOf="parent"
     android:background="@drawable/custom_login"
     android:elevation="2dp"
