@@ -2,8 +2,13 @@ package com.example.myapplication.vetaillayout.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.Toast
+import androidx.recyclerview.widget.AsyncListDiffer
+import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.vetaillayout.R
 import com.example.myapplication.vetaillayout.adapters.ShopListItemsDetailRVAdapter
 import com.example.myapplication.vetaillayout.databinding.FragmentShopListBottomSheetBinding
@@ -31,7 +36,7 @@ class ShopListBottomSheetFragment(val shopListItem: ShopListItems) : BottomSheet
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.ivFullImage.setImageResource(shopListItem.itemImage[0])
+
         binding.tvItemName.text=shopListItem.itemName
         if (shopListItem.hot){
             binding.ivHotIcon.visibility=View.VISIBLE
@@ -44,6 +49,14 @@ class ShopListBottomSheetFragment(val shopListItem: ShopListItems) : BottomSheet
         binding.tvAboutItem.text=shopListItem.aboutItem
 
         var adapter = ShopListItemsDetailRVAdapter(shopListItem.itemImage)
-        binding.rvImages.adapter
+        binding.rvImages.adapter=adapter
+
+        binding.ivFullImage.setImageResource(shopListItem.itemImage[0])
+
+//        binding.tvItemPts.setOnClickListener {
+//            binding.ivFullImage.setImageResource(ShopListItemsDetailRVAdapter(shopListItem.itemImage).img)
+//            var noice =ShopListItemsDetailRVAdapter(shopListItem.itemImage).img
+//            Toast.makeText(this.context, "${noice}", Toast.LENGTH_SHORT).show()
+//        }
     }
 }

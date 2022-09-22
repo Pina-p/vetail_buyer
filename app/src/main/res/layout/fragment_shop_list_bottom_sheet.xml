@@ -116,6 +116,7 @@
             android:textSize="23sp"
             android:textColor="@color/yellow"
             android:textStyle="bold"
+            android:clickable="true"
             />
         <TextView
             android:id="@+id/tvItemPtsText"
