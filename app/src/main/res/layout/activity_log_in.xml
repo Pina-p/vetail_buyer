@@ -181,6 +181,7 @@
         android:textAllCaps="false"
         app:layout_constraintLeft_toLeftOf="@id/til_pw"
         app:layout_constraintRight_toRightOf="@id/til_pw"
+        android:stateListAnimator="@null"
         android:background="@drawable/custom_button_invisibile_blue"
         />
 

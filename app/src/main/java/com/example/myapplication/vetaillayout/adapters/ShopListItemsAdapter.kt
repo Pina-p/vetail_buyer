@@ -53,7 +53,7 @@ class ShopListItemsAdapter(val shopListItems: List<ShopListItems>, var positionR
         return shopListItems.size
     }
 
-    private fun showDialog(holder: ShopListItemsHolder,shopListItems: ShopListItems) {
+    private fun showDialog(holder: ShopListItemsHolder, shopListItems: ShopListItems) {
         var manager: FragmentManager = (holder.itemView.context as AppCompatActivity).supportFragmentManager
         ShopListBottomSheetFragment(shopListItems).show(manager,"this")
 //        val dialog= Dialog(holder.itemView.context)

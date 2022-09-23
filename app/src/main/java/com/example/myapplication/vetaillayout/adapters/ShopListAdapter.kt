@@ -1,21 +1,14 @@
 package com.example.myapplication.vetaillayout.adapters
 
-import android.app.Dialog
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.vetaillayout.R
 import com.example.myapplication.vetaillayout.databinding.ItemShopListBinding
-import com.example.myapplication.vetaillayout.fragments.ShopListBottomSheetFragment
 import com.example.myapplication.vetaillayout.model.ShopList
-import com.example.myapplication.vetaillayout.model.ShopListItems
 
 class ShopListAdapter(val shopList: List<ShopList>) :
     RecyclerView.Adapter<ShopListAdapter.ShopListHolder>() {
@@ -48,7 +41,7 @@ class ShopListAdapter(val shopList: List<ShopList>) :
             holder.itemView.findViewById<ImageView>(R.id.ivShare).setImageResource(R.drawable.ic_share_icon)
            }
         val rvShopItem=holder.itemView.findViewById<RecyclerView>(R.id.rvShopItems)
-        val shopListItemsAdapter=ShopListItemsAdapter(shopList[position].shopItems,position)
+        val shopListItemsAdapter=ShopListItemsAdapter(shopList[position].shopListItems,position)
         rvShopItem.adapter=shopListItemsAdapter
 
         holder.itemView.setOnClickListener {

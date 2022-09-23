@@ -47,7 +47,8 @@
             android:paddingLeft="10dp"
             android:background="@color/whitishWhite"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ivFullImage">
+            app:layout_constraintTop_toBottomOf="@id/ivFullImage"
+            android:visibility="visible">
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvImages"
                 android:layout_width="match_parent"
@@ -71,6 +72,7 @@
             android:scaleType="fitCenter"
             android:layout_marginTop="10dp"/>
         <TextView
+            android:id="@+id/tvHotText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="@+id/ivHotIcon"

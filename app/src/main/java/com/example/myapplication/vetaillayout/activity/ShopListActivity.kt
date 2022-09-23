@@ -1,14 +1,16 @@
 package com.example.myapplication.vetaillayout.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import android.util.Log
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.vetaillayout.R
 import com.example.myapplication.vetaillayout.adapters.ShopListAdapter
 import com.example.myapplication.vetaillayout.databinding.ActivityShopListBinding
+import com.example.myapplication.vetaillayout.model.AllShops
 import com.example.myapplication.vetaillayout.model.ShopList
 import com.example.myapplication.vetaillayout.model.ShopListItems
 
@@ -21,7 +23,7 @@ class ShopListActivity : AppCompatActivity() {
     var imageList1=ArrayList<Int>()
     var imageList2=ArrayList<Int>()
     var imageList3=ArrayList<Int>()
-    var imageList4=ArrayList<Int>()
+    var imageListOne=ArrayList<Int>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityShopListBinding.inflate(layoutInflater)
@@ -38,6 +40,13 @@ class ShopListActivity : AppCompatActivity() {
     private fun onClicks() {
         binding.ivScannerIcon.setOnClickListener {
             Toast.makeText(this, "Digital member car pop up", Toast.LENGTH_SHORT).show()
+        }
+        var allshop=AllShops(tempShopList)
+        binding.cvSearchView.setOnClickListener{
+        var svIntent=Intent(this@ShopListActivity,ShopListSearchActivity::class.java)
+            svIntent.putExtra("shopList",allshop)
+            Log.d("Yoe","we sent you ${allshop.allShop}")
+            svIntent.also { startActivity(it) }
         }
     }
 
@@ -70,18 +79,16 @@ class ShopListActivity : AppCompatActivity() {
         imageList3.addAll(imageList1)
         imageList3.addAll(imageList2)
 
-        imageList4.add(R.drawable.naruto_profile)
-        imageList4.addAll(imageList1)
-        imageList4.add(R.drawable.logo_nike)
-        imageList4.add(R.drawable.advertise_for_points)
+        imageListOne.add(R.drawable.naruto_profile)
+
     }
 
     fun addShopTempItems() {
         tempShopItemList.add(
             ShopListItems(
-                "Nike Air 270 new 2022",
+                "Special Nike Air 270 new 2022",
                 "350,000Pts",
-                imageList1,
+                imageListOne,
                 "Hello",
                 true,
                 "til 14 Aug 22"
@@ -152,7 +159,7 @@ class ShopListActivity : AppCompatActivity() {
             ShopListItems(
                 "Nike Air 270 new 2022",
                 "350,000Pts",
-                imageList4,
+                imageListOne,
                 "Hello",
                 true,
                 "til 14 Aug 22"
@@ -172,7 +179,7 @@ class ShopListActivity : AppCompatActivity() {
             ShopListItems(
                 "Nike Air 270 new 2022",
                 "350,000Pts",
-                imageList4,
+                imageListOne,
                 "Hello",
                 true,
                 "til 14 Aug 22"
@@ -182,7 +189,7 @@ class ShopListActivity : AppCompatActivity() {
             ShopListItems(
                 "Nike Air 270 new 2022",
                 "350,000Pts",
-                imageList4,
+                imageListOne,
                 "Hello",
                 true,
                 "til 14 Aug 22"
