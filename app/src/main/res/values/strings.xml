@@ -39,5 +39,11 @@
         <item>မန္တလေး (Mandalay)</item>
         <item>နေပြည်တော် (Nay Pyi Taw)</item>
     </string-array>
+
+    <string-array name="towns">
+        <item>ကမာရွတ် Kamaryut</item>
+        <item>ကြည့်မြင်တိုင် Kyimyindaing</item>
+        <item>အလုံ Ahlone</item>
+    </string-array>
     <string name="signUp">အကောင့်ဝင်မည်</string>
 </resources>

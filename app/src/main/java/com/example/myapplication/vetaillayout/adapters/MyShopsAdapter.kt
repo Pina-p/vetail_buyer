@@ -54,8 +54,12 @@ class MyShopsAdapter (val list: List<MyShops>) :
                 val myDialog = Dialog(itemView.context)
                 var img = dialogBinding.findViewById<ImageView>(R.id.ivShopImg)
                 var text = dialogBinding.findViewById<TextView>(R.id.tvLoginAcc)
+                var btnClose = dialogBinding.findViewById<ImageView>(R.id.ivClose)
                 img.load(list.shopImg){
                     transformations(CircleCropTransformation())
+                }
+                btnClose.setOnClickListener {
+                    myDialog.dismiss()
                 }
                 text.text = list.shopName+"\nကိုအကောင့်ဝင်ရောက်မည်"
                 myDialog.setContentView(dialogBinding)

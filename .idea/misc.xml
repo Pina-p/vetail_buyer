@@ -14,8 +14,11 @@
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_chip_location.xml" value="0.1405" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_cute_profile_gray.xml" value="0.125" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_dot_vector.xml" value="0.1405" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_dropdown.xml" value="0.1405" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_face_logout.xml" value="0.1405" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_home.xml" value="0.1405" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_info.xml" value="0.1405" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_no_point_bg.xml" value="0.1405" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_point_forward.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_recent.xml" value="0.125" />
@@ -31,7 +34,7 @@
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_change_phone_num.xml" value="0.16" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_change_pwd.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_change_user_name_and_image.xml" value="0.22" />
-        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_choose_address.xml" value="0.16047144152311876" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_choose_address.xml" value="0.5" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_connect_with_email.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_delete_acc.xml" value="0.1762295081967213" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/activity_forgot_pwd.xml" value="0.22" />
@@ -50,7 +53,7 @@
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/dropdown_item.xml" value="0.20018115942028986" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_add_new_addr.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_expired_tab.xml" value="0.16032608695652173" />
-        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_login_after_logout.xml" value="0.19010416666666666" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_logout.xml" value="0.18" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_point.xml" value="0.16032608695652173" />

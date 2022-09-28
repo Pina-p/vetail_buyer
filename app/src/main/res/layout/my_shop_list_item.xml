@@ -15,8 +15,8 @@
         app:layout_constraintLeft_toLeftOf="parent">
         <ImageView
             android:id="@+id/ivShopImg"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
             android:src="@drawable/sweetie"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
@@ -31,8 +31,8 @@
         android:textSize="14sp"
         android:maxLines="2"
         android:textColor="@color/black"
-        app:layout_constraintRight_toRightOf="@id/cvImgCard"
-        app:layout_constraintLeft_toLeftOf="@id/cvImgCard"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cvImgCard"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
