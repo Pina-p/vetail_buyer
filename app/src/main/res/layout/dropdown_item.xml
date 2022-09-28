@@ -6,4 +6,4 @@
     android:padding="14dp"
     android:layout_height="wrap_content"
     android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-    android:text="TextView" />
+    android:text="TextView"/>
