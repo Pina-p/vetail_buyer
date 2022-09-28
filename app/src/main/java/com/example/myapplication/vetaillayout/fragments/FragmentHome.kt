@@ -40,10 +40,10 @@ class FragmentHome : Fragment() {
         )
 
         val shops: ArrayList<MyShops> = arrayListOf(
-            MyShops(R.drawable.sweetie,"Sweetie\nBeauty & Spa"),
-            MyShops(R.drawable.spicy_pot,"Mala King\nHotpot & BBQ"),
-            MyShops(R.drawable.your_deli,"SONIC\n Delivery"),
-            MyShops(R.drawable.pink_r,"Sweetie\nBeauty & Spa")
+            MyShops(R.drawable.sweetie,"Sweetie Beauty & Spa"),
+            MyShops(R.drawable.spicy_pot,"Mala King Hotpot & BBQ"),
+            MyShops(R.drawable.your_deli,"SONIC  Delivery"),
+            MyShops(R.drawable.pink_r,"Sweetie Beauty & Spa")
 
         )
 

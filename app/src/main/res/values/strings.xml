@@ -23,10 +23,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-    <string name="profile">မိမိပရိုဖိုင်</string>
+
     <string name="personal_info">ကိုယ်ရေးအချက်အလက်များ</string>
     <string name="phone_num">ဖုန်းနံပါတ်</string>
-    <string name="email">အီးမေးလ်</string>
+
     <string name="connect">ချိတ်ဆက်မည်</string>
     <string name="forgot_pwd">စကားဝှက် မေ့နေပါသလား?</string>
     <string name="its_ok_to_forgot">စိတ်မပူပါနဲ့၊ ဒါဟာဖြစ်တတ်ပါတယ်!</string>
@@ -45,5 +45,24 @@
         <item>ကြည့်မြင်တိုင် Kyimyindaing</item>
         <item>အလုံ Ahlone</item>
     </string-array>
+
+    <string name="connect_acc">ချိတ်ဆက်မည်</string>
+    <string name="profile">မိမိပရိုဖိုင်</string>
+    <string name="profile_name">Jobby James</string>
+    <string name="profile_bio">ကိုယ်ရေး အချက်အလက်များ</string>
+    <string name="setting">ဆက်တင်များ</string>
+    <string name="acc_connect">အကောင့်ချိတ်ဆက်ခြင်း</string>
+    <string name="change_language">ဘာသာစကား ပြောင်းလဲမည်</string>
+    <string name="sec_setting">လုံခြုံရေးဆိုင်ရာ ဆက်တင်များ</string>
+    <string name="phone">ဖုန်းနံပါတ်</string>
+    <string name="_09435984884">09435984884</string>
+    <string name="email">အီးမေးလ်</string>
+    <string name="bd">မွေးနေ့</string>
+    <string name="bd_date">13 Aug 1990</string>
+    <string name="address">လိပ်စာ</string>
+    <string name="location">N0. 84, Padamyar St. Hledan</string>
+    <string name="google">Google</string>
+    <string name="log_out">အကောင့်ထွက်မည်</string>
+    <string name="confirm_waiting_card">ကြာမြင့်ချိန်အနည်းဆုံး <b>၅ ရက်</b> မှ <b>၁၀ ရက်</b> အတွင်း</string>
     <string name="signUp">အကောင့်ဝင်မည်</string>
 </resources>

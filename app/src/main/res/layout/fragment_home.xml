@@ -87,7 +87,7 @@
         android:text="ရရှိထားသောပွိုင့် မရှိပါ!"
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         app:layout_constraintLeft_toLeftOf="@id/ivNoPointBg"
         app:layout_constraintTop_toTopOf="@id/ivNoPointBg"/>
@@ -95,7 +95,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="20dp"
         android:text="စျေးဝယ်ပြီး ပွိုင့်များကိုစုဆောင်းပါ"
         android:textSize="14sp"
         app:layout_constraintLeft_toLeftOf="@id/ivNoPointBg"
@@ -159,12 +159,13 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.cardview.widget.CardView
-        android:visibility="invisible"
+        android:visibility="visible"
         android:id="@+id/cvCard"
+        app:cardElevation="0dp"
         android:layout_marginTop="20dp"
         app:cardBackgroundColor="#FFF7E5"
         app:cardCornerRadius="10dp"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginHorizontal="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/clBluebgLayout">
@@ -200,7 +201,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="City Mart"
-                android:layout_marginTop="5dp"
                 android:layout_marginStart="10dp"
                 android:textColor="@color/black"
                 android:textSize="16sp"
@@ -211,7 +211,7 @@
                 android:id="@+id/tvPointNum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="25dp"
+                android:layout_marginRight="18.5dp"
                 android:text="+340 Points"
                 android:textColor="@color/yellow"
                 android:textSize="16sp"
@@ -222,13 +222,13 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="8dp"
                 android:src="@drawable/arrow_forward"
                 app:layout_constraintLeft_toRightOf="@id/tvPointNum"
-                app:layout_constraintBottom_toBottomOf="@id/tvPointNum"
-                app:layout_constraintTop_toTopOf="@id/tvPointNum"/>
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
@@ -237,6 +237,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ဆိုင်များ"
+        android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:layout_marginTop="10dp"
@@ -270,7 +271,7 @@
         tools:listitem="@layout/home_shop_point_item"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintLeft_toLeftOf="@id/clBluebgLayout"
         app:layout_constraintRight_toRightOf="@id/clBluebgLayout"
         app:layout_constraintTop_toBottomOf="@id/tvShops"
@@ -278,7 +279,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvCard2"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         app:cardBackgroundColor="#F5F8FF"
         app:cardCornerRadius="10dp"
         app:cardElevation="0dp"
@@ -323,7 +324,7 @@
                 android:layout_height="wrap_content"
                 android:text="ဆုလက်ဆောင်များကို လဲလှယ်ပါ"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="17.5sp"
                 android:textStyle="bold"
                 android:layout_marginTop="5dp"
                 app:layout_constraintLeft_toRightOf="@id/ivPresent"
@@ -332,21 +333,23 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
-
+<!--visibility control-->
     <ImageView
         android:id="@+id/ivAdsVetailShop"
-        android:visibility="invisible"
-        android:layout_width="328dp"
+        android:visibility="visible"
+        android:layout_width="0dp"
         android:layout_height="150dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/graphi_home"
         app:layout_constraintTop_toBottomOf="@id/cvCard2"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="@id/clBluebgLayout"
+        app:layout_constraintRight_toRightOf="@id/clBluebgLayout"/>
 
     <ImageView
         android:id="@+id/ivVetailShop"
         android:layout_width="0dp"
         android:layout_height="150dp"
+        android:visibility="gone"
         android:src="@drawable/vetail_shop"
         app:layout_constraintRight_toRightOf="@id/clBluebgLayout"
         app:layout_constraintLeft_toLeftOf="@id/clBluebgLayout"
@@ -354,6 +357,7 @@
 
     <TextView
         android:id="@+id/tvMyShops"
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="မိမိ၏ ဆိုင်များ"
@@ -368,7 +372,7 @@
         android:id="@+id/tvTotalShops"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="စုစုပေါင်း ၆ ဆိုင်"
+        android:text="စုစုပေါင်း 6 ဆိုင်"
         android:textColor="@color/white"
         android:textSize="14sp"
         android:layout_marginStart="15dp"
@@ -379,11 +383,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
+        android:visibility="gone"
         app:cardCornerRadius="15dp"
         app:cardElevation="0dp"
         app:cardBackgroundColor="#F5F8FF"
         android:layout_marginHorizontal="15dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="93.5dp"
         app:layout_constraintTop_toTopOf="@id/ivVetailShop">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"

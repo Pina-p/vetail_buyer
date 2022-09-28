@@ -221,7 +221,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardText"
         app:cardCornerRadius="10dp"
-        android:visibility="visible"
+        android:visibility="gone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -245,7 +245,6 @@
                 android:id="@+id/tvConfirmText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-
                 android:text="ဖြင့် အခြားလိပ်စာတစ်ခုအား ရွေးချယ်ထားပြီးဖြစ်သည်။ ယခုထည့်သွင်းနေသော လိပ်စာအသစ်အား အလုပ်အဖြစ် ပြောင်းလဲရန် သေချာပါသလား?"
                 android:textColor="@color/blueFont"
                 android:layout_marginStart="5dp"

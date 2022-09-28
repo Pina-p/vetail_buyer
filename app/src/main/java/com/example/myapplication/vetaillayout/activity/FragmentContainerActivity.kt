@@ -11,6 +11,7 @@ class FragmentContainerActivity : AppCompatActivity() {
         binding = ActivityFragmentContainerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         var userProfile = intent.getIntExtra("userProfile",0)
         var userName = intent.getStringExtra("userName")
 

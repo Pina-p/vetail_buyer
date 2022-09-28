@@ -7,8 +7,9 @@
     tools:context=".activity.FragmentContainerActivity">
 
     <fragment
-        android:name="com.example.myapplication.vetaillayout.fragments.FragmentAddNewAddr"
         android:id="@+id/pointFragment"
+        android:name="com.example.myapplication.vetaillayout.fragments.FragmentAddNewAddr"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
