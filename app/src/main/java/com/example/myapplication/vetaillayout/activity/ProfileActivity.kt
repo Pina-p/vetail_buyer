@@ -32,6 +32,10 @@ class ProfileActivity : AppCompatActivity() {
             Intent(this,ChangeUserNameAndImage::class.java).also { startActivity(it) }
         }
 
+        binding.tvConnect.setOnClickListener {
+            Intent(this,ConnectWithEmail::class.java).also { startActivity(it) }
+        }
+
         binding.ivArrowBirth.setOnClickListener {
             // Get Current Date
             var c = Calendar.getInstance();

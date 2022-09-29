@@ -8,7 +8,7 @@
     tools:context=".activity.MainActivity">
 
     <fragment
-        android:name="com.example.myapplication.vetaillayout.fragments.FragmentHome"
+        android:name="com.example.myapplication.vetaillayout.fragments.FragmentAddNewAddr"
         android:id="@+id/pointFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

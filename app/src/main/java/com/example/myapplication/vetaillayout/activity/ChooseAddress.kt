@@ -32,7 +32,7 @@ class ChooseAddress : AppCompatActivity() {
         }
 
         binding.ivAdd.setOnClickListener {
-            Intent(this,FragmentContainerActivity::class.java).also {
+            Intent(this,MainActivity::class.java).also {
                 startActivity(it)
             }
         }

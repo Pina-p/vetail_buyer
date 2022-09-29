@@ -27,7 +27,6 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tbSignUpFinish"/>
 
@@ -38,14 +37,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         app:hintTextColor="@color/black"
-        app:boxStrokeColor="#a5a5a5"
         app:boxCornerRadiusBottomEnd="10dp"
         app:boxCornerRadiusTopEnd="10dp"
         app:boxCornerRadiusBottomStart="10dp"
         app:boxCornerRadiusTopStart="10dp"
-        android:background="@color/white"
         android:layout_marginHorizontal="20dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        style="@style/MaterialSpinner"
         app:layout_constraintTop_toBottomOf="@id/tvAddNewAddr">
         <AutoCompleteTextView
             android:id="@+id/autoComplete"
@@ -61,17 +58,16 @@
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         app:endIconDrawable="@drawable/ic_dropdown"
         app:hintTextColor="@color/black"
-        app:boxStrokeColor="#a5a5a5"
         app:boxCornerRadiusBottomEnd="10dp"
         app:boxCornerRadiusTopEnd="10dp"
         app:boxCornerRadiusBottomStart="10dp"
         app:boxCornerRadiusTopStart="10dp"
         android:background="@color/white"
         android:layout_marginHorizontal="20dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        style="@style/MaterialSpinner"
         app:layout_constraintTop_toBottomOf="@id/material_spinner">
         <AutoCompleteTextView
             android:id="@+id/autoComplete_town"
@@ -86,11 +82,10 @@
         android:id="@+id/tilFullAddr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginHorizontal="20dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/LoginTextInputLayoutStyle"
         app:layout_constraintTop_toBottomOf="@id/material_spinner_town"
-        app:boxStrokeColor="#a5a5a5"
         app:hintTextColor="@color/black"
         app:boxCornerRadiusBottomEnd="10dp"
         app:boxCornerRadiusBottomStart="10dp"
@@ -102,6 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="*လိပ်စာ အပြည့်အစုံ"
+            android:textCursorDrawable="@null"
             android:gravity="top"
             android:textColorHint="@color/iconTextColor"
             android:lines="3"
@@ -127,9 +123,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="20dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/LoginTextInputLayoutStyle"
         app:layout_constraintTop_toBottomOf="@id/tvNear"
-        app:boxStrokeColor="#a5a5a5"
         app:hintTextColor="@color/black"
         app:boxCornerRadiusBottomEnd="10dp"
         app:boxCornerRadiusBottomStart="10dp"
@@ -138,6 +133,7 @@
         >
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPlace"
+            android:textCursorDrawable="@null"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="ဥပမာ - မြို့မစျေးအရှေ့ဘက်"
@@ -168,12 +164,15 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         app:singleSelection="true"
+        app:selectionRequired="true"
+        app:checkedChip="@id/chipOther"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvChooseAddr">
         <com.google.android.material.chip.Chip
             android:id="@+id/chipHome"
             style="@style/CustomChipStyle"
-            android:padding="10dp"
+            app:iconStartPadding="8dp"
+            app:textEndPadding="8dp"
             android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -184,39 +183,54 @@
         <com.google.android.material.chip.Chip
             android:id="@+id/chipWork"
             style="@style/CustomChipStyle"
+            app:iconStartPadding="8dp"
+            app:textEndPadding="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="အလုပ်"
             android:gravity="center"
-            android:padding="10dp"
             android:layout_marginEnd="10dp"
             app:chipIconVisible="true"
             app:chipIcon="@drawable/ic_work"/>
         <com.google.android.material.chip.Chip
             android:id="@+id/chipOther"
             style="@style/CustomChipStyle"
-            app:chipIconVisible="true"
-            app:chipIcon="@drawable/ic_location_gray"
-            android:padding="10dp"
+            app:chipIconEnabled="true"
+            app:textEndPadding="8dp"
+            app:chipIcon="@drawable/ic_location_white"
+            app:iconStartPadding="8dp"
             android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="အခြား"/>
     </com.google.android.material.chip.ChipGroup>
 
-
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        style="@style/LoginTextInputLayoutStyle"
+        app:layout_constraintTop_toBottomOf="@id/chipGroup"
+        app:hintTextColor="@color/black"
+        app:hintEnabled="false"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        >
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/etOther"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="*ဥပမာ - ကျော်ကျော်၏ အိမ်"
-        android:gravity="top"
-        android:textSize="14sp"
-        android:padding="10dp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edittext_bg"
-        app:layout_constraintTop_toBottomOf="@id/chipGroup"/>
+        android:hint="*လိပ်စာ အပြည့်အစုံ"
+        android:textCursorDrawable="@null"
+        android:inputType="text"
+        android:textColorHint="@color/iconTextColor"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardText"
@@ -247,7 +261,7 @@
                 android:layout_height="wrap_content"
                 android:text="ဖြင့် အခြားလိပ်စာတစ်ခုအား ရွေးချယ်ထားပြီးဖြစ်သည်။ ယခုထည့်သွင်းနေသော လိပ်စာအသစ်အား အလုပ်အဖြစ် ပြောင်းလဲရန် သေချာပါသလား?"
                 android:textColor="@color/blueFont"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="10dp"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toRightOf="@id/ivInfo"
                 app:layout_constraintTop_toTopOf="@id/ivInfo"/>
@@ -256,12 +270,13 @@
     </androidx.cardview.widget.CardView>
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAddedAddr"
+        android:stateListAnimator="@null"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="ပို့ဆောင်ရန်လိပ်စာ ထည့်ပြီးပါပြီ"
         app:cornerRadius="10dp"
         android:backgroundTint="@color/pale_btn"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,10 +24,9 @@ class FragmentLoginAfterLogout : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.ivUserProfile.load(R.drawable.ic_small_face){
+        binding.ivUserProfile.load(R.drawable.naruto_profile){
             transformations(CircleCropTransformation())
         }
-
 
     }
 }

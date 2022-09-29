@@ -16,7 +16,7 @@ class AccountLogoutActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val data : ArrayList<Account> = arrayListOf(
-            Account(R.drawable.ic_small_face,"Jobby James")
+            Account(R.drawable.naruto_profile,"Jobby James")
         )
 
         binding.rvAcc.apply {

@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".activity.FragmentContainerActivity">
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/pointFragment"
-        android:name="com.example.myapplication.vetaillayout.fragments.FragmentAddNewAddr"
+        android:name="com.example.myapplication.vetaillayout.fragments.FragmentLoginAfterLogout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

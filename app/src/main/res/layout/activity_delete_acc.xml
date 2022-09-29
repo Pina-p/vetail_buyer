@@ -32,7 +32,7 @@
         android:id="@+id/ivHeartBreak"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="15dp"
         android:src="@drawable/heart_icon"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -41,7 +41,7 @@
     <TextView
         android:id="@+id/tvDeleteAcc"
         android:text="မိမိအကောင့်အားအပြီးဖျက်သိမ်းမည်"
-        android:layout_marginHorizontal="10dp"
+        android:layout_marginHorizontal="15dp"
         android:layout_marginTop="20dp"
         android:textColor="@color/black"
         android:textSize="25sp"
@@ -56,8 +56,8 @@
         android:id="@+id/tvSorry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:textColor="#4C4C4C"
         android:textSize="16sp"
         android:text="We feel sorry to see you go"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -68,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="15dp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="20sp"
@@ -80,34 +80,35 @@
         android:id="@+id/tvPassage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
+        android:textColor="#4C4C4C"
         android:textSize="16sp"
         android:layout_marginTop="10dp"
-        android:text="Before you go, we would like to hear your honest\nfeedbacks and why you are deleting your account.\nWe may be able to help with common issues.\nYou can also just continue to deletion."
-        android:layout_marginHorizontal="10dp"
+        android:text="Before you go, we would like to hear your honest feedbacks and why you are deleting your account. We may be able to help with common issues. You can also just continue to deletion."
+        android:layout_marginHorizontal="15dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvLetUsKnow"/>
 
     <View
+        android:id="@+id/view1"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#c0c0c0"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@id/ivCircle"/>
+        android:background="#EEEEEE"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvPassage" />
 
     <ImageView
         android:id="@+id/ivCircle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="12dp"
         android:layout_marginLeft="15dp"
         android:src="@drawable/circle_outline"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvPassage"/>
+        app:layout_constraintTop_toBottomOf="@id/view1"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="I spend too much time on this application."
         android:textColor="@color/black"
@@ -121,22 +122,22 @@
         android:id="@+id/vView2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#c0c0c0"
-        android:layout_marginTop="10dp"
+        android:background="#EEEEEE"
+        android:layout_marginTop="12dp"
         app:layout_constraintTop_toBottomOf="@id/ivCircle"/>
 
     <ImageView
         android:id="@+id/ivCircle2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:layout_marginLeft="15dp"
         android:src="@drawable/circle_outline"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/vView2"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="This app doesn't have any fun to use."
         android:textColor="@color/black"
@@ -150,22 +151,22 @@
         android:id="@+id/vView3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#c0c0c0"
-        android:layout_marginTop="10dp"
+        android:background="#EEEEEE"
+        android:layout_marginTop="12dp"
         app:layout_constraintTop_toBottomOf="@id/ivCircle2"/>
 
     <ImageView
         android:id="@+id/ivCircle3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:layout_marginLeft="15dp"
         android:src="@drawable/circle_outline"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/vView3"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="My account was hacked."
         android:textColor="@color/black"
@@ -179,22 +180,22 @@
         android:id="@+id/vView4"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#c0c0c0"
-        android:layout_marginTop="10dp"
+        android:background="#EEEEEE"
+        android:layout_marginTop="12dp"
         app:layout_constraintTop_toBottomOf="@id/ivCircle3"/>
 
     <ImageView
         android:id="@+id/ivCircle4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:layout_marginLeft="15dp"
         android:src="@drawable/circle_outline"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/vView4"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Because of my personal issues."
         android:textColor="@color/black"
@@ -208,22 +209,22 @@
         android:id="@+id/vView5"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#c0c0c0"
-        android:layout_marginTop="10dp"
+        android:background="#EEEEEE"
+        android:layout_marginTop="12dp"
         app:layout_constraintTop_toBottomOf="@id/ivCircle4"/>
 
     <ImageView
         android:id="@+id/ivCircle5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:layout_marginLeft="15dp"
         android:src="@drawable/circle_outline"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/vView5"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="I don't feel safe using this app."
         android:textColor="@color/black"
@@ -237,22 +238,22 @@
         android:id="@+id/vView6"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#c0c0c0"
-        android:layout_marginTop="10dp"
+        android:background="#EEEEEE"
+        android:layout_marginTop="12dp"
         app:layout_constraintTop_toBottomOf="@id/ivCircle5"/>
 
     <ImageView
         android:id="@+id/ivCircle6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:layout_marginLeft="15dp"
         android:src="@drawable/circle_outline"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/vView6"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Other, please explain further."
         android:textColor="@color/black"
@@ -261,29 +262,36 @@
         app:layout_constraintLeft_toRightOf="@id/ivCircle6"
         app:layout_constraintBottom_toBottomOf="@id/ivCircle6"
         app:layout_constraintTop_toTopOf="@id/ivCircle6"/>
-
+            <View
+                android:id="@+id/vView7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/ivCircle6"/>
     <androidx.constraintlayout.widget.ConstraintLayout
         app:layout_constraintTop_toBottomOf="@id/ivCircle6"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="50dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_marginTop="30dp"
+        android:layout_height="0dp">
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnCancel"
         android:layout_width="match_parent"
         app:cornerRadius="10dp"
+        android:stateListAnimator="@null"
         android:layout_height="56dp"
         android:backgroundTint="@color/blueOne"
-        android:text="No, I've changed my mind."
+        android:text="No, I've changed my mind"
         android:textAllCaps="false"
         android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginHorizontal="15dp"
         android:layout_marginBottom="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDelete"
+        android:stateListAnimator="@null"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:textAllCaps="false"
@@ -291,7 +299,7 @@
         android:backgroundTint="#FFECEC"
         android:textColor="@color/red"
         android:text="Delete my account anyway"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginHorizontal="15dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnCancel"/>
 

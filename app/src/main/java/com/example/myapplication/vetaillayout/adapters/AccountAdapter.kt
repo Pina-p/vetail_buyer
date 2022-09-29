@@ -39,15 +39,21 @@ class AccountAdapter (val list: List<Account>) :
     inner class AccountHolder(private val binding: AccListItemBinding):RecyclerView.ViewHolder(binding.root){
 
         fun bind(list : Account){
-            binding.ivUserProfile.load(list.userProfile)
+            binding.ivUserProfile.load(list.userProfile){
+                transformations(CircleCropTransformation())
+            }
             binding.tvUserName.text = list.userName
             binding.ivRemoveAcc.setOnClickListener {
                 var dialogBinding = LayoutInflater.from(itemView.context).inflate(R.layout.custom_alert_dialog_delete_acc,null)
                 val myDialog = Dialog(itemView.context)
                 var img = dialogBinding.findViewById<ImageView>(R.id.ivUserProfile)
+                var ivClose = dialogBinding.findViewById<ImageView>(R.id.ivClose)
                 var text = dialogBinding.findViewById<TextView>(R.id.tvUserName)
                 img.load(list.userProfile){
                     transformations(CircleCropTransformation())
+                }
+                ivClose.setOnClickListener {
+                    myDialog.dismiss()
                 }
                 text.text = list.userName+"\nအကောင့်ကို ဖယ်ရှားမည်"
                 myDialog.setContentView(dialogBinding)
@@ -78,5 +84,6 @@ class AccountAdapter (val list: List<Account>) :
     override fun getItemCount(): Int {
         return list.size
     }
+
 
 }

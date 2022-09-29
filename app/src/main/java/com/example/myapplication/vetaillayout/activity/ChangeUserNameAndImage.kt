@@ -20,6 +20,6 @@ class ChangeUserNameAndImage : AppCompatActivity() {
             transformations(CircleCropTransformation())
         }
 
-        binding.etName.requestFocus()
+
     }
 }

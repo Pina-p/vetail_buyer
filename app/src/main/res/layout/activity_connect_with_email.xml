@@ -81,9 +81,8 @@
         app:errorIconDrawable="@drawable/ic_red_mail"
         app:startIconDrawable="@drawable/ic_mail_24"
         android:layout_marginHorizontal="16dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/LoginTextInputLayoutStyle"
         app:layout_constraintTop_toBottomOf="@id/tvAddNewMail"
-        app:boxStrokeColor="@color/blueOne"
         app:hintTextColor="@color/blueOne"
         app:boxCornerRadiusTopStart="10dp"
         app:boxCornerRadiusTopEnd="10dp"
@@ -92,11 +91,11 @@
         >
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/et_mail"
+        android:textCursorDrawable="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="အီးမေးလ်"
         android:textColorHint="@color/iconTextColor"
-        android:maxLength="11"
         android:inputType="textEmailAddress"
         />
     </com.google.android.material.textfield.TextInputLayout>
