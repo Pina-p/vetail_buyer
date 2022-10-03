@@ -2,7 +2,7 @@
     <string name="app_name">vetail layout</string>
     <string name="loginIntro">Login to my account</string>
     <string name="signupIntro">I\'m new here, sign me up</string>
-    <string name="term_policy">By loggin in or signing up, you are agree to Veatail\'s <font color='#487FFF'>Terms of Use</font> and <font color='#487FFF'>Privacy Policy.</font></string>
+    <string name="term_policy">By loggin in or signing up, you are agree to Veatail\'s <font color='#2E6EFF'>Terms of Use</font> and <font color='#2E6EFF'>Privacy Policy.</font></string>
     <string name="login_to_my_account">Login to my account</string>
     <string name="login_phone_email">Mobile number or email</string>
     <string name="password">Password</string>

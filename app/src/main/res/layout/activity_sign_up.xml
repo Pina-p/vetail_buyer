@@ -45,7 +45,13 @@
 <!--            android:layout_height="match_parent"/>-->
 <!--        </androidx.cardview.widget.CardView>-->
 <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
-
+    <View
+        android:id="@+id/viewBg"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/custom_login"
+        app:layout_constraintBottom_toBottomOf="@id/ivBackgroundSignUp"
+        />
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/regFragmentHost"
         android:layout_width="match_parent"

@@ -8,13 +8,13 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+
         android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/ivTopIcon"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginTop="25dp"
             android:src="@drawable/ic_mail_beautiful_24"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -27,6 +27,7 @@
             android:layout_marginTop="40dp"
             android:text="တစ်ခါသုံးကုဒ် ထည့်ပါ"
             android:textColor="@color/black"
+            android:textStyle="bold"
             android:textSize="24sp"
             app:layout_constraintLeft_toLeftOf="@id/otp_view"
             app:layout_constraintTop_toBottomOf="@+id/ivTopIcon" />
@@ -38,11 +39,10 @@
             android:layout_marginTop="20dp"
             android:textSize="16sp"
             android:gravity="left"
-            android:text="သင်ထဲ့ထားသောဖုန်းနံပါတ် 09683***** သို့တစ်ခါသုံးကုဒ်ပေးပို့ပြီးဖြစ်ပါသည်၊။ ၎င်းတစ်ခါသုံးကုဒ်ကို အောက်တွင် ရိုက်ထဲ့ပါ"
+            android:text="သင်ထည့်ထားသောဖုန်းနံပါတ် 09683***** သို့တစ်ခါသုံးကုဒ်ပေးပို့ပြီးဖြစ်ပါသည်၊။ ၎င်းတစ်ခါသုံးကုဒ်ကို အောက်တွင် ရိုက်ထည့်ပါ"
             app:layout_constraintLeft_toLeftOf="@+id/otp_view"
             app:layout_constraintRight_toRightOf="@+id/otp_view"
             app:layout_constraintTop_toBottomOf="@+id/tvTopLabel" />
-
 
 
         <com.chaos.view.PinView
@@ -51,7 +51,8 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvNotice"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginHorizontal="16dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
@@ -62,10 +63,10 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:itemCount="6"
-            app:itemHeight="52dp"
+            app:itemHeight="50dp"
             app:itemRadius="5dp"
-            app:itemWidth="52dp"
-            app:itemSpacing="10dp"
+            app:itemWidth="50dp"
+            app:itemSpacing="5dp"
             app:lineColor="@color/greyer"
             android:paddingHorizontal="1dp"
             android:hint="******"

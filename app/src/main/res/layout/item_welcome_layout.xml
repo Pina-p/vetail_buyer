@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/ivLayoutIcon"
         android:textColor="@color/white"
-        android:textSize="24dp"
+        android:textSize="22sp"
         android:text="@string/welcome_first_caption"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="@id/ivLayoutIcon" />
@@ -36,8 +36,9 @@
         app:layout_constraintRight_toRightOf="parent"
         android:text="@string/welcome_first_little_caption"
         android:gravity="left"
+        android:layout_marginTop="15dp"
         android:layout_marginHorizontal="40dp"
-        android:textSize="18dp"
+        android:textSize="14sp"
         android:textColor="@color/white"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

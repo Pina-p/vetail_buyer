@@ -10,6 +10,7 @@
         android:layout_height="match_parent">
         <TextView
             android:id="@+id/tvTobLabel"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="အကောင့်အသစ်ဖွင့်မည်"
@@ -17,8 +18,7 @@
             android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="@+id/til_ph_no"
-            android:layout_marginTop="35dp"/>
+            app:layout_constraintLeft_toLeftOf="@+id/til_ph_no" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_ph_no"
@@ -41,7 +41,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_ph_no"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="55dp"
+                android:textSize="14sp"
                 android:hint="@string/login_phone_email"
                 android:textColorHint="@color/iconTextColor"
                 android:inputType="text"
@@ -97,7 +98,7 @@
             app:layout_constraintRight_toRightOf="@id/til_ph_no"
             android:layout_marginTop="35dp"
             android:text="ဆက်သွားမည်"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textColor="@color/white"
             android:textAllCaps="false"
             android:background="@drawable/custom_button_invisibile_blue"
