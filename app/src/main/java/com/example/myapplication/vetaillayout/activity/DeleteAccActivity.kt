@@ -14,5 +14,8 @@ class DeleteAccActivity : AppCompatActivity() {
         binding.ivBackButton.setOnClickListener {
             finish()
         }
+        binding.btnCancel.setOnClickListener {
+            finish()
+        }
     }
 }

@@ -13,6 +13,7 @@ import android.widget.Toast
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
 import com.example.myapplication.vetaillayout.R
+import com.example.myapplication.vetaillayout.activity.FragmentContainerActivity
 import com.example.myapplication.vetaillayout.databinding.FragmentAddNewAddrBinding
 import com.google.android.material.chip.Chip
 
@@ -42,6 +43,11 @@ class FragmentAddNewAddr : Fragment() {
             if(binding.autoComplete.text.toString().isNotEmpty()){
                 binding.materialSpinnerTown.visibility = View.VISIBLE
             }
+        }
+
+        binding.ivBackButton.setOnClickListener {
+            activity?.finish()
+            //Toast.makeText(context, "Bruh", Toast.LENGTH_SHORT).show()
         }
 
         binding.chipGroup.setOnCheckedChangeListener { group, checkedId ->
@@ -84,4 +90,10 @@ class FragmentAddNewAddr : Fragment() {
             }
 
     }
+    private fun replaceFragment(fragment: Fragment){
+        val fragmentManager = parentFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fragment_container,fragment).addToBackStack("tag").commit()
+    }
+
 }

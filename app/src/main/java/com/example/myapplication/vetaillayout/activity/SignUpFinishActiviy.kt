@@ -1,6 +1,8 @@
 package com.example.myapplication.vetaillayout.activity
 
+import android.animation.ObjectAnimator
 import android.app.Dialog
+import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -8,11 +10,15 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
-import android.view.View.OnFocusChangeListener
+import android.view.MotionEvent
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import androidx.core.widget.doAfterTextChanged
 import com.example.myapplication.vetaillayout.R
 import com.example.myapplication.vetaillayout.databinding.ActivitySignUpFinishActiviyBinding
 import com.example.myapplication.vetaillayout.utils.PasswordPatterns
@@ -24,6 +30,32 @@ class SignUpFinishActiviy : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySignUpFinishActiviyBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.etName.doAfterTextChanged {
+
+        }
+        binding.etName.setOnTouchListener(View.OnTouchListener { v, event ->
+            if (MotionEvent.ACTION_UP == event.action) {
+                binding.etName.requestFocus()
+                val imm: InputMethodManager =
+                    getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.showSoftInput(binding.etName, InputMethodManager.SHOW_IMPLICIT)
+
+                binding.ivVetailIcon.layoutParams.width = 320
+                binding.ivVetailIcon.layoutParams.height = 75
+                binding.tvWelcomeText.visibility = View.INVISIBLE
+                binding.tvWelcomeTextMini.visibility = View.GONE
+                ObjectAnimator.ofFloat(binding.ivVetailIcon,"translationX",150f)
+                    .apply {
+                        duration = 1000
+                        start()
+                    }
+                ObjectAnimator.ofFloat(binding.ivVetailIcon,"translationY",60f).apply {
+                    duration = 1000
+                    start()
+                }
+            }
+            true // return is important...
+        })
         onClick()
         textChangeListener()
     }
@@ -246,7 +278,7 @@ class SignUpFinishActiviy : AppCompatActivity() {
         close.setOnClickListener {
             myDialog.cancel()
         }
-        var doBtn = dialogBinding.findViewById<AppCompatButton>(R.id.btnDo)
+        var doBtn = dialogBinding.findViewById<TextView>(R.id.btnDo)
         doBtn.setOnClickListener {
             Toast.makeText(this, "Account Created Loading animation Started", Toast.LENGTH_SHORT).show()
         }
@@ -255,7 +287,6 @@ class SignUpFinishActiviy : AppCompatActivity() {
         donBtn.setOnClickListener {
             myDialog.cancel()
         }
-
 
         myDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         myDialog.show()

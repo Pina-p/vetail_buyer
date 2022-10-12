@@ -26,7 +26,7 @@ class AddressAdapter (val list: List<Address>) :
             binding.tvPlace.text = list.category
             binding.tvAddress.text = list.address
             binding.tvNearPlace.text = list.near
-          //  binding.rbRadio.isChecked = selected == adapterPosition
+            //binding.rbRadio.isChecked = selected == adapterPosition
 
             if(adapterPosition == 0){
                 binding.rbRadio.isChecked = true

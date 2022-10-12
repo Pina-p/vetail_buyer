@@ -23,9 +23,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="လိပ်စာအသစ်ထည့်မည်"
-        android:textSize="24sp"
+        android:fontFamily="@font/interfont"
+        android:textSize="26sp"
         android:textColor="@color/black"
         android:textStyle="bold"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tbSignUpFinish"/>
@@ -113,7 +115,7 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilFullAddr"/>
 
@@ -171,6 +173,7 @@
         <com.google.android.material.chip.Chip
             android:id="@+id/chipHome"
             style="@style/CustomChipStyle"
+            app:chipIconSize="16dp"
             app:iconStartPadding="8dp"
             app:textEndPadding="8dp"
             android:gravity="center"
@@ -182,6 +185,7 @@
             app:chipIcon="@drawable/ic_home"/>
         <com.google.android.material.chip.Chip
             android:id="@+id/chipWork"
+            app:chipIconSize="16dp"
             style="@style/CustomChipStyle"
             app:iconStartPadding="8dp"
             app:textEndPadding="8dp"
@@ -197,6 +201,7 @@
             style="@style/CustomChipStyle"
             app:chipIconEnabled="true"
             app:textEndPadding="8dp"
+            app:chipIconSize="16dp"
             app:chipIcon="@drawable/ic_location_white"
             app:iconStartPadding="8dp"
             android:gravity="center"
@@ -224,7 +229,7 @@
         android:id="@+id/etOther"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="*လိပ်စာ အပြည့်အစုံ"
+        android:hint="*ဥပမာ - ကျော်ကျော်၏ အိမ်"
         android:textCursorDrawable="@null"
         android:inputType="text"
         android:textColorHint="@color/iconTextColor"

@@ -55,7 +55,7 @@ class AccountAdapter (val list: List<Account>) :
                 ivClose.setOnClickListener {
                     myDialog.dismiss()
                 }
-                text.text = list.userName+"\nအကောင့်ကို ဖယ်ရှားမည်"
+                text.text = list.userName
                 myDialog.setContentView(dialogBinding)
                 myDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
                 myDialog.show()

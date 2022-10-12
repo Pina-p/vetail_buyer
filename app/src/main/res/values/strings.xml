@@ -23,7 +23,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-
     <string name="personal_info">ကိုယ်ရေးအချက်အလက်များ</string>
     <string name="phone_num">ဖုန်းနံပါတ်</string>
 
@@ -34,20 +33,10 @@
     အီးမေးလ်ကို အောက်တွင်ဖြည့်စွက်ပါ။</string>
     <string name="checkPhoneNum">ယခုဖုန်းနံပါတ်ဖြင့် ချိတ်ဆက်ထားသောအကောင့်မရှိပါ! ဖုန်းနံပါတ် မှန်မမှန် ပြန်လည်စစ်ဆေးပါ။</string>
 
-    <string-array name="cities">
-        <item>ရန်ကုန် (Yangon)</item>
-        <item>မန္တလေး (Mandalay)</item>
-        <item>နေပြည်တော် (Nay Pyi Taw)</item>
-    </string-array>
-
-    <string-array name="towns">
-        <item>ကမာရွတ် Kamaryut</item>
-        <item>ကြည့်မြင်တိုင် Kyimyindaing</item>
-        <item>အလုံ Ahlone</item>
-    </string-array>
-
     <string name="connect_acc">ချိတ်ဆက်မည်</string>
+
     <string name="profile">မိမိပရိုဖိုင်</string>
+
     <string name="profile_name">Jobby James</string>
     <string name="profile_bio">ကိုယ်ရေး အချက်အလက်များ</string>
     <string name="setting">ဆက်တင်များ</string>
@@ -65,4 +54,14 @@
     <string name="log_out">အကောင့်ထွက်မည်</string>
     <string name="confirm_waiting_card">ကြာမြင့်ချိန်အနည်းဆုံး <b>၅ ရက်</b> မှ <b>၁၀ ရက်</b> အတွင်း</string>
     <string name="signUp">အကောင့်ဝင်မည်</string>
+    <string-array name="cities">
+        <item>ရန်ကုန် (Yangon)</item>
+        <item>မန္တလေး (Mandalay)</item>
+        <item>နေပြည်တော် (Nay Pyi Taw)</item>
+    </string-array>
+    <string-array name="towns">
+        <item>ကမာရွတ် Kamaryut</item>
+        <item>ကြည့်မြင်တိုင် Kyimyindaing</item>
+        <item>အလုံ Ahlone</item>
+    </string-array>
 </resources>

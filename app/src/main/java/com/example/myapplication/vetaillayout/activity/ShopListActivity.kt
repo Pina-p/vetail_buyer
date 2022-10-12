@@ -87,7 +87,7 @@ class ShopListActivity : AppCompatActivity() {
         tempShopItemList.add(
             ShopListItems(
                 "Special Nike Air 270 new 2022",
-                "350,000Pts",
+                "350,000",
                 imageListOne,
                 "Hello",
                 true,
@@ -97,7 +97,7 @@ class ShopListActivity : AppCompatActivity() {
         tempShopItemList.add(
             ShopListItems(
                 "Image 2",
-                "350,00Pts",
+                "350,00",
                 imageList3,
                 "walla walla bing bong",
                 false,
@@ -107,7 +107,7 @@ class ShopListActivity : AppCompatActivity() {
         tempShopItemList.add(
             ShopListItems(
                 "Nike",
-                "3,500Pts",
+                "3,500",
                 imageList2,
                 "Hello",
                 false,
@@ -117,7 +117,7 @@ class ShopListActivity : AppCompatActivity() {
         tempShopItemList.add(
             ShopListItems(
                 "Temp 270 new 2022",
-                "45,000Pts",
+                "45,000",
                 imageList1,
                 "Hello",
                 false,
@@ -128,7 +128,7 @@ class ShopListActivity : AppCompatActivity() {
         tempShopItemList1.add(
             ShopListItems(
                 "270 new 2022",
-                "5,000Pts",
+                "5,000",
                 imageList2,
                 "Hello",
                 true,
@@ -138,7 +138,7 @@ class ShopListActivity : AppCompatActivity() {
         tempShopItemList1.add(
             ShopListItems(
                 "Nike Air 270 new 2022",
-                "350,000Pts",
+                "350,000",
                 imageList1,
                 "Hello",
                 true,
@@ -148,7 +148,7 @@ class ShopListActivity : AppCompatActivity() {
         tempShopItemList1.add(
             ShopListItems(
                 "Temp Data",
-                "30,000Pts",
+                "30,000",
                 imageList2,
                 "Hello",
                 true,
@@ -158,7 +158,7 @@ class ShopListActivity : AppCompatActivity() {
         tempShopItemList1.add(
             ShopListItems(
                 "Nike Air 270 new 2022",
-                "350,000Pts",
+                "350,000",
                 imageListOne,
                 "Hello",
                 true,
@@ -168,7 +168,7 @@ class ShopListActivity : AppCompatActivity() {
         tempShopItemList1.add(
             ShopListItems(
                 "Nike Air 270 new 2022",
-                "350,000Pts",
+                "350,000",
                 imageList3,
                 "Hello",
                 true,
@@ -178,7 +178,7 @@ class ShopListActivity : AppCompatActivity() {
         tempShopItemList2.add(
             ShopListItems(
                 "Nike Air 270 new 2022",
-                "350,000Pts",
+                "350,000",
                 imageListOne,
                 "Hello",
                 true,
@@ -188,7 +188,7 @@ class ShopListActivity : AppCompatActivity() {
         tempShopItemList2.add(
             ShopListItems(
                 "Nike Air 270 new 2022",
-                "350,000Pts",
+                "350,000",
                 imageListOne,
                 "Hello",
                 true,
@@ -203,7 +203,7 @@ class ShopListActivity : AppCompatActivity() {
             ShopList(
                 R.drawable.shop_ruby,
                 "Ruby Energy Lashio",
-                "35,000 Pts",
+                "35,000",
                 tempShopItemList
             )
         )
@@ -211,7 +211,7 @@ class ShopListActivity : AppCompatActivity() {
             ShopList(
                 R.drawable.logo_nike,
                 "Nike Myanmar",
-                "3,000 Pts",
+                "3,000",
                 tempShopItemList1
             )
         )
@@ -219,7 +219,7 @@ class ShopListActivity : AppCompatActivity() {
             ShopList(
                 R.drawable.logo_citymart,
                 "City Mart",
-                "20,000 Pts",
+                "20,000",
                 tempShopItemList2
             )
         )

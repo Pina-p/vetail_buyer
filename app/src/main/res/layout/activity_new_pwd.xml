@@ -27,8 +27,9 @@
         android:layout_height="wrap_content"
         android:text="စကားဝှက် အသစ်ထည့်မည်"
         android:textColor="@color/black"
-        android:textSize="26sp"
-        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
         android:padding="5dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tbSignUpFinish"/>
@@ -37,6 +38,8 @@
         android:id="@+id/tvSuggest"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="15dp"
         android:text="သင့် စကားဝှက်အသစ်ကို မှတ်မိလွယ်ပြီး အလွယ်တကူ\nမခိုးယူနိုင်သော စကားဝှက်မျိုးထားရှိရန် အကြုံပြုအပ်ပါသည်။"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -51,11 +54,9 @@
         android:layout_marginTop="16dp"
         app:startIconTint="@color/black"
         app:startIconDrawable="@drawable/ic_lock_24"
-        android:layout_marginHorizontal="16dp"
-
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginHorizontal="15dp"
+        style="@style/LoginTextInputLayoutStyle"
         app:layout_constraintTop_toBottomOf="@id/tvSuggest"
-        app:boxStrokeColor="@color/blueOne"
         app:hintTextColor="@color/blueOne"
         app:passwordToggleEnabled="true"
         app:boxCornerRadiusBottomEnd="10dp"
@@ -71,7 +72,7 @@
             android:hint="စကားဝှက်အသစ်"
             android:textColorHint="@color/iconTextColor"
             android:maxLength="11"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:cursorVisible="true"
             android:textCursorDrawable="@null"
             />
@@ -84,10 +85,9 @@
         android:layout_marginTop="16dp"
         app:startIconTint="@color/black"
         app:startIconDrawable="@drawable/ic_lock_24"
-        android:layout_marginHorizontal="16dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginHorizontal="15dp"
+        style="@style/LoginTextInputLayoutStyle"
         app:layout_constraintTop_toBottomOf="@id/tilNewPwd"
-        app:boxStrokeColor="@color/blueOne"
         app:hintTextColor="@color/blueOne"
         app:passwordToggleEnabled="true"
         app:boxCornerRadiusBottomEnd="10dp"
@@ -103,11 +103,13 @@
             android:hint="စကားဝှက်အသစ် ထပ်မံထည့်ပါ"
             android:textColorHint="@color/iconTextColor"
             android:maxLength="11"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:cursorVisible="true"
             android:textCursorDrawable="@null"
             />
     </com.google.android.material.textfield.TextInputLayout>
+
+
 
     <LinearLayout
         android:id="@+id/llErrorLayout"
@@ -132,12 +134,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center|left"
             android:layout_marginTop="10dp">
             <ImageView
                 android:id="@+id/ivPwCheckSixDigit"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="5dp"
                 android:src="@drawable/ic_union"/>
             <TextView
                 android:id="@+id/tvPwCheckSixDigit"
@@ -154,12 +156,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center|left"
             android:layout_marginTop="10dp">
             <ImageView
                 android:id="@+id/ivPwCheckOneAlpha"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="5dp"
                 android:src="@drawable/ic_union"/>
             <TextView
                 android:id="@+id/tvPwCheckOneAlpha"
@@ -175,12 +177,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center|left"
             android:layout_marginTop="10dp">
             <ImageView
                 android:id="@+id/ivPwCheckOneNum"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="5dp"
                 android:src="@drawable/ic_union"/>
             <TextView
                 android:id="@+id/tvPwCheckOneNum"
@@ -201,10 +203,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/signUp"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textColor="@color/white"
         android:textAllCaps="false"
         android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="15dp"
         android:background="@drawable/custom_button_invisibile_blue"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

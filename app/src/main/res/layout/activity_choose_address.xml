@@ -28,7 +28,7 @@
         android:text="လိပ်စာရွေးချယ်ပါ"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:textSize="24sp"
+        android:textSize="26sp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -37,7 +37,6 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvAddress"
         tools:listitem="@layout/address_item"
-
         tools:itemCount="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

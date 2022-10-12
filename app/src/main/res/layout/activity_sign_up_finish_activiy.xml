@@ -28,8 +28,8 @@
         android:layout_marginHorizontal="25dp">
         <ImageView
             android:id="@+id/ivVetailIcon"
-            android:layout_width="150dp"
-            android:layout_height="55dp"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
             android:layout_gravity="left"
             android:src="@drawable/ic_vetail_blue"/>
         <TextView
@@ -37,8 +37,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ကြိုဆိုပါတယ်"
+            android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="25sp"
+            android:textSize="24sp"
             android:layout_marginTop="25dp"/>
         <TextView
             android:id="@+id/tvWelcomeTextMini"
@@ -46,7 +47,8 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:gravity="left"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#7c7c7c"
             android:text="သင့်ရဲ့စတိုးဆိုင်ကို ပိုမိုကောင်းမွန်တဲ့ \nအွန်လိုင်းစတိုးဆိုင် အဖြစ် အလွယ်ကူပြေင်းလဲနိုင်ဖို့အတွက် Vetail မှကူညီရန်အသင့်ရှိပါတယ်"/>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -160,12 +162,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center|left"
             android:layout_marginTop="10dp">
             <ImageView
                 android:id="@+id/ivPwCheckSixDigit"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="5dp"
                 android:src="@drawable/ic_union"/>
             <TextView
                 android:id="@+id/tvPwCheckSixDigit"
@@ -173,6 +175,7 @@
                 android:layout_height="wrap_content"
                 android:text="စကားဝှက်မှာ အနည်းဆုံး ၆ လုံးရှိရမည်။"
                 android:textSize="14sp"
+                android:textColor="#929292"
                 android:layout_marginLeft="5dp"
                 />
         </LinearLayout>
@@ -181,17 +184,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center|left"
             android:layout_marginTop="10dp">
             <ImageView
                 android:id="@+id/ivPwCheckOneAlpha"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="5dp"
                 android:src="@drawable/ic_union"/>
             <TextView
                 android:id="@+id/tvPwCheckOneAlpha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#929292"
                 android:text="စကားဝှက်မှာ အနည်းဆုံး အင်္ဂလိပ်အက္ခရာ ၁ လုံးပါရမည်။"
                 android:textSize="14sp"
                 android:layout_marginLeft="5dp"
@@ -201,17 +205,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center|left"
             android:layout_marginTop="10dp">
             <ImageView
                 android:id="@+id/ivPwCheckOneNum"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="5dp"
                 android:src="@drawable/ic_union"/>
             <TextView
                 android:id="@+id/tvPwCheckOneNum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#929292"
                 android:text="စကားဝှက်မှာ အနည်းဆုံး ဂဏန်းနံပါတ် ၁ လုံးပါရမည်။"
                 android:textSize="14sp"
                 android:layout_marginLeft="5dp"
@@ -222,7 +227,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/signUp"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="@color/white"
                 android:textAllCaps="false"
                 android:layout_marginTop="15dp"

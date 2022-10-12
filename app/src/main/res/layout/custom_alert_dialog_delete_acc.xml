@@ -44,16 +44,28 @@
                 android:id="@+id/tvUserName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jobby James\nအကောင့်ကို ဖယ်ရှားမည်"
+                android:text="Jobby James"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="16sp"
-                android:textAlignment="center"
+                android:fontFamily="@font/interfont"
                 android:layout_marginTop="10dp"
+                android:textAlignment="center"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/ivUserProfile"/>
-
+            <TextView
+                android:id="@+id/tvRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="အကောင့်ကို ဖယ်ရှားမည်"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/interfont"
+                android:textAlignment="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvUserName"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnDo"
@@ -66,7 +78,7 @@
                 android:backgroundTint="@color/red"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvUserName"/>
+                app:layout_constraintTop_toBottomOf="@id/tvRemove"/>
 
             <TextView
                 android:id="@+id/tvCancel"

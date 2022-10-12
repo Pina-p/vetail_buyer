@@ -5,6 +5,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
+import coil.transform.RoundedCornersTransformation
 import com.example.myapplication.vetaillayout.R
 import com.example.myapplication.vetaillayout.databinding.ItemImageRvBinding
 
@@ -13,7 +15,8 @@ class ShopListItemsDetailRVAdapter(val imgList: List<Int>) :
     inner class ImageListHolder(private val binding: ItemImageRvBinding) :
         RecyclerView.ViewHolder(binding.root){
             fun bind(imgList:Int){
-                binding.ivImage.setImageResource(imgList)
+                binding.ivImage.load(imgList)
+                //binding.ivImage.setImageResource(imgList)
             }
         }
 

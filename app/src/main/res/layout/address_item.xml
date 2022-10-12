@@ -7,7 +7,7 @@
 
     <RadioButton
         android:id="@+id/rbRadio"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="16dp"
         android:layout_width="35dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"

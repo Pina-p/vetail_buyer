@@ -38,6 +38,7 @@ class ShopListAdapter(val shopList: List<ShopList>) :
         if (position==0){
             holder.itemView.background=ContextCompat.getDrawable(holder.itemView.context,R.color.yellowishYellow)
             holder.itemView.findViewById<TextView>(R.id.tvMyPoints).setTextColor(holder.itemView.resources.getColor(R.color.black))
+            holder.itemView.findViewById<TextView>(R.id.tvPts).setTextColor(holder.itemView.resources.getColor(R.color.black))
             holder.itemView.findViewById<ImageView>(R.id.ivShare).setImageResource(R.drawable.ic_share_icon)
            }
         val rvShopItem=holder.itemView.findViewById<RecyclerView>(R.id.rvShopItems)
