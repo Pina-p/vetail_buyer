@@ -4,13 +4,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.myapplication.vetaillayout.R
+import com.example.myapplication.vetaillayout.fragments.point.FragmentPointHistory
 import com.example.myapplication.vetaillayout.fragments.point.FragmentPoints
 
 class PointFragmentContainer : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_point_fragment_container)
-        replaceFragment(FragmentPoints())
+        //replaceFragment(FragmentPoints())
+        replaceFragment(FragmentPointHistory())
     }
     private fun replaceFragment(fragment: Fragment){
         val fragmentManager = supportFragmentManager

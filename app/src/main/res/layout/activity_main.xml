@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     android:id="@+id/fragment_container"
     tools:context=".activity.MainActivity">
-
+<!--    add new addr & home page-->
     <fragment
-        android:name="com.example.myapplication.vetaillayout.fragments.FragmentHome"
+        android:name="com.example.myapplication.vetaillayout.fragments.FragmentAddNewAddr"
         android:id="@+id/pointFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

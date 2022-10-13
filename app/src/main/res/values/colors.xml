@@ -26,7 +26,7 @@
     <color name="tab_unselected">#96B7FF</color>
     <color name="blackish_grey">#949494</color>
 
-
+    <color name="dark_grey">#a0a0a0</color>
     <color name="icon_color">#929292</color>
 
 </resources>

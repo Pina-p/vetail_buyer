@@ -29,6 +29,7 @@ class HomeShopPointAdapter (val list: List<HomeShopPoint>) :
             binding.tvShopName.text = list.shopName
             binding.tvEarnPoint.text = "earn "+list.point.toString()+" point"
             binding.tvKyat.text = "Ks"+list.amount
+
         }
     }
 

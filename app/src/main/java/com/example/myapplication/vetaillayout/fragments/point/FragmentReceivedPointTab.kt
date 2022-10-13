@@ -1,43 +1,65 @@
-package com.example.myapplication.vetaillayout.fragments.point
+package com.exam.homepage.fragment
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.vetaillayout.R
-import com.example.myapplication.vetaillayout.adapters.ReveivedPointsAdapter
+import com.example.myapplication.vetaillayout.adapters.ReceivedPointAdapter
 import com.example.myapplication.vetaillayout.databinding.FragmentReceivedPointTabBinding
-import com.example.myapplication.vetaillayout.databinding.FragmentReceivedPointsBinding
-import com.example.myapplication.vetaillayout.databinding.PointHistoryBinding
-import com.example.myapplication.vetaillayout.model.ReceivedPoints
+import com.example.myapplication.vetaillayout.model.ReceivedPointData
 
 class FragmentReceivedPointTab : Fragment() {
-    private lateinit var binding: FragmentReceivedPointTabBinding
+    private lateinit var binding : FragmentReceivedPointTabBinding
+    private lateinit var receivedPointAdapter: ReceivedPointAdapter
+    private lateinit var recyclerView : RecyclerView
+    var receivedPointList = ArrayList<ReceivedPointData>()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
+
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentReceivedPointTabBinding.inflate(layoutInflater)
+        // Inflate the layout for this fragment
+        binding = FragmentReceivedPointTabBinding.inflate(layoutInflater,container,false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        addHistoryData()
+        val layoutManager = LinearLayoutManager(context)
+        recyclerView= view.findViewById(R.id.rvReceivedPointHistory)
+        recyclerView.layoutManager=layoutManager
+        recyclerView.setHasFixedSize(true)
+        receivedPointAdapter = ReceivedPointAdapter(receivedPointList)
+        recyclerView.adapter = receivedPointAdapter
 
-
-        val data : ArrayList<ReceivedPoints> = arrayListOf(
-            ReceivedPoints(R.drawable.shop_img1,"Ruby Energy (Lashio)","#090909","လက်ဆောင် ပွိုင့်လေးပါခင်ဗျာ","+1,000","1 Sep 22 04:00 PM"),
-            ReceivedPoints(R.drawable.shop_img1,"Ruby Energy (Lashio)","#GivingCoin","လက်ဆောင် ပွိုင့်လေးပါခင်ဗျာ","+600","28 Aug 22 09:00 PM"),
-            ReceivedPoints(R.drawable.shop_img1,"Ruby Energy (Lashio)","#GivingCoin","လက်ဆောင် ပွိုင့်လေးပါခင်ဗျာ","+10","25 Aug 22 01:23 PM"),
-            ReceivedPoints(R.drawable.shop_img1,"Ruby Energy (Lashio)","#GivingCoin","လက်ဆောင် ပွိုင့်လေးပါခင်ဗျာ","+6","13 Aug 22 07:00 AM"),
-        )
-        binding.rvReceivedPointHistory.apply {
-            setHasFixedSize(true)
-            layoutManager = LinearLayoutManager(view.context)
-            adapter = ReveivedPointsAdapter(data)
-        }
     }
+
+    fun addHistoryData(){
+        receivedPointList.add(
+            ReceivedPointData(
+                R.drawable.logo_ruby,R.color.black,"1 min","Ruby Energy",
+                "+5,000","Aung Soe, Admin ထံမှရရှိပါသည်","","","Order: 8978899",
+                "50,000 Ks","အင်ဂျင်ဝိုင် ဝယ်ယူသည့်အတွက် လက်ဆောင်ပွိုင့်လေးရပါတယ်ခင်ဗျ")
+        )
+
+        receivedPointList.add(
+            ReceivedPointData(R.drawable.logo_nike,R.color.black,"3 min","Nike",
+                "+120,000","စျေးဝယ်သည့်အတွက်ရရှိပါသည်","","","Order: 8978899",
+                "50,000 Ks","")
+        )
+
+
+    }
+
+
 }

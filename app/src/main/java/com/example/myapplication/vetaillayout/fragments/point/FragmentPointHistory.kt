@@ -5,8 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.exam.homepage.fragment.FragmentExpiredTab
+import com.exam.homepage.fragment.FragmentRankingTab
+import com.exam.homepage.fragment.FragmentReceivedPointTab
+import com.exam.homepage.fragment.FragmentUsedPointTab
 import com.example.myapplication.vetaillayout.adapters.FragmentAdapter
 import com.example.myapplication.vetaillayout.databinding.PointHistoryBinding
+import com.example.myapplication.vetaillayout.fragments.PointHistoryFilterFragment
 
 class FragmentPointHistory : Fragment() {
     private lateinit var binding: PointHistoryBinding
@@ -30,8 +35,17 @@ class FragmentPointHistory : Fragment() {
         fragmentAdapter.addFragment(FragmentExpiredTab(),"သက်တမ်းကုန်သွားသော")
 
         // fragmentAdapter.addFragment(Fragment7(),"??")
-        binding.viewPager.adapter=fragmentAdapter
+        binding.viewPager.adapter= fragmentAdapter
         binding.tabLayout.setupWithViewPager(binding.viewPager)
         //binding.tabLayout.setSelectedTabIndicatorColor(Color. parseColor("#ffffff"))
+
+        binding.ivFilter.setOnClickListener {
+            val pointHistoryFilterFragment = PointHistoryFilterFragment()
+            pointHistoryFilterFragment.show(parentFragmentManager,pointHistoryFilterFragment.TAG)
+        }
+
+        binding.ivBackArrow.setOnClickListener {
+            //onBackPressed()
+        }
     }
 }

@@ -336,7 +336,7 @@
 <!--visibility control-->
     <ImageView
         android:id="@+id/ivAdsVetailShop"
-        android:visibility="visible"
+        android:visibility="gone"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginTop="20dp"
@@ -349,7 +349,7 @@
         android:id="@+id/ivVetailShop"
         android:layout_width="0dp"
         android:layout_height="150dp"
-        android:visibility="gone"
+        android:visibility="visible"
         android:src="@drawable/vetail_shop"
         app:layout_constraintRight_toRightOf="@id/clBluebgLayout"
         app:layout_constraintLeft_toLeftOf="@id/clBluebgLayout"
@@ -357,7 +357,7 @@
 
     <TextView
         android:id="@+id/tvMyShops"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="မိမိ၏ ဆိုင်များ"
@@ -383,7 +383,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:cardCornerRadius="15dp"
         app:cardElevation="0dp"
         app:cardBackgroundColor="#F5F8FF"
