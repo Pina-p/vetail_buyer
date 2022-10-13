@@ -28,9 +28,9 @@ class ShopPointAdapter (val lists: List<ShopPoints>) :
             binding.tvPointNum.text = list.points
             binding.tvShopName.text = list.shopName
 
-            if(adapterPosition == lists.size-1){
-                binding.vView.visibility = View.GONE
-            }
+//            if(adapterPosition == lists.size-1){
+//                binding.vView.visibility = View.GONE
+//            }
         }
 
     }

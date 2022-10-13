@@ -39,6 +39,7 @@
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_point_forward.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_pwd_toggle.xml" value="0.1415" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_qr_blue.xml" value="0.1035" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_qr_code.xml" value="0.143" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_recent.xml" value="0.125" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_search_icon.xml" value="0.1045" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/drawable/ic_share_grey.xml" value="0.1035" />
@@ -87,7 +88,7 @@
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_logout.xml" value="0.2" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_point.xml" value="0.16032608695652173" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_point_history_filter.xml" value="0.25" />
-        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_points.xml" value="0.16032608695652173" />
+        <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_points.xml" value="0.25" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_profile.xml" value="0.16032608695652173" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_ranking_tab.xml" value="0.16032608695652173" />
         <entry key="..\:/Androidbooster/vetail_layout/app/src/main/res/layout/fragment_received_point_tab.xml" value="0.16032608695652173" />

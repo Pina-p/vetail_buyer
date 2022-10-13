@@ -5,10 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.exam.homepage.fragment.FragmentExpiredTab
 import com.exam.homepage.fragment.FragmentRankingTab
 import com.exam.homepage.fragment.FragmentReceivedPointTab
 import com.exam.homepage.fragment.FragmentUsedPointTab
+import com.example.myapplication.vetaillayout.R
 import com.example.myapplication.vetaillayout.adapters.FragmentAdapter
 import com.example.myapplication.vetaillayout.databinding.PointHistoryBinding
 import com.example.myapplication.vetaillayout.fragments.PointHistoryFilterFragment
@@ -45,7 +47,13 @@ class FragmentPointHistory : Fragment() {
         }
 
         binding.ivBackArrow.setOnClickListener {
-            //onBackPressed()
+            activity?.supportFragmentManager?.popBackStack()
         }
+    }
+    private fun replaceFragment(fragment: Fragment){
+        val fragmentManager = parentFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fragment_container,fragment)
+        fragmentTransaction.commit()
     }
 }

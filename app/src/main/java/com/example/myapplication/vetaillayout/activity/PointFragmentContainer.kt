@@ -11,8 +11,8 @@ class PointFragmentContainer : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_point_fragment_container)
-        //replaceFragment(FragmentPoints())
-        replaceFragment(FragmentPointHistory())
+        replaceFragment(FragmentPoints())
+        //replaceFragment(FragmentPointHistory())
     }
     private fun replaceFragment(fragment: Fragment){
         val fragmentManager = supportFragmentManager

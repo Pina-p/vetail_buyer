@@ -74,6 +74,7 @@ class PointHistoryFilterFragment : BottomSheetDialogFragment(),AdapterView.OnIte
 
         val shopAdapter = ShopAutoFillAdapter(requireActivity(),R.layout.dropdown_shop,shops)
         binding.autoComplete.setAdapter(shopAdapter)
+
 //        productList.add(ProductData(0,R.color.background,"","Mixed Fruit","SKU 348585"))
 //        productList.add(ProductData(1,R.color.background,"ဆုလက်ဆောင်","Fruit I don't know","SKU 348585"))
 //        productList.add(ProductData(2,R.color.background,"","Sunkit","SKU 348585"))
@@ -137,7 +138,7 @@ class PointHistoryFilterFragment : BottomSheetDialogFragment(),AdapterView.OnIte
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
 
         when (view?.id) {
-            1 -> binding.materialSpinner.setStartIconDrawable(R.drawable.ic_cancel_filter)
+            1 -> binding.materialSpinner.setEndIconDrawable(R.drawable.ic_cancel_filter)
             0 -> Log.d(TAG, "onItemSelected: working")
             else -> {
 

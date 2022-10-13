@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.vetaillayout.databinding.MemberPointHistoryCardBinding
+import com.example.myapplication.vetaillayout.model.UsedPointData
 
 class UsedPointAdapter(
     var usedPointList : ArrayList<UsedPointData>
