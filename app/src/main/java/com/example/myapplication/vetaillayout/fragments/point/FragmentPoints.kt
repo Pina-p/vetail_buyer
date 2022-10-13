@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.vetaillayout.R
 import com.example.myapplication.vetaillayout.adapters.ShopPointAdapter
@@ -18,10 +19,12 @@ class FragmentPoints : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        binding = FragmentPointsBinding.inflate(layoutInflater)
+    ): View {
+        binding = FragmentPointsBinding.inflate(layoutInflater,container,false)
         return binding.root
     }
+
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -38,11 +41,15 @@ class FragmentPoints : Fragment() {
             adapter = ShopPointAdapter(data)
         }
         binding.btnPointHistory.setOnClickListener {
-            val fragmentManager = parentFragmentManager
-            val fragmentTransaction = fragmentManager.beginTransaction()
-            fragmentTransaction.addToBackStack("ni")
-            fragmentTransaction.add(R.id.fragment_container,FragmentPointHistory())
-            fragmentTransaction.commit()
+            findNavController().navigate(R.id.action_point_history_fragment)
+
+//            val fragmentManager = parentFragmentManager
+//            val fragmentTransaction = fragmentManager.beginTransaction()
+//            //fragmentTransaction.addToBackStack("ni").commit()
+//            fragmentTransaction.replace(R.id.fragment_container,FragmentPointHistory())
+//            //fragmentTransaction.add(R.id.fragment_container,FragmentPointHistory())
+//
+//            fragmentTransaction.commit()
         }
     }
 

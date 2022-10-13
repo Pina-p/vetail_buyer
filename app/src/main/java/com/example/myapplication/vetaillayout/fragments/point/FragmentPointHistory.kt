@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import androidx.navigation.fragment.findNavController
 import com.exam.homepage.fragment.FragmentExpiredTab
 import com.exam.homepage.fragment.FragmentRankingTab
 import com.exam.homepage.fragment.FragmentReceivedPointTab
@@ -21,8 +22,8 @@ class FragmentPointHistory : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        binding = PointHistoryBinding.inflate(layoutInflater)
+    ): View {
+        binding = PointHistoryBinding.inflate(layoutInflater,container,false)
         return binding.root
     }
 
@@ -47,7 +48,8 @@ class FragmentPointHistory : Fragment() {
         }
 
         binding.ivBackArrow.setOnClickListener {
-            activity?.supportFragmentManager?.popBackStack()
+            findNavController().navigateUp()
+//            activity?.supportFragmentManager?.popBackStackImmediate()
         }
     }
     private fun replaceFragment(fragment: Fragment){

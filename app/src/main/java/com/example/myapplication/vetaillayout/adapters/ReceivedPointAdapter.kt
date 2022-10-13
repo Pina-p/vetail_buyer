@@ -1,5 +1,6 @@
 package com.example.myapplication.vetaillayout.adapters
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible
@@ -57,6 +58,7 @@ class ReceivedPointAdapter(
 
     override fun onBindViewHolder(holder: ReceivedPointHolder, position: Int) {
         holder.bind(receivedPointList[position])
+        Log.d("OOOOOOOOO", "onBindViewHolder: $receivedPointList")
     }
 
     override fun getItemCount(): Int {
