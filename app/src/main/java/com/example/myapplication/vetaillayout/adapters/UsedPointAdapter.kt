@@ -2,6 +2,7 @@ package com.example.myapplication.vetaillayout.adapters
 
 import android.graphics.Color
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
@@ -9,10 +10,16 @@ import com.example.myapplication.vetaillayout.databinding.MemberPointHistoryCard
 import com.example.myapplication.vetaillayout.model.UsedPointData
 
 class UsedPointAdapter(
-    var usedPointList : ArrayList<UsedPointData>
+    var usedPointList : ArrayList<UsedPointData>,
+    var aName : String
 ) : RecyclerView.Adapter<UsedPointAdapter.UsedPointHolder>() {
     inner class UsedPointHolder(private val binding : MemberPointHistoryCardBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(usedPointList : UsedPointData){
+            if(aName.equals("shopDetailPoint")){
+                binding.civSubProfile.visibility = View.GONE
+            }else{
+                binding.civSubProfile.visibility = View.VISIBLE
+            }
             binding.civProfile.setImageResource(usedPointList.profile)
             binding.civSubProfile.setImageResource(usedPointList.subProfile)
             binding.tvTime.text=usedPointList.time

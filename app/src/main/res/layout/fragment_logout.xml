@@ -37,6 +37,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
+        android:textColor="#4c4c4c"
         android:text="သင့်ရဲ့စတိုးဆိုင်ကို ပိုမိုကောင်းမွန်တဲ့ အွန်လိုင်းစတိုးဆိုင် အဖြစ် အလွယ်တကူပြောင်းလဲနိုင်ဖို့အတွက် Vetail မှကူညီရန်အသင့်ရှိပါတယ်"
         app:layout_constraintTop_toBottomOf="@id/tvWelcomeText"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -70,7 +71,7 @@
         android:layout_height="wrap_content"
         android:text="အခြားအကောင့်ဝင်မည်"
         android:layout_marginStart="10dp"
-        android:textColor="@color/blueFont"
+        android:textColor="@color/blueOne"
         app:layout_constraintLeft_toRightOf="@id/ivPlus"
         app:layout_constraintBottom_toBottomOf="@id/ivPlus"
         app:layout_constraintTop_toTopOf="@id/ivPlus"/>

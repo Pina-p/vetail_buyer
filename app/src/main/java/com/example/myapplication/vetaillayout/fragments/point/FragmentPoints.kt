@@ -1,5 +1,6 @@
 package com.example.myapplication.vetaillayout.fragments.point
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.vetaillayout.R
+import com.example.myapplication.vetaillayout.activity.PointHistoryActivity
 import com.example.myapplication.vetaillayout.adapters.ShopPointAdapter
 import com.example.myapplication.vetaillayout.databinding.FragmentPointsBinding
 import com.example.myapplication.vetaillayout.model.ShopPoints
@@ -41,7 +43,9 @@ class FragmentPoints : Fragment() {
             adapter = ShopPointAdapter(data)
         }
         binding.btnPointHistory.setOnClickListener {
-            findNavController().navigate(R.id.action_point_history_fragment)
+            Intent(context,PointHistoryActivity::class.java).also {
+                startActivity(it)
+            }
 
 //            val fragmentManager = parentFragmentManager
 //            val fragmentTransaction = fragmentManager.beginTransaction()

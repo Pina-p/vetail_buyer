@@ -2,6 +2,7 @@ package com.example.myapplication.vetaillayout.adapters
 
 import android.graphics.Color
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
@@ -9,10 +10,16 @@ import com.example.myapplication.vetaillayout.databinding.MemberPointHistoryCard
 import com.example.myapplication.vetaillayout.model.ExpiredPointData
 
 class ExpiredPointAdapter(
-    var expiredPointList : ArrayList<ExpiredPointData>
+    var expiredPointList : ArrayList<ExpiredPointData>,
+    var aName:String
 ) : RecyclerView.Adapter<ExpiredPointAdapter.ExpiredPointHolder>() {
     inner class ExpiredPointHolder(private val binding : MemberPointHistoryCardBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(expiredPointList : ExpiredPointData){
+            if(aName.equals("shopDetailPoint")){
+                binding.civSubProfile.visibility = View.GONE
+            }else{
+                binding.civSubProfile.visibility = View.VISIBLE
+            }
             binding.civProfile.setImageResource(expiredPointList.profile)
             binding.civSubProfile.setImageResource(expiredPointList.subProfile)
             binding.tvTime.text=expiredPointList.time

@@ -1,6 +1,7 @@
 package com.example.myapplication.vetaillayout.adapters
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
@@ -8,10 +9,16 @@ import com.example.myapplication.vetaillayout.databinding.MemberPointHistoryCard
 import com.example.myapplication.vetaillayout.model.LevelChangedData
 
 class RankChangedAdapter(
-    var levelChangedList : ArrayList<LevelChangedData>
+    var levelChangedList : ArrayList<LevelChangedData>,
+    var aName : String
 ) : RecyclerView.Adapter<RankChangedAdapter.LevelChangedHolder>() {
     inner class LevelChangedHolder(private val binding : MemberPointHistoryCardBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(levelChangedList : LevelChangedData){
+            if(aName.equals("shopDetailPoint")){
+                binding.civSubProfile.visibility = View.GONE
+            }else{
+                binding.civSubProfile.visibility = View.VISIBLE
+            }
             binding.civProfile.setImageResource(levelChangedList.profile)
             binding.civSubProfile.setImageResource(levelChangedList.subProfile)
             binding.tvTime.text=levelChangedList.time

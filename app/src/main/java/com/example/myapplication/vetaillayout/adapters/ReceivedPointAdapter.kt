@@ -2,6 +2,7 @@ package com.example.myapplication.vetaillayout.adapters
 
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
@@ -9,10 +10,16 @@ import com.example.myapplication.vetaillayout.databinding.MemberPointHistoryCard
 import com.example.myapplication.vetaillayout.model.ReceivedPointData
 
 class ReceivedPointAdapter(
-    var receivedPointList : ArrayList<ReceivedPointData>
+    var receivedPointList : ArrayList<ReceivedPointData>,
+    var aName : String
 ) : RecyclerView.Adapter<ReceivedPointAdapter.ReceivedPointHolder>() {
     inner class ReceivedPointHolder(private val binding : MemberPointHistoryCardBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(receivedPointList : ReceivedPointData){
+            if(aName.equals("shopDetailPoint")){
+                binding.civSubProfile.visibility = View.GONE
+            }else{
+                binding.civSubProfile.visibility = View.VISIBLE
+            }
             binding.civProfile.setImageResource(receivedPointList.profile)
             binding.civSubProfile.setImageResource(receivedPointList.subProfile)
             binding.tvTime.text=receivedPointList.time
@@ -20,7 +27,7 @@ class ReceivedPointAdapter(
             binding.tvPoints.text = receivedPointList.point
             binding.tvMessage.text = receivedPointList.message
             if (receivedPointList.changedLevel==""){
-                binding.tvLevelChange.isVisible=false
+                binding.tvLevelChange.isVisible= false
             }else{
                 binding.tvLevelChange.text = receivedPointList.changedLevel
             }

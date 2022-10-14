@@ -1,6 +1,7 @@
 package com.example.myapplication.vetaillayout.adapters
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.content.res.Resources
 import android.graphics.Color
 import android.os.Build
@@ -14,6 +15,8 @@ import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.graphics.drawable.DrawableCompat
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.example.myapplication.vetaillayout.activity.ShopDetailPointHistory
+import com.example.myapplication.vetaillayout.databinding.ActivityShopDetailPointHistoryBinding
 import com.example.myapplication.vetaillayout.databinding.AddressItemBinding
 import com.example.myapplication.vetaillayout.databinding.ShopPointItemsBinding
 import com.example.myapplication.vetaillayout.model.Address
@@ -43,6 +46,11 @@ class ShopPointAdapter (val lists: List<ShopPoints>) :
 
         override fun onBindViewHolder(holder: ShopPointHolder, position: Int) {
             holder.bind(lists[position])
+            holder.itemView.setOnClickListener {
+                var intent = Intent(holder.itemView.context,ShopDetailPointHistory::class.java)
+                intent.putExtra("shopName",lists[position].shopName)
+                holder.itemView.context.startActivity(intent)
+            }
         }
 
         override fun getItemCount(): Int {

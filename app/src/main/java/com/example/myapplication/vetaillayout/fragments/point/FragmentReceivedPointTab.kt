@@ -19,6 +19,18 @@ class FragmentReceivedPointTab : Fragment() {
     private lateinit var receivedPointAdapter: ReceivedPointAdapter
     private lateinit var recyclerView : RecyclerView
 
+
+    companion object{
+        var activityName = ""
+        fun newInstance(a: String): FragmentReceivedPointTab{
+            var args = Bundle()
+            val fragment = FragmentReceivedPointTab()
+            fragment.arguments = args
+            activityName = a
+            return fragment
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -35,15 +47,23 @@ class FragmentReceivedPointTab : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val layoutManager = LinearLayoutManager(context)
-
-        val data : ArrayList<ReceivedPointData> = arrayListOf(
+        val dataShopDetail : ArrayList<ReceivedPointData> = arrayListOf(
             ReceivedPointData(
-                R.drawable.logo_ruby,R.color.black,"1 min","Ruby Energy",
+                R.drawable.ic_admin_point,0,"1 min","Ruby Energy",
                 "+5,000","Aung Soe, Admin ထံမှရရှိပါသည်","","","Order: 8978899",
                 "50,000 Ks","အင်ဂျင်ဝိုင် ဝယ်ယူသည့်အတွက် လက်ဆောင်ပွိုင့်လေးရပါတယ်ခင်ဗျ"),
             ReceivedPointData(
-                R.drawable.logo_ruby,R.color.black,"1 min","Ruby Energy",
+                R.drawable.ic_buy_point,0,"1 min","Ruby Energy",
+                "+5,000","Aung Soe, Admin ထံမှရရှိပါသည်","","","Order: 8978899",
+                "50,000 Ks","အင်ဂျင်ဝိုင် ဝယ်ယူသည့်အတွက် လက်ဆောင်ပွိုင့်လေးရပါတယ်ခင်ဗျ"),
+        )
+        val data : ArrayList<ReceivedPointData> = arrayListOf(
+            ReceivedPointData(
+                R.drawable.logo_ruby,R.drawable.ic_admin_point,"1 min","Ruby Energy",
+                "+5,000","Aung Soe, Admin ထံမှရရှိပါသည်","","","Order: 8978899",
+                "50,000 Ks","အင်ဂျင်ဝိုင် ဝယ်ယူသည့်အတွက် လက်ဆောင်ပွိုင့်လေးရပါတယ်ခင်ဗျ"),
+            ReceivedPointData(
+                R.drawable.logo_ruby,R.drawable.ic_buy_point,"1 min","Ruby Energy",
                 "+5,000","Aung Soe, Admin ထံမှရရှိပါသည်","","","Order: 8978899",
                 "50,000 Ks","အင်ဂျင်ဝိုင် ဝယ်ယူသည့်အတွက် လက်ဆောင်ပွိုင့်လေးရပါတယ်ခင်ဗျ"),
             ReceivedPointData(
@@ -51,15 +71,42 @@ class FragmentReceivedPointTab : Fragment() {
                 "+5,000","Aung Soe, Admin ထံမှရရှိပါသည်","","","Order: 8978899",
                 "50,000 Ks","အင်ဂျင်ဝိုင် ဝယ်ယူသည့်အတွက် လက်ဆောင်ပွိုင့်လေးရပါတယ်ခင်ဗျ")
         )
-        recyclerView= binding.rvReceivedPointHistory // view.findViewById(R.id.rvReceivedPointHistory)
-        recyclerView.layoutManager=layoutManager
-        recyclerView.setHasFixedSize(true)
-        receivedPointAdapter = ReceivedPointAdapter(data)
-        recyclerView.adapter = receivedPointAdapter
+        if(activityName == "shopDetailPoint"){
+            binding.rvReceivedPointHistory.apply{
+                setHasFixedSize(true)
+                layoutManager = LinearLayoutManager(activity)
+                adapter = ReceivedPointAdapter(dataShopDetail, activityName)
+            }
+        }else{
+            binding.rvReceivedPointHistory.apply {
+                setHasFixedSize(true)
+                layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
+                receivedPointAdapter = ReceivedPointAdapter(data, activityName)
+                adapter = receivedPointAdapter
+                receivedPointAdapter.notifyDataSetChanged()
+            }
+        }
+
+//        recyclerView= binding.rvReceivedPointHistory // view.findViewById(R.id.rvReceivedPointHistory)
+//        recyclerView.layoutManager=layoutManager
+//        recyclerView.setHasFixedSize(true)
+//        receivedPointAdapter = ReceivedPointAdapter(data)
+//        recyclerView.adapter = receivedPointAdapter
+
+
         Log.d("OOOOOOOO", "onViewCreated: $data")
 
     }
 
-
+//    override fun onResume() {
+//        super.onResume()
+//        binding.rvReceivedPointHistory.apply {
+//            setHasFixedSize(true)
+//            layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
+//            receivedPointAdapter = ReceivedPointAdapter(data)
+//            adapter = receivedPointAdapter
+//            receivedPointAdapter.notifyDataSetChanged()
+//        }
+//    }
 
 }
