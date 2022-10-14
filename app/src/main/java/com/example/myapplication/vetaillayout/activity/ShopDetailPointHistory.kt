@@ -1,5 +1,6 @@
 package com.example.myapplication.vetaillayout.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.exam.homepage.fragment.FragmentExpiredTab
@@ -26,5 +27,10 @@ class ShopDetailPointHistory : AppCompatActivity() {
         // fragmentAdapter.addFragment(Fragment7(),"??")
         binding.viewPager.adapter= fragmentAdapter
         binding.tabLayout.setupWithViewPager(binding.viewPager)
+
+        binding.ibForwardArrow.setOnClickListener{
+            var intent = Intent(this,PointRecapActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

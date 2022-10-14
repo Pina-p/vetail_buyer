@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PointRecapActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbPointRecap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="156dp">
+
+        <ImageView
+            android:id="@+id/ivCloseButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_close" />
+
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:id="@+id/ivPointRecap"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbPointRecap"/>
+    <ImageView
+        android:id="@+id/ivShopLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/logo_ruby"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivPointRecap"/>
+    <TextView
+        android:id="@+id/tvShopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ruby Energy (Lashio)"
+        android:textStyle="bold"
+        android:fontFamily="@font/interfont"
+        android:textSize="16sp"
+        android:textColor="@color/black_text"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/ivShopLogo"
+        app:layout_constraintBottom_toBottomOf="@id/ivShopLogo"
+        app:layout_constraintTop_toTopOf="@id/ivShopLogo"/>
+
+    <TextView
+        android:id="@+id/tvTotalPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="မိမိရရှိခဲ့သောပွိုင့်အရေအတွက် စုစုပေါင်း"
+        android:fontFamily="@font/interfont"
+        android:textSize="16sp"
+        android:textColor="@color/grey_text"
+        
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/ivShopLogo"
+        app:layout_constraintLeft_toLeftOf="@id/ivShopLogo"/>
+    <TextView
+        android:id="@+id/tvTotalPointsNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="540,000"
+        android:fontFamily="@font/interfont"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="@id/ivShopLogo"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalPoints"/>
+    <TextView
+        android:id="@+id/tvPoints1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points"
+        android:textSize="16sp"
+        android:fontFamily="@font/interfont"
+        android:textColor="@color/yellow"
+        
+        app:layout_constraintLeft_toRightOf="@id/tvTotalPointsNum"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotalPointsNum" />
+
+    <TextView
+        android:id="@+id/tvTotalUsedPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="မိမိအသုံးပြုခဲ့သောပွိုင့်အရေအတွက် စုစုပေါင်း"
+        android:textSize="16sp"
+        android:fontFamily="@font/interfont"
+        android:textColor="@color/black_text"
+        
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/ivShopLogo"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalPointsNum"/>
+    <TextView
+        android:id="@+id/tvTotalUsedPointNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="65,000"
+        android:textSize="22sp"
+        android:fontFamily="@font/interfont"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="@id/ivShopLogo"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalUsedPoint"/>
+    <TextView
+        android:id="@+id/tvPoints2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/interfont"
+        android:text="Points"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        
+        app:layout_constraintLeft_toRightOf="@id/tvTotalUsedPointNum"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotalUsedPointNum" />
+    <TextView
+        android:id="@+id/tvToReceivePoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="မိမိရရှိရန်ကျန်သောပွိုင့်အရေအတွက် စုစုပေါင်း"
+        android:textSize="16sp"
+        android:textColor="@color/black_text"
+        android:fontFamily="@font/interfont"
+        
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/ivShopLogo"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalUsedPointNum"/>
+    <TextView
+        android:id="@+id/tvToReceivePointNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="32,000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/interfont"
+        android:textColor="@color/yellow"
+        
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="@id/ivShopLogo"
+        app:layout_constraintTop_toBottomOf="@id/tvToReceivePoint"/>
+    <TextView
+        android:id="@+id/tvPoints3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:fontFamily="@font/interfont"
+        app:layout_constraintLeft_toRightOf="@id/tvToReceivePointNum"
+        app:layout_constraintBottom_toBottomOf="@id/tvToReceivePointNum" />
+    <TextView
+        android:id="@+id/tvHighestRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="မိမိရောက်ခဲ့ဖူးသော အမြင့်ဆုံးမန်ဘာအဆင့်"
+        android:textSize="16sp"
+        android:textColor="@color/black_text"
+        android:fontFamily="@font/interfont"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/ivShopLogo"
+        app:layout_constraintTop_toBottomOf="@id/tvToReceivePointNum"/>
+    <ImageView
+        android:id="@+id/ivMemberRank"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_dollar_star"
+        app:layout_constraintLeft_toLeftOf="@id/ivShopLogo"
+        app:layout_constraintTop_toBottomOf="@id/tvHighestRank"/>
+    <TextView
+        android:id="@+id/tvMemberRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Platinum"
+        android:textColor="@color/black_text"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:fontFamily="@font/interfont"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivMemberRank"
+        app:layout_constraintTop_toTopOf="@id/ivMemberRank"
+        app:layout_constraintLeft_toRightOf="@id/ivMemberRank"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
