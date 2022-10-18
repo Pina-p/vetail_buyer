@@ -1,5 +1,6 @@
 package com.example.myapplication.vetaillayout.adapters
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,6 +20,7 @@ class ShopListItemsAdapter(val shopListItems: List<ShopListItems>, var positionR
             fun bind(itemList:ShopListItems){
                 if (positionRv==0){
                     binding.btnCheck.setBackgroundResource(R.drawable.custom_mini_button_red)
+                    binding.cvCard.setCardBackgroundColor(Color.WHITE)
                 }
 
                 binding.ivItemImage.setImageResource(itemList.itemImage[0])

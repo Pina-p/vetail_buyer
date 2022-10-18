@@ -25,7 +25,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:text="ဆိုင်များ"
                 android:textStyle="bold"
-                android:textSize="24sp"
+                android:textSize="26sp"
                 android:textColor="@color/black"/>
             <ImageView
                 android:id="@+id/ivScannerIcon"
@@ -35,7 +35,7 @@
                 app:layout_constraintTop_toTopOf="@id/cvSearchView"
                 app:layout_constraintBottom_toBottomOf="@id/cvSearchView"
                 android:src="@drawable/ic_qr_blue"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="15dp"
                 />
 
 
@@ -63,7 +63,8 @@
                 app:layout_constraintRight_toLeftOf="@id/ivScannerIcon"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="18dp"
+                android:layout_marginEnd="12dp"
+                app:cardElevation="0dp"
                 android:background="@color/white"
                 app:cardCornerRadius="15dp"
                 >
@@ -119,7 +120,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="မရှိတော့ပါ"
+                android:text="ထပ်မရှိတော့ပါ"
                 android:gravity="center"
                 android:textSize="14sp"
                 android:layout_marginVertical="15dp"/>

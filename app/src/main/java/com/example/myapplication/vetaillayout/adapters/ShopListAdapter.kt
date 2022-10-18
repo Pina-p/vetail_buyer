@@ -1,9 +1,11 @@
 package com.example.myapplication.vetaillayout.adapters
 
+import android.graphics.Color
 import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.vetaillayout.R
@@ -37,9 +39,9 @@ class ShopListAdapter(val shopList: List<ShopList>) :
         holder.bind(shopList[position])
         if (position==0){
             holder.itemView.background=ContextCompat.getDrawable(holder.itemView.context,R.color.yellowishYellow)
-            holder.itemView.findViewById<TextView>(R.id.tvMyPoints).setTextColor(holder.itemView.resources.getColor(R.color.black))
-            holder.itemView.findViewById<TextView>(R.id.tvPts).setTextColor(holder.itemView.resources.getColor(R.color.black))
-            holder.itemView.findViewById<ImageView>(R.id.ivShare).setImageResource(R.drawable.ic_share_icon)
+            holder.itemView.findViewById<TextView>(R.id.tvMyPoints).setTextColor(Color.parseColor("#5B4200"))
+            holder.itemView.findViewById<TextView>(R.id.tvPts).setTextColor(Color.parseColor("#5B4200"))
+            holder.itemView.findViewById<ImageView>(R.id.ivShare).setImageResource(R.drawable.ic_share_icon_yellow)
            }
         val rvShopItem=holder.itemView.findViewById<RecyclerView>(R.id.rvShopItems)
         val shopListItemsAdapter=ShopListItemsAdapter(shopList[position].shopListItems,position)

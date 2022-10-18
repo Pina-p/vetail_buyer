@@ -89,6 +89,7 @@ class ShopListSearchActivity : AppCompatActivity() {
                             tempShopList.add(it)
                             binding.llNotFound.visibility= View.GONE
                             binding.svItems.visibility=View.VISIBLE
+                            binding.tvNoMore.visibility = View.VISIBLE
                         }
                     }
                     if (tempShopList.isEmpty()){
