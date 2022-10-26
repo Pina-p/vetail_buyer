@@ -21,7 +21,6 @@ class ShopListBottomSheetFragment(val shopListItem: ShopListItems) : BottomSheet
 
     override fun getTheme(): Int {
 //        Toast.makeText(binding.root.context, "called", Toast.LENGTH_SHORT).show()
-
         return R.style.NoBackGroundDialogTheme
     }
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {

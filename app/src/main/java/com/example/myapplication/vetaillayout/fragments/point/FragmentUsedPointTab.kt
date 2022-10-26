@@ -50,11 +50,11 @@ class FragmentUsedPointTab : Fragment() {
 
         val data : ArrayList<UsedPointData> = arrayListOf(
             UsedPointData(R.drawable.logo_sc,R.drawable.ic_trophy,"13 Aug 22 06:00 AM","Jit Two",
-                "12,000","Wai Wai, Ahlone Branch မှ နှုတ်ယူလိုက်သည်","","","Order: 8978899",
-                "50,000 Ks","အော်ဒါအတွက် ကျသင့်ငွေအစား ပွိုင့်ကို နှုတ်ယူလိုက်ပါပြီ",false),
+                "12,000","ဆုလက်ဆောင် လဲလှယ်လိုက်သည်","","Bangkok Flight 30% off","Order: 8978899",
+                "50,000 Ks"," ကျသင့်ငွေအစား ပွိုင့်ကို နှုတ်ယူလိုက်ပါပြီ",false),
             UsedPointData(
                 R.drawable.logo_oway,R.drawable.ic_dollar_decrease,"1 min","Ba Din",
-                "67,000","မန်ဘာပွိုင့်များဖြင့် ‌စျေးဝယ်ယူခဲ့သည်","","","Order: 8978899",
+                "67,000","Wai Wai, Ahlone Branch မှ နှုတ်ယူလိုက်သည်","","","Order: 8978899",
                 "50,000 Ks","",false),
             UsedPointData(
                 R.drawable.logo_oway,R.drawable.ic_buy_with_point,"1 min","Ba Din",
@@ -63,11 +63,11 @@ class FragmentUsedPointTab : Fragment() {
         )
         val dataShopHistory : ArrayList<UsedPointData> = arrayListOf(
             UsedPointData(R.drawable.ic_trophy,R.drawable.ic_trophy,"13 Aug 22 06:00 AM","Jit Two",
-                "12,000","Wai Wai, Ahlone Branch မှ နှုတ်ယူလိုက်သည်","","","Order: 8978899",
+                "12,000","ဆုလက်ဆောင် လဲလှယ်လိုက်သည်","","","Order: 8978899",
                 "50,000 Ks","အော်ဒါအတွက် ကျသင့်ငွေအစား ပွိုင့်ကို နှုတ်ယူလိုက်ပါပြီ",false),
             UsedPointData(
                 R.drawable.ic_dollar_decrease,R.drawable.ic_dollar_decrease,"1 min","Ba Din",
-                "67,000","မန်ဘာပွိုင့်များဖြင့် ‌စျေးဝယ်ယူခဲ့သည်","","","Order: 8978899",
+                "67,000","Wai Wai, Ahlone Branch မှ နှုတ်ယူလိုက်သည်","","","Order: 8978899",
                 "50,000 Ks","",false),
             UsedPointData(
                 R.drawable.ic_buy_with_point,R.drawable.ic_buy_with_point,"1 min","Ba Din",

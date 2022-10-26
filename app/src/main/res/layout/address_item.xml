@@ -29,6 +29,7 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="20sp"
+        android:fontFamily="@font/interfont"
         android:layout_marginLeft="10dp"
         app:layout_constraintLeft_toRightOf="@id/ivIcon"
         app:layout_constraintTop_toTopOf="@id/ivIcon"
@@ -48,12 +49,13 @@
         android:id="@+id/tvAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/interfont"
         android:text="Orchid Condo, Ahlone,\nYangon"
         android:maxLines="2"
         android:textSize="16sp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
-        android:textColor="@color/black"
+        android:textColor="@color/black_text"
         app:layout_constraintLeft_toRightOf="@id/ivIcon"
         app:layout_constraintTop_toBottomOf="@id/chipOther"/>
 
@@ -73,6 +75,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:text="တိုယိုတာကားစင်တာ အနီး"
+        android:textColor="@color/grey_text"
+        android:fontFamily="@font/pyidaungsu"
         android:layout_marginTop="10dp"
         app:layout_constraintLeft_toRightOf="@id/ivFlag"
         app:layout_constraintTop_toBottomOf="@id/tvAddress"/>

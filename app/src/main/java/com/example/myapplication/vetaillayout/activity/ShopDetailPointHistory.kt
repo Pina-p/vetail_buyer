@@ -32,5 +32,10 @@ class ShopDetailPointHistory : AppCompatActivity() {
             var intent = Intent(this,PointRecapActivity::class.java)
             startActivity(intent)
         }
+
+        binding.ivBackButton.setOnClickListener {
+            onBackPressed()
+        }
+
     }
 }

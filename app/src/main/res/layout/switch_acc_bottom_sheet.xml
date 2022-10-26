@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="15dp"
+    android:background="@drawable/custom_bottom_sheet">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTopBar"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#D9D9D9"
+        app:cardElevation="0dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="160dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:text="မိမိအကောင့် နှင့် ဆိုင်များ"
+        android:textStyle="bold"
+        android:textColor="@color/black_text"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvTopBar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvShopCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/switch_acc_list_item"
+        tools:itemCount="3"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+        android:id="@+id/vHorizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#eeeeee"
+        app:layout_constraintTop_toBottomOf="@id/rvShopCategory" />
+
+    <LinearLayout
+        android:id="@+id/llNewShopBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/vHorizontalLine">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_blue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ဆိုင်အသစ်ဖွင့်မည်"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textColor="@color/blueOne"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/vHorizontalLine1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        app:layout_constraintTop_toBottomOf="@id/llNewShopBtn" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLoginOtherAcc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:stateListAnimator="@null"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_face"
+        app:iconGravity="textStart"
+        android:backgroundTint="@color/blueOne"
+        android:text="(သို့မဟုတ်) အခြားအကောင့်ဝင်မည်"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/vHorizontalLine1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnLoginOtherAcc"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

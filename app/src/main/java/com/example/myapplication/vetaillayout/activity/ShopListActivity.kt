@@ -79,7 +79,12 @@ class ShopListActivity : AppCompatActivity() {
         imageList3.addAll(imageList1)
         imageList3.addAll(imageList2)
 
-        imageListOne.add(R.drawable.naruto_profile)
+        imageListOne.add(R.drawable.sweetie)
+        imageListOne.add(R.drawable.image2)
+        imageListOne.add(R.drawable.image_boy_cry)
+        imageListOne.add(R.drawable.image_boy_cry)
+        imageListOne.add(R.drawable.image_boy_cry)
+        imageListOne.add(R.drawable.ic_bg_people_discussing)
 
     }
 
@@ -128,9 +133,9 @@ class ShopListActivity : AppCompatActivity() {
         tempShopItemList1.add(
             ShopListItems(
                 "270 new 2022",
-                "5,000",
+                "5,000 Pts",
                 imageList2,
-                "Hello Pts",
+                "Hello",
                 true,
                 "til 14 Aug 22"
             )
@@ -203,7 +208,7 @@ class ShopListActivity : AppCompatActivity() {
             ShopList(
                 R.drawable.shop_ruby,
                 "Ruby Energy Lashio",
-                "35,000 Pts",
+                "35,000",
                 tempShopItemList
             )
         )
@@ -211,7 +216,7 @@ class ShopListActivity : AppCompatActivity() {
             ShopList(
                 R.drawable.logo_nike,
                 "Nike Myanmar",
-                "3,000 Pts",
+                "3,000",
                 tempShopItemList1
             )
         )
@@ -219,7 +224,7 @@ class ShopListActivity : AppCompatActivity() {
             ShopList(
                 R.drawable.logo_citymart,
                 "City Mart",
-                "20,000 Pts",
+                "20,000",
                 tempShopItemList2
             )
         )

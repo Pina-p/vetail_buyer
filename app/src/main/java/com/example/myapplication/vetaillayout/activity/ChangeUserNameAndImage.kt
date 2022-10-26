@@ -20,6 +20,9 @@ class ChangeUserNameAndImage : AppCompatActivity() {
             transformations(CircleCropTransformation())
         }
 
+        binding.btnCancel.setOnClickListener {
+            onBackPressed()
+        }
 
     }
 }

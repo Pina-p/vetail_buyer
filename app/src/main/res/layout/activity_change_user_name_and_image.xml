@@ -10,7 +10,8 @@
         android:id="@+id/tvProfile"
         android:text="@string/profile"
         android:textStyle="bold"
-        android:textSize="26sp"
+        android:textSize="25sp"
+        android:fontFamily="@font/pyidaungsu"
         android:textColor="@color/black"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
@@ -18,16 +19,16 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"/>
-    <ImageView
-        android:id="@+id/ivCuteProfile"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_cute_profile_gray"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tvProfile"
-        app:layout_constraintBottom_toBottomOf="@id/tvProfile"/>
+<!--    <ImageView-->
+<!--        android:id="@+id/ivCuteProfile"-->
+<!--        android:layout_width="35dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:src="@drawable/ic_cute_profile_gray"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/tvProfile"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/tvProfile"/>-->
 
     <ImageView
         android:id="@+id/ivProfileImg"
@@ -99,6 +100,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Jobby James"
+            android:fontFamily="@font/interfont"
             android:textColorHint="@color/iconTextColor"
             android:inputType="textEmailAddress"
             />
@@ -126,6 +128,7 @@
         app:cornerRadius="10dp"
         android:text="မလုပ်တော့ပါ"
         android:textColor="#575757"
+        android:fontFamily="@font/pyidaungsu"
         android:backgroundTint="@color/light_gray"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
@@ -147,6 +150,7 @@
         android:stateListAnimator="@null"
         android:text="သိမ်းဆည်းမည်"
         app:cornerRadius="10dp"
+        android:fontFamily="@font/pyidaungsu"
         android:backgroundTint="@color/blueOne"
         android:layout_marginRight="20dp"
         app:layout_constraintLeft_toRightOf="@id/view"

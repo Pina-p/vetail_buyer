@@ -40,7 +40,7 @@
             android:layout_marginStart="15dp"
             android:text="1 min"
             android:textSize="13sp"
-            android:textColor="@color/dark_grey"
+            android:textColor="@color/grey_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -52,7 +52,7 @@
             android:text="Soe Aung"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="@color/black_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -87,7 +87,7 @@
             android:layout_marginRight="25dp"
             android:text="Aung Soe, Admin ထံမှရရှိသည်"
             android:lineHeight="20dp"
-            android:textColor="@color/black"
+            android:textColor="@color/black_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
 
@@ -97,7 +97,7 @@
             app:layout_constraintLeft_toLeftOf="@id/tvTime"
             android:text="Silver to Gold"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="@color/black_text"
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -117,12 +117,16 @@
                android:gravity="center"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content">
-
+               <ImageView
+                   android:src="@drawable/ic_trophy_small"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
                <TextView
                    android:id="@+id/tvOff"
                    android:text="Bangkok Flight 30% off"
+                   android:textSize="14sp"
                    android:layout_marginLeft="15dp"
-                   android:textColor="@color/black"
+                   android:textColor="@color/black_text"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"/>
 
@@ -141,8 +145,8 @@
                     android:id="@+id/tvOrderId"
                     android:text="Order: 8978899"
                     android:drawableLeft="@drawable/ic_order"
-                    android:textColor="@color/black"
-                    android:textSize="12sp"
+                    android:textColor="@color/black_text"
+                    android:textSize="14sp"
                     android:drawablePadding="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -162,8 +166,8 @@
                     android:text="5,000 Ks"
                     android:drawableLeft="@drawable/ic_money_dollar"
                     android:drawablePadding="15dp"
-                    android:textColor="@color/black"
-                    android:textSize="12sp"
+                    android:textColor="@color/black_text"
+                    android:textSize="14sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -184,10 +188,10 @@
                 <TextView
                     android:id="@+id/tvComment"
                     android:text="အင်ဂျင်ဝိုင် ဝယ်ယူသည့်အတွက် လက်ဆောင်ပွိုင့်လေးရပါတယ်ခင်ဗျ"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:layout_marginLeft="15dp"
                     android:lineHeight="20dp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/black_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>

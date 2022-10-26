@@ -1,11 +1,14 @@
 package com.example.myapplication.vetaillayout.fragments
 
+import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
+import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.*
+import android.view.inputmethod.InputMethodManager
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.TextView
@@ -59,6 +62,13 @@ class PointHistoryFilterFragment : BottomSheetDialogFragment(),AdapterView.OnIte
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+//        binding.materialSpinner.setOnTouchListener(View.OnTouchListener { v, event ->
+//            if (MotionEvent.ACTION_UP == event.action) {
+//                binding.materialSpinner.endIconDrawable =
+//                    resources.getDrawable(R.drawable.ic_blue_arrow_up)
+//            }
+//            true // return is important...
+//        })
         var shops = ArrayList<MyShops>()
         //shop dropdowon data setup for step 3
 //        val shop = resources.getStringArray(R.array.shop)
@@ -73,6 +83,7 @@ class PointHistoryFilterFragment : BottomSheetDialogFragment(),AdapterView.OnIte
         shops.add(MyShops(3,R.drawable.logo_citymart,"City Mart"))
 
         val shopAdapter = ShopAutoFillAdapter(requireActivity(),R.layout.dropdown_shop,shops)
+        binding.autoComplete.threshold =0
         binding.autoComplete.setAdapter(shopAdapter)
 
 //        productList.add(ProductData(0,R.color.background,"","Mixed Fruit","SKU 348585"))

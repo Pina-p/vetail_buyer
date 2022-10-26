@@ -68,11 +68,11 @@ class LogOrSignActivity : AppCompatActivity() {
 
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab?) {
-                Toast.makeText(
-                    this@LogOrSignActivity,
-                    "${tabLayout.selectedTabPosition}",
-                    Toast.LENGTH_SHORT
-                ).show()
+//                Toast.makeText(
+//                    this@LogOrSignActivity,
+//                    "${tabLayout.selectedTabPosition}",
+//                    Toast.LENGTH_SHORT
+//                ).show()
             }
             override fun onTabUnselected(tab: TabLayout.Tab?) {
             }

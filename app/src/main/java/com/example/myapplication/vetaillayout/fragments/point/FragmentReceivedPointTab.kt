@@ -54,7 +54,7 @@ class FragmentReceivedPointTab : Fragment() {
                 "50,000 Ks","အင်ဂျင်ဝိုင် ဝယ်ယူသည့်အတွက် လက်ဆောင်ပွိုင့်လေးရပါတယ်ခင်ဗျ"),
             ReceivedPointData(
                 R.drawable.ic_buy_point,0,"1 min","Ruby Energy",
-                "+5,000","Aung Soe, Admin ထံမှရရှိပါသည်","","","Order: 8978899",
+                "+5,000","စျေးဝယ်သည့်အတွက် ရရှိသည်","","","Order: 8978899",
                 "50,000 Ks","အင်ဂျင်ဝိုင် ဝယ်ယူသည့်အတွက် လက်ဆောင်ပွိုင့်လေးရပါတယ်ခင်ဗျ"),
         )
         val data : ArrayList<ReceivedPointData> = arrayListOf(
@@ -64,12 +64,9 @@ class FragmentReceivedPointTab : Fragment() {
                 "50,000 Ks","အင်ဂျင်ဝိုင် ဝယ်ယူသည့်အတွက် လက်ဆောင်ပွိုင့်လေးရပါတယ်ခင်ဗျ"),
             ReceivedPointData(
                 R.drawable.logo_ruby,R.drawable.ic_buy_point,"1 min","Ruby Energy",
-                "+5,000","Aung Soe, Admin ထံမှရရှိပါသည်","","","Order: 8978899",
+                "+5,000","စျေးဝယ်သည့်အတွက် ရရှိသည်","","","Order: 8978899",
                 "50,000 Ks","အင်ဂျင်ဝိုင် ဝယ်ယူသည့်အတွက် လက်ဆောင်ပွိုင့်လေးရပါတယ်ခင်ဗျ"),
-            ReceivedPointData(
-                R.drawable.logo_ruby,R.color.black,"1 min","Ruby Energy",
-                "+5,000","Aung Soe, Admin ထံမှရရှိပါသည်","","","Order: 8978899",
-                "50,000 Ks","အင်ဂျင်ဝိုင် ဝယ်ယူသည့်အတွက် လက်ဆောင်ပွိုင့်လေးရပါတယ်ခင်ဗျ")
+
         )
         if(activityName == "shopDetailPoint"){
             binding.rvReceivedPointHistory.apply{

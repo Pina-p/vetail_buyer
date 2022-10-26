@@ -34,13 +34,29 @@
             />
         </androidx.cardview.widget.CardView>
 
-
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvFullImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="35dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="parent">
         <ImageView
             android:id="@+id/ivFullImage"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="260dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="30dp"
+            android:src="@color/black_text"
             app:layout_constraintTop_toTopOf="parent"/>
-
+        </com.google.android.material.card.MaterialCardView>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="@id/cvFullImage"/>
         <LinearLayout
             android:id="@+id/llrvImages"
             android:layout_width="match_parent"
@@ -48,7 +64,7 @@
             android:paddingLeft="10dp"
             android:background="@color/whitishWhite"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ivFullImage"
+            app:layout_constraintTop_toTopOf="@id/view"
             android:visibility="visible">
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvImages"

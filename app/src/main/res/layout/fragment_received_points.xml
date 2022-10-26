@@ -99,6 +99,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:text="ဆိုင်များ"
+        android:textColor="@color/grey_text"
         app:layout_constraintTop_toBottomOf="@id/btnPointHistory"
         app:layout_constraintLeft_toLeftOf="parent"/>
 

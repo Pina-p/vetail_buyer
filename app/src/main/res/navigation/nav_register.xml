@@ -16,7 +16,6 @@
     </fragment>
     <fragment
         android:id="@+id/signUpTwoFragment"
-        android:name="com.example.myapplication.vetaillayout.fragments.SignUpTwoFragment"
-        android:label="fragment_sign_up_two"
+        android:name="com.example.myapplication.vetaillayout.fragments.SignUpTwoFragment"        android:label="fragment_sign_up_two"
         tools:layout="@layout/fragment_sign_up_two" />
 </navigation>

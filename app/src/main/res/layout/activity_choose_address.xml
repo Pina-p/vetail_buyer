@@ -14,8 +14,8 @@
         <ImageView
             android:id="@+id/ivBackButton"
             android:clickable="true"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
             android:src="@drawable/arrow_back"
             android:background="@color/white"
             />
@@ -26,6 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="လိပ်စာရွေးချယ်ပါ"
+        android:fontFamily="@font/pyidaungsu"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="26sp"

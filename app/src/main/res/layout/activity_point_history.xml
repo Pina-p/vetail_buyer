@@ -31,6 +31,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginStart="20dp"
             android:textSize="22sp"
+            android:textStyle="bold"
             android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -49,7 +50,7 @@
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabTextColor="@color/dark_grey"
+        app:tabTextColor="@color/grey_text"
         app:tabSelectedTextColor="@color/blueOne"
         app:tabIndicatorColor="@color/blueOne"
         app:tabIndicator="@drawable/custom_tab_indicator"
